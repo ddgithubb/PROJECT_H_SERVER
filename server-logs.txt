@@ -1,0 +1,204 @@
+2021/08/26 18:51:32 ip: 10.217.70.188:62156; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/26 19:15:59 ip: 10.217.70.188:62305; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62305: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/26 22:25:54 ip: 10.217.70.188:62370; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62370: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/27 10:22:11 ip: 10.217.70.188:62978; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 10:22:11 ip: 10.217.70.188:62930; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 10:22:11 ip: 10.217.70.188:62914; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 10:22:11 ip: 10.217.70.188:62959; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 10:22:12 ip: 10.217.70.188:62943; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 14:41:52 ip: 10.217.70.188:61969; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 14:41:52 ip: 10.217.70.188:61955; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/27 15:39:56 ip: 10.217.70.188:62119; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62119: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/28 15:49:05 ip: 10.217.70.188:62689; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/28 16:25:16 ip: 10.217.70.188; Problem: ffmpeg_clip; Error: Failed Start FFMPEG ([-nostats -loglevel 0 -y -i pipe:0 -ss 00:00:00.0 -t 00:00:15.0 -movflags frag_keyframe -f m4a pipe:1 -hls_list_size 0 -movflags frag_keyframe]) with exec: "C:\\ffmpeg-4.4\\bin\\ffmpeg.exe\r": file does not exist, message  
+2021/08/28 16:38:24 ip: 10.217.70.188; Problem: ffmpeg_clip; Error: Failed Start FFMPEG ([-nostats -loglevel 0 -y -i pipe:0 -ss 00:00:00.0 -t 00:00:15.0 -movflags frag_keyframe -f m4a pipe:1 -hls_list_size 0 -movflags frag_keyframe]) with exec: "C:\\ffmpeg-4.4\\bin\\ffmpeg.exe\r": file does not exist, message  
+2021/08/28 17:09:06 ip: 10.217.70.188; Problem: ffmpeg_clip; Error: Failed Start FFMPEG ([-nostats -loglevel 0 -y -i pipe:0 -ss 00:00:00.0 -t 00:00:15.0 -movflags frag_keyframe -f m4a pipe:1 -hls_list_size 0 -movflags frag_keyframe]) with exec: "C:\\ffmpeg-4.4\\bin\\ffmpeg.exe\r": file does not exist, message  
+2021/08/28 19:02:25 ip: 10.217.70.188:63100; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63100: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/28 19:11:04 ip: 10.217.70.188:63190; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63190: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/28 19:23:48 ip: 10.217.70.188:63209; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63209: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/29 13:41:43 ip: 10.217.70.188:62906; Problem: websocket_type; Error: type error
+2021/08/29 14:10:39 ip: 10.217.70.188:63050; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63050: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/29 16:04:31 ip: 10.217.70.188:63647; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63647: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2021/08/29 16:04:42 ip: 10.217.70.188:63533; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63533: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2021/08/29 16:05:00 ip: 10.217.70.188:63633; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63633: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2021/08/30 18:09:54 ip: 10.217.70.188:62781; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/30 18:09:54 ip: 10.217.70.188:62751; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/30 18:09:54 ip: 10.217.70.188:62768; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/30 18:09:54 ip: 10.217.70.188:62731; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/08/30 18:22:20 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 18:23:44 ip: 10.217.70.188; Problem: minio_put; Error: read |0: file already closed
+2021/08/30 18:39:54 ip: 10.217.70.188:63082; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:63082: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/30 19:02:06 ip: 10.217.70.188; Problem: cmd_start; Error: exec: "ffmpeg -ss 00:00:00 -i pipe:0 -to 00:00:15 -c copy pipe:1": file does not exist
+2021/08/30 21:30:40 ip: 10.217.70.188; Problem: cmd_start; Error: exec: "ffmpeg -ss 00:00:00 -i pipe:0 -to 00:00:15 -c copy pipe:1": file does not exist
+2021/08/30 21:42:07 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 21:44:57 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 21:47:57 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 21:48:59 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 21:50:46 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:05:11 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:08:06 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:12:23 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:13:47 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:15:24 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:19:47 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:22:23 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/30 22:24:33 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/31 13:25:26 ip: 10.217.70.188:62305; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62305: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2021/08/31 13:40:36 ip: 10.217.70.188; Problem: cmd_run; Error: exec: Stdout already set
+2021/08/31 13:48:28 ip: 10.217.70.188; Problem: cmd_run; Error: exec: Stderr already set
+2021/08/31 14:03:20 ip: 10.217.70.188; Problem: cmd_run; Error: exit status 1
+2021/08/31 14:10:22 ip: 10.217.70.188; Problem: cmd_run; Error: 
+2021/08/31 14:12:57 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Option movflags not found.
+
+2021/08/31 14:52:27 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Unknown input format: 'adts'
+
+2021/08/31 14:53:54 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'pipe:0':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2021-08-31T18:53:54.000000Z
+    com.android.version: 10
+  Duration: 00:00:00.91, start: 0.000000, bitrate: N/A
+  Stream #0:0(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 48 kb/s (default)
+    Metadata:
+      creation_time   : 2021-08-31T18:53:54.000000Z
+      handler_name    : SoundHandle
+      vendor_id       : [0][0][0][0]
+[NULL @ 000002227a605340] Unable to find a suitable output format for 'pipe:1'
+pipe:1: Invalid argument
+
+2021/08/31 15:02:10 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mp3float @ 000001849d860740] Header missing
+    Last message repeated 14 times
+[mp3 @ 000001849d83b2c0] decoding for stream 0 failed
+[mp3 @ 000001849d83b2c0] Could not find codec parameters for stream 0 (Audio: mp3 (mp3float), 0 channels, fltp): unspecified frame size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, mp3, from 'pipe:0':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Audio: mp3, 0 channels, fltp
+[adts @ 000001849d8a8800] sample rate not set
+Could not write header for output file #0 (incorrect codec parameters ?): Invalid argument
+Error initializing output stream 0:0 -- 
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+    Last message repeated 1 times
+
+2021/08/31 15:32:48 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, aac, from 'pipe:0':
+  Duration: N/A, bitrate: 50 kb/s
+  Stream #0:0: Audio: aac (LC), 44100 Hz, mono, fltp, 50 kb/s
+[NULL @ 0000013cdd2b2ac0] Requested output format 'm4a' is not a suitable output format
+pipe:1: Invalid argument
+
+2021/08/31 16:38:47 ip: 10.217.70.188; Problem: cmd_run; Error: ffprobe version 4.4-full_build-www.gyan.dev Copyright (c) 2007-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+ffprobe -v error -show_entries stream=duration,stream=codec_name,stream=bit_rate -of default=noprint_wrappers=1:nokey=1 -print_format compact pipe:0: Invalid argument
+
+2021/08/31 16:40:18 ip: 10.217.70.188; Problem: cmd_run; Error: Argument 'pipe:0' provided as input filename, but 'ffprobe' was already specified.
+
+2021/08/31 16:41:13 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+pipe:0: End of file
+
+2021/08/31 16:43:54 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+pipe:0: End of file
+
+2021/08/31 17:40:24 ip: 10.217.70.188:62128; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62128: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/31 18:09:03 ip: 10.217.70.188; Problem: cmd_run; Error: ffmpeg version 4.4-full_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-sdl2 --enable-libdav1d --enable-libzvbi --enable-librav1e --enable-libsvtav1 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libglslang --enable-vulkan --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libilbc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+pipe:0: End of file
+
+2021/08/31 18:12:16 ip: 10.217.70.188:62262; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62262: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/31 18:29:41 ip: 10.217.70.188:62358; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62358: wsarecv: An existing connection was forcibly closed by the remote host.
+2021/08/31 18:46:54 ip: 10.217.70.188:62408; Problem: websocket_read; Error: read tcp4 10.217.70.188:8081->10.217.70.188:62408: wsarecv: An existing connection was forcibly closed by the remote host.

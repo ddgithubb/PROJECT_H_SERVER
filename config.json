@@ -1,0 +1,18 @@
+{
+    "origin": "http://localhost:4200",
+    "port": ":8081",
+    "version": "/apiv1",
+    "emailFrom": "PROJECT H",
+    "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "user": "ddnoreplytest@gmail.com",
+        "password": "c88ub29g"
+    },
+    "pubPort": "8700",
+    "subPort": "8701",
+    "minIO": {
+        "user": "PROJECTHDB_MINIO",
+        "password": "np6b6z7VIXxHU6j0eDFStD0scvwFBW1ZfZawnDpYwUAYxvcZgIONQoOewNxX3lK"
+    }
+}
