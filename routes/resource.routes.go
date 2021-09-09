@@ -11,6 +11,7 @@ func resourceRoutes(api fiber.Router) {
 	resources := api.Group("resources")
 	resources.Use(helpers.Authenticate)
 	resources.Post("/authenticate", services.Authenticate)
+	resources.Post("/get-chains", services.GetChains)
 }
 
 func formRoutes(api fiber.Router) {

@@ -3,6 +3,7 @@ package services
 import (
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/global"
+	"PROJECT_H_server/helpers"
 	"time"
 
 	"github.com/gocql/gocql"
@@ -76,8 +77,7 @@ func Request(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	c.Locals("data", struct{ ChainID string }{ChainID: chainID.String()})
-	return nil
+	return helpers.ReturnData(c, struct{ ChainID string }{ChainID: chainID.String()})
 }
 
 // RemoveRelations removes relation selected user by id
@@ -104,8 +104,7 @@ func RemoveRelation(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	c.Locals("data", "OK")
-	return nil
+	return helpers.ReturnOKData(c)
 }
 
 // Accept accepts request from user by id
@@ -115,6 +114,9 @@ func Accept(c *fiber.Ctx) error {
 	requestID := c.Locals("requestid").(string)
 
 	chainID, err := gocql.ParseUUID(c.Query("chainid"))
+	if err != nil {
+		return errors.HandleBadRequestError(c, "ChainID", "invalid")
+	}
 	curTime := time.Now().UTC()
 
 	err = global.Session.Query(`
@@ -152,6 +154,5 @@ func Accept(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	c.Locals("data", "OK")
-	return nil
+	return helpers.ReturnOKData(c)
 }

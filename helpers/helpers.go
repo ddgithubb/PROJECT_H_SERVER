@@ -42,3 +42,15 @@ func OKResponse(c *fiber.Ctx) error {
 func MilisecondsToTime(milli int64) time.Time {
 	return time.UnixMilli(milli)
 }
+
+// ReturnData populates local data and returns nil
+func ReturnData(c *fiber.Ctx, data interface{}) error {
+	c.Locals("data", data)
+	return nil
+}
+
+// ReturnOKData returns ok message in local data and returns nil
+func ReturnOKData(c *fiber.Ctx) error {
+	c.Locals("data", "OK")
+	return nil
+}

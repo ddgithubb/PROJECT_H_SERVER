@@ -109,7 +109,7 @@ func Stream(ws *websocket.Conn) {
 			break
 		}
 		if mt, msg, err = ws.ReadMessage(); err != nil {
-			if err != websocket.ErrCloseSent && !websocket.IsCloseError(err, 1000) && !strings.Contains(err.Error(), "i/o timeout") {
+			if err != websocket.ErrCloseSent && !websocket.IsCloseError(err, 1000) && !strings.Contains(err.Error(), "i/o timeout") && !strings.Contains(err.Error(), "An existing connection was forcibly closed by the remote host") {
 				errors.HandleWebsocketError(ws, "websocket_read", err.Error())
 			}
 			break
@@ -167,6 +167,10 @@ func Stream(ws *websocket.Conn) {
 				err = Errors.New("websocket_write: " + err.Error())
 				break
 			}
+			// if err = ws.WriteMessage(websocket.TextMessage, append([]byte("byte"), data.Bytes()...)); err != nil {
+			// 	err = Errors.New("websocket_write: " + err.Error())
+			// 	break
+			// }
 		default:
 			err = Errors.New("type error")
 		}

@@ -33,7 +33,9 @@ func Test(c *fiber.Ctx) error {
 		return errors.HandleValidatorError(c, err)
 	}
 
-	fmt.Println("OK")
+	temp := time.Now()
+	fmt.Println(temp.Unix())
+	fmt.Println(temp.UnixMilli())
 
 	return helpers.OKResponse(c)
 }

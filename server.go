@@ -175,11 +175,16 @@ func init() {
 	errors.HandleFatalError(err)
 
 	err = global.Session.Query(`
+		DROP TABLE projecthdb.chains;
+	`).Exec()
+
+	err = global.Session.Query(`
 		CREATE TABLE IF NOT EXISTS projecthdb.chains (
 			chain_id uuid,
 			created timestamp,
-			user uuid,
+			user_id uuid,
 			message_id uuid,
+			duration int,
 			seen boolean,
 			action int,
 			display text,

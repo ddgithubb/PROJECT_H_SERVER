@@ -5,6 +5,7 @@ import (
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/schemas"
 	Errors "errors"
+	"sort"
 	"time"
 
 	"github.com/gocql/gocql"
@@ -85,9 +86,7 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 		relations  schemas.RelationsSchema
 		curFriend  schemas.FriendsSchema
 		curRequest schemas.RequestsSchema
-		lastTime   time.Time
 	)
-	lastTime = time.Now().UTC()
 	for {
 		row := make(map[string]interface{})
 		if !iter.MapScan(row) {
@@ -96,17 +95,14 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 
 		if relationID, ok = row["relation_id"].(gocql.UUID); ok {
 			if row["friend"].(bool) {
-				curFriend.UserID = relationID.String()
+				curFriend.RelationID = relationID.String()
 				curFriend.Username = row["relation_username"].(string)
 				curFriend.ChainID = row["chain_id"].(gocql.UUID).String()
-				curFriend.LastSeen = row["last_seen"].(time.Time).Unix()
-				if lastTime.Before(row["last_seen"].(time.Time)) {
-					relations.Friends = append(relations.Friends, curFriend)
-				} else {
-					relations.Friends = append([]schemas.FriendsSchema{curFriend}, relations.Friends...)
-				}
+				curFriend.LastSeen = row["last_seen"].(time.Time).UnixMilli()
+				curFriend.LastRecv = row["last_recv"].(time.Time).UnixMilli()
+				relations.Friends = append(relations.Friends, curFriend)
 			} else {
-				curRequest.UserID = relationID.String()
+				curRequest.RelationID = relationID.String()
 				curRequest.Username = row["relation_username"].(string)
 				curRequest.Requested = row["requested"].(bool)
 				if curRequest.Requested {
@@ -118,6 +114,11 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 		} else {
 			return schemas.RelationsSchema{}, Errors.New("iter error")
 		}
+	}
+	if len(relations.Friends) >= 1 {
+		sort.SliceStable(relations.Friends, func(i, j int) bool {
+			return relations.Friends[i].LastRecv > relations.Friends[j].LastRecv
+		})
 	}
 	return relations, nil
 }

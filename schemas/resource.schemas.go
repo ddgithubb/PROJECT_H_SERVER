@@ -36,21 +36,27 @@ type RelationsSchema struct {
 
 // FriendsSchema struct
 type FriendsSchema struct {
-	Username string
-	UserID   string
-	ChainID  string
-	LastSeen int64
+	Username   string
+	RelationID string
+	ChainID    string
+	LastSeen   int64
+	LastRecv   int64
 }
 
 // RequestsSchema struct
 type RequestsSchema struct {
-	Username  string
-	UserID    string
-	Requested bool
+	Username   string
+	RelationID string
+	Requested  bool
 }
 
-// SendAudioSchema struct
-type SendAudioSchema struct {
-	ChainID string `form:"cequestID"`
-	Audio   []byte `form:"audio"`
+// ChainSchema struct
+type ChainSchema struct {
+	MessageID string
+	UserID    string
+	Created   int64
+	Duration  int
+	Seen      bool
+	Action    int
+	Display   string
 }
