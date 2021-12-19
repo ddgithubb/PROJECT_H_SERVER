@@ -128,20 +128,9 @@ func Stream(ws *websocket.Conn) {
 			continue
 		}
 
-		reqChunk = strings.Split(req, "|") //DOPN"T USE SPLIT, SIMPLY USE A STRAIGHT STRING AND INDEX
+		reqChunk = strings.Split(req, "|")
 		payload = []string{reqChunk[0]}
 		send = true
-
-		// exists, err = helpers.CheckUser(reqChunk[1])
-		// if err != nil {
-		// 	if err == gocql.ErrNotFound {
-		// 		continue
-		// 	}
-		// 	break
-		// }
-		// if !exists {
-		// 	continue
-		// }
 
 		switch reqChunk[0] {
 		case "request":
@@ -153,24 +142,30 @@ func Stream(ws *websocket.Conn) {
 		case "unfriend":
 			payload = append(payload, userID)
 		case "get-audio":
-
 			send = false
-			data, err = helpers.GetAudio(reqChunk[1], reqChunk[2], reqChunk[3])
+			data, err = helpers.GetAudio(userID, reqChunk[1], reqChunk[2], reqChunk[3], reqChunk[4], reqChunk[5])
 
 			if err != nil {
 				break
 			}
 
-			fmt.Println(data.Len())
+			fmt.Println(len(data.Bytes()))
 
 			if err = ws.WriteMessage(websocket.TextMessage, []byte("byte"+base64.StdEncoding.EncodeToString(data.Bytes()))); err != nil {
 				err = Errors.New("websocket_write: " + err.Error())
 				break
 			}
-			// if err = ws.WriteMessage(websocket.TextMessage, append([]byte("byte"), data.Bytes()...)); err != nil {
-			// 	err = Errors.New("websocket_write: " + err.Error())
-			// 	break
-			// }
+		case "send-message":
+			payload = append(payload, userID, reqChunk[2], reqChunk[3], reqChunk[4], reqChunk[5])
+		case "send-action":
+
+			err = helpers.UpdateAction(reqChunk[2], reqChunk[3], reqChunk[4])
+
+			if err != nil {
+				break
+			}
+
+			payload = append(payload, userID, reqChunk[3], reqChunk[4])
 		default:
 			err = Errors.New("type error")
 		}

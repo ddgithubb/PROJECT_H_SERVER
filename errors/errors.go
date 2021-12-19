@@ -3,6 +3,7 @@ package errors
 import (
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/schemas"
+	Errors "errors"
 	"log"
 
 	"github.com/go-playground/validator/v10"
@@ -24,6 +25,12 @@ func HandleBasicError(err error) bool {
 		return true
 	}
 	return false
+}
+
+// HandleComplexError handles complex errors and logs
+func HandleComplexError(problem string, err string) error {
+	global.Logger.Println("Problem: " + problem + "; Error: " + err)
+	return Errors.New("Problem: " + problem + "; Error: " + err)
 }
 
 // HandleInternalError handles internal errors (things that should never happen in normal circumstances)

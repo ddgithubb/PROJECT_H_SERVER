@@ -81,19 +81,19 @@ func init() {
 	config := lifecycle.NewConfiguration()
 	config.Rules = []lifecycle.Rule{
 		{
-			ID:     "expire-audio",
+			ID:     "audio-expire",
 			Status: "Enabled",
 			Expiration: lifecycle.Expiration{
-				Days: 30,
+				Days: 1,
 			},
 		},
 	}
 
-	exists, err = global.MinIOClient.BucketExists(global.Context, "audio_expire")
+	exists, err = global.MinIOClient.BucketExists(global.Context, "audio-expire")
 	errors.HandleFatalError(err)
 	if !exists {
-		global.MinIOClient.MakeBucket(global.Context, "audio_expire", minio.MakeBucketOptions{Region: "us-east-1"})
-		global.MinIOClient.SetBucketLifecycle(global.Context, "audio_expire", config)
+		global.MinIOClient.MakeBucket(global.Context, "audio-expire", minio.MakeBucketOptions{Region: "us-east-1"})
+		global.MinIOClient.SetBucketLifecycle(global.Context, "audio-expire", config)
 	}
 
 	global.RedisClient = redis.NewClient(&redis.Options{
@@ -174,9 +174,9 @@ func init() {
 
 	errors.HandleFatalError(err)
 
-	err = global.Session.Query(`
-		DROP TABLE projecthdb.chains;
-	`).Exec()
+	// err = global.Session.Query(`
+	// 	DROP TABLE projecthdb.chains;
+	// `).Exec()
 
 	err = global.Session.Query(`
 		CREATE TABLE IF NOT EXISTS projecthdb.chains (

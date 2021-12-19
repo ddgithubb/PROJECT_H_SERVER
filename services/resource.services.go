@@ -6,7 +6,6 @@ import (
 	"PROJECT_H_server/helpers"
 	"PROJECT_H_server/schemas"
 	"bytes"
-	Errors "errors"
 	"fmt"
 	"mime/multipart"
 	"os/exec"
@@ -76,7 +75,7 @@ func SendAudio(c *fiber.Ctx) error {
 	}
 
 	//Cut vid 15 seconds and rest _l0, _l1, _l2, _l3 //
-	_, err = global.MinIOClient.PutObject(global.Context, "audio", messageID.String()+"_l0", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
+	_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", messageID.String()+"_l0", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
 	if err != nil {
 		return errors.HandleInternalError(c, "minio_put", err.Error())
 	}
@@ -97,7 +96,7 @@ func SendAudio(c *fiber.Ctx) error {
 		}
 
 		//Cut vid 15 seconds and rest _l0, _l1, _l2, _l3 //
-		_, err = global.MinIOClient.PutObject(global.Context, "audio", messageID.String()+"_l1", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
+		_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", messageID.String()+"_l1", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
 		if err != nil {
 			return errors.HandleInternalError(c, "minio_put", err.Error())
 		}
@@ -119,7 +118,7 @@ func SendAudio(c *fiber.Ctx) error {
 		}
 
 		//Cut vid 15 seconds and rest _l0, _l1, _l2, _l3 //
-		_, err = global.MinIOClient.PutObject(global.Context, "audio", messageID.String()+"_l2", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
+		_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", messageID.String()+"_l2", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
 		if err != nil {
 			return errors.HandleInternalError(c, "minio_put", err.Error())
 		}
@@ -193,65 +192,25 @@ func GetChains(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "parse_duration", err.Error())
 	}
 	requestTime := time.UnixMilli(request)
+	asc := c.Query("asc")
+	desc := c.Query("desc")
 
-	iter := global.Session.Query(`
-		SELECT * FROM chains WHERE chain_id = ? AND created >= ? ORDER BY created ASC LIMIT 15 BYPASS CACHE;`,
-		chainID,
-		requestTime,
-	).WithContext(global.Context).Iter()
+	ascChains := []schemas.ChainSchema{}
+	descChains := []schemas.ChainSchema{}
 
-	var chains []schemas.ChainSchema
-
-	var (
-		messageID gocql.UUID
-		ok        bool
-		curChain  schemas.ChainSchema
-	)
-	for {
-		row := make(map[string]interface{})
-		if !iter.MapScan(row) {
-			break
-		}
-
-		if messageID, ok = row["message_id"].(gocql.UUID); ok {
-			curChain.MessageID = messageID.String()
-			curChain.UserID = row["user_id"].(gocql.UUID).String()
-			curChain.Created = messageID.Time().UnixMilli()
-			curChain.Duration = row["duration"].(int)
-			curChain.Seen = row["seen"].(bool)
-			curChain.Action = row["action"].(int)
-			curChain.Display = row["display"].(string)
-			chains = append(chains, curChain)
-		} else {
-			return Errors.New("iter error")
+	if asc == "true" {
+		ascChains, err = helpers.GetChains(chainID, requestTime, true)
+		if err != nil {
+			return errors.HandleInternalError(c, "helpers_get_chains", err.Error())
 		}
 	}
 
-	iter = global.Session.Query(`
-		SELECT * FROM chains WHERE chain_id = ? AND created < ? LIMIT 10 BYPASS CACHE;`,
-		chainID,
-		requestTime,
-	).WithContext(global.Context).Iter()
-
-	for {
-		row := make(map[string]interface{})
-		if !iter.MapScan(row) {
-			break
-		}
-
-		if messageID, ok = row["message_id"].(gocql.UUID); ok {
-			curChain.MessageID = messageID.String()
-			curChain.UserID = row["user_id"].(gocql.UUID).String()
-			curChain.Created = messageID.Time().UnixMilli()
-			curChain.Duration = row["duration"].(int)
-			curChain.Seen = row["seen"].(bool)
-			curChain.Action = row["action"].(int)
-			curChain.Display = row["display"].(string)
-			chains = append([]schemas.ChainSchema{curChain}, chains...)
-		} else {
-			return Errors.New("iter error")
+	if desc == "true" {
+		descChains, err = helpers.GetChains(chainID, requestTime, false)
+		if err != nil {
+			return errors.HandleInternalError(c, "helpers_get_chains", err.Error())
 		}
 	}
 
-	return helpers.ReturnData(c, chains)
+	return helpers.ReturnData(c, append(descChains, ascChains...))
 }

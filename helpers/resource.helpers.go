@@ -122,3 +122,57 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 	}
 	return relations, nil
 }
+
+//GetChains gets a limited amount of chains based on created
+func GetChains(chainID gocql.UUID, reqTime time.Time, asc bool) ([]schemas.ChainSchema, error) {
+
+	var iter *gocql.Iter
+
+	if asc {
+		iter = global.Session.Query(`
+			SELECT * FROM chains WHERE chain_id = ? AND created >= ? ORDER BY created ASC LIMIT 15 BYPASS CACHE;`,
+			chainID,
+			reqTime,
+		).WithContext(global.Context).Iter()
+	} else {
+		iter = global.Session.Query(`
+			SELECT * FROM chains WHERE chain_id = ? AND created < ? LIMIT 15 BYPASS CACHE;`,
+			chainID,
+			reqTime,
+		).WithContext(global.Context).Iter()
+	}
+
+	var chains []schemas.ChainSchema
+
+	var (
+		messageID gocql.UUID
+		ok        bool
+		curChain  schemas.ChainSchema
+	)
+	for {
+		row := make(map[string]interface{})
+		if !iter.MapScan(row) {
+			break
+		}
+
+		if messageID, ok = row["message_id"].(gocql.UUID); ok {
+			curChain.MessageID = messageID.String()
+			curChain.UserID = row["user_id"].(gocql.UUID).String()
+			curChain.Created = messageID.Time().UnixMilli()
+			curChain.Duration = row["duration"].(int)
+			curChain.Seen = row["seen"].(bool)
+			curChain.Action = row["action"].(int)
+			curChain.Display = row["display"].(string)
+			if asc {
+				chains = append(chains, curChain)
+			} else {
+				chains = append([]schemas.ChainSchema{curChain}, chains...)
+			}
+		} else {
+			return []schemas.ChainSchema{}, Errors.New("iter error")
+		}
+	}
+
+	return chains, nil
+
+}

@@ -7,6 +7,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"net/smtp"
+	"strconv"
 	"time"
 
 	"github.com/gofiber/fiber/v2"
@@ -53,4 +54,9 @@ func ReturnData(c *fiber.Ctx, data interface{}) error {
 func ReturnOKData(c *fiber.Ctx) error {
 	c.Locals("data", "OK")
 	return nil
+}
+
+// ParseStringToInt parses string to int
+func ParseStringToInt(str string) (int64, error) {
+	return strconv.ParseInt(str, 10, 64)
 }
