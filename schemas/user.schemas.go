@@ -5,13 +5,6 @@ type UserByUsernameSchema struct {
 	Username string
 }
 
-// LoginResponseSchema struct
-type LoginResponseSchema struct {
-	Data      UserInfoSchema
-	SessionID string
-	Tokens    TokensSchema
-}
-
 // UserInfoSchema struct
 type UserInfoSchema struct {
 	UserID    string
@@ -41,6 +34,7 @@ type FriendsSchema struct {
 	ChainID    string
 	LastSeen   int64
 	LastRecv   int64
+	Key        int
 }
 
 // RequestsSchema struct
@@ -48,15 +42,4 @@ type RequestsSchema struct {
 	Username   string
 	RelationID string
 	Requested  bool
-}
-
-// ChainSchema struct
-type ChainSchema struct {
-	MessageID string
-	UserID    string
-	Created   int64
-	Duration  int
-	Seen      bool
-	Action    int
-	Display   string
 }

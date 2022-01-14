@@ -3,12 +3,83 @@ package helpers
 import (
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/global"
+	"PROJECT_H_server/schemas"
 	"bytes"
+	Errors "errors"
 	"fmt"
+	"time"
 
 	"github.com/gocql/gocql"
 	minio "github.com/minio/minio-go/v7"
 )
+
+//GetChain gets a limited amount of chain based on created
+func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit int64) ([]schemas.ChainSchema, error) {
+
+	var iter *gocql.Iter
+
+	if limit > 10 {
+		limit = 10
+	} else if limit <= 0 {
+		return []schemas.ChainSchema{}, nil
+	}
+
+	if !new {
+		if asc {
+			iter = global.Session.Query(`
+				SELECT * FROM chains WHERE chain_id = ? AND created > ? ORDER BY created ASC LIMIT `+fmt.Sprint(limit)+` BYPASS CACHE;`,
+				chainID,
+				reqTime,
+			).WithContext(global.Context).Iter()
+		} else {
+			iter = global.Session.Query(`
+				SELECT * FROM chains WHERE chain_id = ? AND created < ? LIMIT `+fmt.Sprint(limit)+` BYPASS CACHE;`,
+				chainID,
+				reqTime,
+			).WithContext(global.Context).Iter()
+		}
+	} else {
+		iter = global.Session.Query(`
+			SELECT * FROM chains WHERE chain_id = ? AND created <= ? LIMIT `+fmt.Sprint(limit)+` BYPASS CACHE;`,
+			chainID,
+			reqTime,
+		).WithContext(global.Context).Iter()
+	}
+
+	chain := []schemas.ChainSchema{}
+
+	var (
+		messageID gocql.UUID
+		ok        bool
+		curChain  schemas.ChainSchema
+	)
+	for {
+		row := make(map[string]interface{})
+		if !iter.MapScan(row) {
+			break
+		}
+
+		if messageID, ok = row["message_id"].(gocql.UUID); ok {
+			curChain.MessageID = messageID.String()
+			curChain.UserID = row["user_id"].(gocql.UUID).String()
+			curChain.Created = messageID.Time().UnixMilli()
+			curChain.Duration = row["duration"].(int)
+			curChain.Seen = row["seen"].(bool)
+			curChain.Action = row["action"].(int)
+			curChain.Display = row["display"].(string)
+			if asc {
+				chain = append(chain, curChain)
+			} else {
+				chain = append([]schemas.ChainSchema{curChain}, chain...)
+			}
+		} else {
+			return []schemas.ChainSchema{}, Errors.New("iter error")
+		}
+	}
+
+	return chain, nil
+
+}
 
 // GetAudio gets a certain audio clip based on level
 func GetAudio(userID string, chainID string, messageID string, level string, seen string, requestID string) (*bytes.Buffer, error) {

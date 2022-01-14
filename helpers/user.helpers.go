@@ -5,7 +5,6 @@ import (
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/schemas"
 	Errors "errors"
-	"sort"
 	"time"
 
 	"github.com/gocql/gocql"
@@ -92,7 +91,6 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 		if !iter.MapScan(row) {
 			break
 		}
-
 		if relationID, ok = row["relation_id"].(gocql.UUID); ok {
 			if row["friend"].(bool) {
 				curFriend.RelationID = relationID.String()
@@ -100,7 +98,7 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 				curFriend.ChainID = row["chain_id"].(gocql.UUID).String()
 				curFriend.LastSeen = row["last_seen"].(time.Time).UnixMilli()
 				curFriend.LastRecv = row["last_recv"].(time.Time).UnixMilli()
-				relations.Friends = append(relations.Friends, curFriend)
+				relations.Friends = append([]schemas.FriendsSchema{curFriend}, relations.Friends...)
 			} else {
 				curRequest.RelationID = relationID.String()
 				curRequest.Username = row["relation_username"].(string)
@@ -115,64 +113,13 @@ func RelationsMapper(userID string) (schemas.RelationsSchema, error) {
 			return schemas.RelationsSchema{}, Errors.New("iter error")
 		}
 	}
-	if len(relations.Friends) >= 1 {
-		sort.SliceStable(relations.Friends, func(i, j int) bool {
-			return relations.Friends[i].LastRecv > relations.Friends[j].LastRecv
-		})
+	for i := 0; i < len(relations.Friends); i++ {
+		relations.Friends[i].Key = i
 	}
+	// if len(relations.Friends) >= 1 {
+	// 	sort.SliceStable(relations.Friends, func(i, j int) bool {
+	// 		return relations.Friends[i].LastRecv > relations.Friends[j].LastRecv
+	// 	})
+	// }
 	return relations, nil
-}
-
-//GetChains gets a limited amount of chains based on created
-func GetChains(chainID gocql.UUID, reqTime time.Time, asc bool) ([]schemas.ChainSchema, error) {
-
-	var iter *gocql.Iter
-
-	if asc {
-		iter = global.Session.Query(`
-			SELECT * FROM chains WHERE chain_id = ? AND created >= ? ORDER BY created ASC LIMIT 15 BYPASS CACHE;`,
-			chainID,
-			reqTime,
-		).WithContext(global.Context).Iter()
-	} else {
-		iter = global.Session.Query(`
-			SELECT * FROM chains WHERE chain_id = ? AND created < ? LIMIT 15 BYPASS CACHE;`,
-			chainID,
-			reqTime,
-		).WithContext(global.Context).Iter()
-	}
-
-	var chains []schemas.ChainSchema
-
-	var (
-		messageID gocql.UUID
-		ok        bool
-		curChain  schemas.ChainSchema
-	)
-	for {
-		row := make(map[string]interface{})
-		if !iter.MapScan(row) {
-			break
-		}
-
-		if messageID, ok = row["message_id"].(gocql.UUID); ok {
-			curChain.MessageID = messageID.String()
-			curChain.UserID = row["user_id"].(gocql.UUID).String()
-			curChain.Created = messageID.Time().UnixMilli()
-			curChain.Duration = row["duration"].(int)
-			curChain.Seen = row["seen"].(bool)
-			curChain.Action = row["action"].(int)
-			curChain.Display = row["display"].(string)
-			if asc {
-				chains = append(chains, curChain)
-			} else {
-				chains = append([]schemas.ChainSchema{curChain}, chains...)
-			}
-		} else {
-			return []schemas.ChainSchema{}, Errors.New("iter error")
-		}
-	}
-
-	return chains, nil
-
 }

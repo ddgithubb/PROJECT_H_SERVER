@@ -346,3 +346,51 @@ pipe:0: End of file
 2021/12/18 13:06:28 ip: 10.0.0.86:33906; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
 2021/12/18 13:06:28 ip: 10.0.0.86:33454; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
 2021/12/18 17:52:09 ip: 10.0.0.86:39274; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/19 19:21:02 ip: 10.0.0.86:47228; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/22 10:03:08 ip: 10.0.0.86:45058; Problem: websocket_read; Error: read tcp4 10.0.0.18:8081->10.0.0.86:45058: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2021/12/23 16:14:51 ip: 10.0.0.86:59632; Problem: websocket_read; Error: read tcp4 10.0.0.18:8081->10.0.0.86:59632: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2021/12/24 13:08:03 ip: 10.0.0.86:37804; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/24 13:22:37 ip: 10.0.0.86:39236; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/24 13:22:37 ip: 10.0.0.86:39260; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/28 15:02:23 Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:02:23 ip: 10.0.0.86:47498; Problem: websocket_type; Error: Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:02:50 Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:02:50 ip: 10.0.0.86:47506; Problem: websocket_type; Error: Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:07:21 Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:07:21 ip: 10.0.0.86:47580; Problem: websocket_type; Error: Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:07:45 Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:07:45 ip: 10.0.0.86:47596; Problem: websocket_type; Error: Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:11:31 Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 15:11:31 ip: 10.0.0.86:47640; Problem: websocket_type; Error: Problem: buffer; Error: read_from: The specified key does not exist.
+2021/12/28 17:35:52 ip: 10.0.0.86:48490; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/28 21:14:14 ip: 10.0.0.86:49674; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/29 19:53:19 ip: 10.0.0.86:60872; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 12:04:58 ip: 10.0.0.86:38890; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 12:04:58 ip: 10.0.0.86:38702; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 12:07:09 ip: 10.0.0.86:38932; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 12:07:09 ip: 10.0.0.86:38970; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 14:19:36 ip: 10.0.0.86:40136; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 14:19:36 ip: 10.0.0.86:40044; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 14:19:36 ip: 10.0.0.86:40106; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 15:27:55 ip: 10.0.0.86:41642; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 15:27:55 ip: 10.0.0.86:41572; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 15:27:55 ip: 10.0.0.86:41612; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 16:59:44 ip: 10.0.0.86:42870; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 16:59:44 ip: 10.0.0.86:42876; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 16:59:44 ip: 10.0.0.86:42894; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/30 16:59:44 ip: 10.0.0.86:42888; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/12/31 16:29:04 ip: 10.0.0.86:52184; Problem: websocket_read; Error: read tcp4 10.0.0.18:8081->10.0.0.86:52184: wsarecv: An established connection was aborted by the software in your host machine.
+2022/01/02 18:12:34 ip: 10.0.0.86:43858; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/03 19:18:35 ip: 10.0.0.86:35140; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/03 19:18:35 ip: 10.0.0.86:35080; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/03 19:18:35 ip: 10.0.0.86:35116; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/03 19:18:35 ip: 10.0.0.86:35054; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/03 19:18:52 ip: 10.0.0.86:35178; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/04 16:56:29 ip: 10.0.0.86:45006; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/04 16:56:29 ip: 10.0.0.86:45072; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/04 16:56:29 ip: 10.0.0.86:44982; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/04 16:56:29 ip: 10.0.0.86:45044; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/12 12:28:43 ip: 10.0.0.86:60462; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/13 14:48:02 ip: 10.0.0.86:43378; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/13 14:48:02 ip: 10.0.0.86:43410; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/13 14:48:02 ip: 10.0.0.86:43328; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF

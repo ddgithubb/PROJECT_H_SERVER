@@ -42,3 +42,10 @@ type TokensInfoSchema struct {
 	SessionID    string             `validate:"required" json:"sessionID" form:"sessionID"`
 	RefreshToken RefreshTokenSchema `validate:"dive" json:"refreshToken"`
 }
+
+// LoginResponseSchema struct
+type LoginResponseSchema struct {
+	Data      UserInfoSchema
+	SessionID string
+	Tokens    TokensSchema
+}

@@ -17,19 +17,6 @@ import (
 	minio "github.com/minio/minio-go/v7"
 )
 
-// Authenticate authenticates users with a refresh token
-func Authenticate(c *fiber.Ctx) error {
-
-	userID := c.Locals("userid").(string)
-
-	initUserInfo, err := helpers.GetUserInfo(c, userID)
-	if initUserInfo.UserID == "" {
-		return err
-	}
-
-	return helpers.ReturnData(c, initUserInfo)
-}
-
 // SendAudio sends audio message to specific friend
 func SendAudio(c *fiber.Ctx) error {
 
@@ -180,8 +167,8 @@ func SendAudio(c *fiber.Ctx) error {
 	})
 }
 
-// GetChains gets a segment of chain for specified relation
-func GetChains(c *fiber.Ctx) error {
+// GetChain gets a segment of chain for specified relation
+func GetChain(c *fiber.Ctx) error {
 
 	chainID, err := gocql.ParseUUID(c.Query("chainID"))
 	if err != nil {
@@ -189,28 +176,41 @@ func GetChains(c *fiber.Ctx) error {
 	}
 	request, err := strconv.ParseInt(c.Query("requestTime"), 10, 64)
 	if err != nil {
-		return errors.HandleInternalError(c, "parse_duration", err.Error())
+		return errors.HandleInternalError(c, "parse_request_time", err.Error())
 	}
 	requestTime := time.UnixMilli(request)
 	asc := c.Query("asc")
 	desc := c.Query("desc")
-
-	ascChains := []schemas.ChainSchema{}
-	descChains := []schemas.ChainSchema{}
-
-	if asc == "true" {
-		ascChains, err = helpers.GetChains(chainID, requestTime, true)
-		if err != nil {
-			return errors.HandleInternalError(c, "helpers_get_chains", err.Error())
-		}
+	limit, err := strconv.ParseInt(c.Query("limit", "50"), 10, 64)
+	if err != nil {
+		return errors.HandleInternalError(c, "parse_limit", err.Error())
 	}
 
-	if desc == "true" {
-		descChains, err = helpers.GetChains(chainID, requestTime, false)
+	if asc != "true" && desc != "true" {
+		newChain, err := helpers.GetChain(chainID, requestTime, false, true, limit)
 		if err != nil {
-			return errors.HandleInternalError(c, "helpers_get_chains", err.Error())
+			return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
 		}
-	}
 
-	return helpers.ReturnData(c, append(descChains, ascChains...))
+		return helpers.ReturnData(c, newChain)
+	} else {
+
+		ascChain := []schemas.ChainSchema{}
+		descChain := []schemas.ChainSchema{}
+
+		if asc == "true" {
+			ascChain, err = helpers.GetChain(chainID, requestTime, true, false, limit)
+			if err != nil {
+				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+			}
+		}
+
+		if desc == "true" {
+			descChain, err = helpers.GetChain(chainID, requestTime, false, false, limit)
+			if err != nil {
+				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+			}
+		}
+		return helpers.ReturnData(c, append(descChain, ascChain...))
+	}
 }
