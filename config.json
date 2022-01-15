@@ -1,6 +1,6 @@
 {
-    "origin": "http://localhost:4200",
-    "port": ":8081",
+    "origin": "http://localhost",
+    "port": ":9000",
     "version": "/apiv1",
     "emailFrom": "PROJECT H",
     "smtp": {
