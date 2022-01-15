@@ -394,3 +394,12 @@ pipe:0: End of file
 2022/01/13 14:48:02 ip: 10.0.0.86:43378; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
 2022/01/13 14:48:02 ip: 10.0.0.86:43410; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
 2022/01/13 14:48:02 ip: 10.0.0.86:43328; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 10:40:05 ip: 10.0.0.86:47406; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 10:44:15 ip: 10.0.0.86:47452; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 10:51:19 ip: 10.0.0.86:47738; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 10:52:12 ip: 10.0.0.86:48200; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 11:01:26 ip: 10.0.0.86:48472; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 11:30:46 ip: 10.0.0.86:50632; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 11:30:46 ip: 10.0.0.86:50712; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 11:30:46 ip: 10.0.0.86:50446; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/15 11:34:24 ip: 10.0.0.86:50758; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
