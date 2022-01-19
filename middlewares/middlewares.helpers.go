@@ -1,15 +1,15 @@
-package helpers
+package middlewares
 
 import (
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/global"
+	"PROJECT_H_server/helpers"
 	"PROJECT_H_server/schemas"
 	"fmt"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/go-playground/validator/v10"
 	"github.com/go-redis/redis/v8"
 	"github.com/gocql/gocql"
 	"github.com/gofiber/fiber/v2"
@@ -25,8 +25,7 @@ func Authenticate(c *fiber.Ctx) error {
 		return errors.HandleBadJsonError(c)
 	}
 
-	err := validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -69,8 +68,7 @@ func AuthenticateForm(c *fiber.Ctx) error {
 
 	c.Locals("multipart", form)
 
-	err = validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -79,6 +77,7 @@ func AuthenticateForm(c *fiber.Ctx) error {
 
 // AuthenticateHelper includes the logic for refreshing the tokens
 func AuthenticateHelper(c *fiber.Ctx, req *schemas.TokensInfoSchema) error {
+
 	authorization := c.Request().Header.Peek("Authorization")
 	accessToken := strings.Split(string(authorization), "Bearer ")[1]
 
@@ -91,7 +90,7 @@ func AuthenticateHelper(c *fiber.Ctx, req *schemas.TokensInfoSchema) error {
 		Refreshed: false,
 	}
 
-	userID, err := ParseJWT(c, accessToken)
+	userID, err := helpers.ParseJWT(c, accessToken)
 	if userID == "expired" {
 		res, err := global.RedisClient.HGetAll(global.Context, "refreshtokens:"+req.SessionID).Result()
 		if err != nil {
@@ -119,7 +118,7 @@ func AuthenticateHelper(c *fiber.Ctx, req *schemas.TokensInfoSchema) error {
 
 			userID = res["userid"]
 
-			tokens.RefreshToken.Token, err = RandomTokenString(40)
+			tokens.RefreshToken.Token, err = helpers.RandomTokenString(40)
 			if err != nil {
 				redisError = true
 				return errors.HandleInternalError(c, "password", "hex token error")
@@ -144,7 +143,7 @@ func AuthenticateHelper(c *fiber.Ctx, req *schemas.TokensInfoSchema) error {
 				return errors.HandleInternalError(c, "expire_refresh_tokens", "Redis: "+err.Error())
 			}
 
-			tokens.AccessToken, err = GenerateJWT(c, userID)
+			tokens.AccessToken, err = helpers.GenerateJWT(c, userID)
 			if tokens.AccessToken == "" {
 				redisError = true
 				return err
@@ -186,7 +185,7 @@ func AuthenticateStream(c *fiber.Ctx) error {
 			return errors.HandleInvalidRequestError(c, "websocket_username", "empty username")
 		}
 
-		userID, err := ParseJWT(c, accessToken)
+		userID, err := helpers.ParseJWT(c, accessToken)
 		if userID == "expired" {
 			return errors.HandleInvalidRequestError(c, "Access Token", "expired")
 		}
@@ -211,7 +210,7 @@ func SocialMiddleware(c *fiber.Ctx) error {
 		return errors.HandleBadRequestError(c, "Request ID", "invalid")
 	}
 
-	reqUsername, err := GetUsernameByID(requestID)
+	reqUsername, err := helpers.GetUsernameByID(requestID)
 
 	if err != nil {
 		if err == gocql.ErrNotFound {

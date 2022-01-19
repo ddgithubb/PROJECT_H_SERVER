@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"PROJECT_H_server/helpers"
+	"PROJECT_H_server/middlewares"
 	"PROJECT_H_server/services"
 
 	"github.com/gofiber/fiber/v2"
@@ -9,13 +9,13 @@ import (
 
 func resourceRoutes(api fiber.Router) {
 	resources := api.Group("resources")
-	resources.Use(helpers.Authenticate)
+	resources.Use(middlewares.Authenticate)
 	resources.Post("/authenticate", services.Authenticate)
 	resources.Post("/get-chain", services.GetChain)
 }
 
 func formRoutes(api fiber.Router) {
 	forms := api.Group("/forms")
-	forms.Use(helpers.AuthenticateForm)
+	forms.Use(middlewares.AuthenticateForm)
 	forms.Post("/send-audio", services.SendAudio)
 }

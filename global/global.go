@@ -6,6 +6,7 @@ import (
 	"log"
 	"time"
 
+	"github.com/go-playground/validator/v10"
 	"github.com/go-redis/redis/v8"
 	"github.com/gocql/gocql"
 	minio "github.com/minio/minio-go/v7"
@@ -37,6 +38,9 @@ var RefreshTokenDuration time.Duration = time.Hour * 24 * 60
 
 // Context is the default context
 var Context = context.Background()
+
+// Validator validates incoming bodys of data
+var Validator = validator.New()
 
 // // FFMPEGConf points to ffmpeg path
 // var FFMPEGConf = &ffmpeg.Config{

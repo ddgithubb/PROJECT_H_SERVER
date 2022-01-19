@@ -2,7 +2,7 @@ package routes
 
 import (
 	"PROJECT_H_server/config"
-	"PROJECT_H_server/helpers"
+	"PROJECT_H_server/middlewares"
 	"PROJECT_H_server/services"
 
 	"github.com/gofiber/fiber/v2"
@@ -17,7 +17,7 @@ func SetRoutes(app *fiber.App) {
 		AllowCredentials: true,
 	}))
 
-	app.Use("/stream", helpers.AuthenticateStream, websocket.New(services.Stream))
+	app.Use("/stream", middlewares.AuthenticateStream, websocket.New(services.Stream))
 
 	authRoutes(api)
 	socialRoutes(api)

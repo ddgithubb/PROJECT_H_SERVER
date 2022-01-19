@@ -11,7 +11,6 @@ import (
 	"PROJECT_H_server/helpers"
 	"PROJECT_H_server/schemas"
 
-	"github.com/go-playground/validator/v10"
 	"github.com/go-redis/redis/v8"
 	"github.com/gocql/gocql"
 	"github.com/gofiber/fiber/v2"
@@ -28,8 +27,7 @@ func Test(c *fiber.Ctx) error {
 		return errors.HandleBadJsonError(c)
 	}
 
-	err := validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -49,8 +47,7 @@ func Register(c *fiber.Ctx) error {
 		return errors.HandleBadJsonError(c)
 	}
 
-	err := validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -62,7 +59,7 @@ func Register(c *fiber.Ctx) error {
 
 	var existCount int
 
-	err = global.Session.Query(`
+	err := global.Session.Query(`
 		SELECT count(*) FROM users_public WHERE username = ? LIMIT 1;`,
 		req.Username,
 	).WithContext(global.Context).Scan(&existCount)
@@ -151,8 +148,7 @@ func ResendVerification(c *fiber.Ctx) error {
 		return errors.HandleBadJsonError(c)
 	}
 
-	err := validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -180,8 +176,7 @@ func VerifyEmail(c *fiber.Ctx) error {
 		return errors.HandleBadJsonError(c)
 	}
 
-	err := validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -253,8 +248,7 @@ func Login(c *fiber.Ctx) error {
 		return errors.HandleBadJsonError(c)
 	}
 
-	err := validator.New().Struct(req)
-	if err != nil {
+	if err := global.Validator.Struct(req); err != nil {
 		return errors.HandleValidatorError(c, err)
 	}
 
@@ -262,7 +256,7 @@ func Login(c *fiber.Ctx) error {
 
 	mainResult := make(map[string]interface{})
 
-	err = global.Session.Query(`
+	err := global.Session.Query(`
 		SELECT * FROM users WHERE email = ? LIMIT 1;`,
 		req.Email,
 	).WithContext(global.Context).MapScan(mainResult)
