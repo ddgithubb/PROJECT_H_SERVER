@@ -7,7 +7,7 @@ import (
 )
 
 func authRoutes(api fiber.Router) {
-	oauth := api.Group("auth")
+	oauth := api.Group("/auth")
 	oauth.Post("/test", services.Test)
 	oauth.Post("/register", services.Register)
 	oauth.Post("/resend-verification", services.ResendVerification)

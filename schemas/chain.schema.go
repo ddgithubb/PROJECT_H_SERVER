@@ -1,7 +1,7 @@
 package schemas
 
-// ChainSchema struct
-type ChainSchema struct {
+// MessageSchema struct
+type MessageSchema struct {
 	MessageID string
 	UserID    string
 	Created   int64

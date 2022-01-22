@@ -560,3 +560,11 @@ pipe:0: End of file
 2022/01/17 21:23:09 ip: 10.0.0.86:44840; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
 2022/01/17 21:53:14 ip: 10.0.0.86:46380; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
 2022/01/17 21:53:14 ip: 10.0.0.86:46382; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/21 14:35:22 ip: 10.0.0.86:45994; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/21 14:35:22 ip: 10.0.0.86:45992; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/21 14:35:22 ip: 10.0.0.86:46100; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/21 14:36:57 ip: 10.0.0.86:46134; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/21 15:06:22 ip: 10.0.0.86:48222; Problem: websocket_read; Error: websocket: close 1006 (abnormal closure): unexpected EOF
+2022/01/21 21:00:03 IP: 10.0.0.86; Problem: users_private; Error: ScyllaDB: invalid UUID "expired"
+2022/01/21 21:00:33 IP: 10.0.0.86; Problem: users_private; Error: ScyllaDB: invalid UUID "expired"
+2022/01/21 23:12:02 IP: 10.0.0.86; Problem: users_private; Error: ScyllaDB: invalid UUID "expired"

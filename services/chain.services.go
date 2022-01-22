@@ -22,13 +22,13 @@ func SendAudio(c *fiber.Ctx) error {
 
 	form := c.Locals("multipart").(*multipart.Form)
 	userID := c.Locals("userid").(string)
-	requestID := c.Query("requestid")
-	chainID, err := gocql.ParseUUID(c.Query("chainID"))
+	requestID := c.Query("requestid") // MAYBE INSTEAD OF QUERY, PUT IN FORM???? (becuase it is metadata afterall)
+	chainID, err := helpers.ParseChainUUID(c)
 	if err != nil {
-		return errors.HandleBadRequestError(c, "ChainID", "invalid")
+		return err
 	}
 	display := form.Value["display"][0]
-	duration, err := strconv.ParseInt(c.Query("duration"), 10, 64)
+	duration, err := strconv.ParseInt(c.Query("duration"), 10, 64) //ALSO THIS, DURATION
 	if err != nil {
 		return errors.HandleInternalError(c, "parse_duration", err.Error())
 	}
@@ -158,7 +158,7 @@ func SendAudio(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	return helpers.ReturnData(c, struct {
+	return c.JSON(struct {
 		MessageID string
 		LastSeen  int64
 	}{
@@ -170,9 +170,9 @@ func SendAudio(c *fiber.Ctx) error {
 // GetChain gets a segment of chain for specified relation
 func GetChain(c *fiber.Ctx) error {
 
-	chainID, err := gocql.ParseUUID(c.Query("chainID"))
+	chainID, err := helpers.ParseChainUUID(c)
 	if err != nil {
-		return errors.HandleBadRequestError(c, "ChainID", "invalid")
+		return err
 	}
 	request, err := strconv.ParseInt(c.Query("requestTime"), 10, 64)
 	if err != nil {
@@ -192,11 +192,11 @@ func GetChain(c *fiber.Ctx) error {
 			return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
 		}
 
-		return helpers.ReturnData(c, newChain)
+		return c.JSON(newChain)
 	} else {
 
-		ascChain := []schemas.ChainSchema{}
-		descChain := []schemas.ChainSchema{}
+		ascChain := []schemas.MessageSchema{}
+		descChain := []schemas.MessageSchema{}
 
 		if asc == "true" {
 			ascChain, err = helpers.GetChain(chainID, requestTime, true, false, limit)
@@ -211,6 +211,7 @@ func GetChain(c *fiber.Ctx) error {
 				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
 			}
 		}
-		return helpers.ReturnData(c, append(descChain, ascChain...))
+
+		return c.JSON(append(descChain, ascChain...))
 	}
 }

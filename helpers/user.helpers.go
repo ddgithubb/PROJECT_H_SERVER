@@ -12,13 +12,20 @@ import (
 )
 
 // GetUsernameByID gets only the username column by id
-func GetUsernameByID(id string) (string, error) {
+func GetUsernameByID(c *fiber.Ctx, id string) (string, error) {
 	reqUsername := ""
 
 	err := global.Session.Query(`
 		SELECT username FROM users_private WHERE user_id = ? LIMIT 1;`,
 		id,
 	).WithContext(global.Context).Scan(&reqUsername)
+
+	if err != nil {
+		if err == gocql.ErrNotFound {
+			return "", errors.HandleBadRequestError(c, "UserID", "invalid")
+		}
+		return "", errors.HandleInternalError(c, "users_private", "ScyllaDB: "+err.Error())
+	}
 
 	return reqUsername, err
 }

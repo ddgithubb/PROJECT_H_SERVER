@@ -35,27 +35,36 @@ func HandleComplexError(problem string, err string) error {
 
 // HandleInternalError handles internal errors (things that should never happen in normal circumstances)
 func HandleInternalError(c *fiber.Ctx, problem string, err string) error {
-	global.Logger.Println("ip: " + c.IP() + "; Problem: " + problem + "; Error: " + err)
+	global.Logger.Println("IP: " + c.IP() + "; Problem: " + problem + "; Error: " + err)
 	return c.Status(fiber.StatusInternalServerError).JSON(schemas.ErrorResponse{
 		Error: true,
 	})
 }
 
+// HandleUnauthorizedError handles authorization error
+func HandleUnauthorizedError(c *fiber.Ctx) error {
+	return c.Status(fiber.StatusUnauthorized).JSON(schemas.ErrorResponse{
+		Error:       true,
+		Problem:     "Authorization",
+		Description: "unauthorized",
+	})
+}
+
 // HandleBadRequestError handles bad request errors (client error that is harmless to server and state)
-func HandleBadRequestError(c *fiber.Ctx, errorType string, problem string) error {
+func HandleBadRequestError(c *fiber.Ctx, problem string, description string) error {
 	return c.Status(fiber.StatusBadRequest).JSON(schemas.ErrorResponse{
-		Error:   true,
-		Type:    errorType,
-		Problem: problem,
+		Error:       true,
+		Problem:     problem,
+		Description: description,
 	})
 }
 
 // HandleInvalidRequestError handles invalid request errors (expected errors)
-func HandleInvalidRequestError(c *fiber.Ctx, errorType string, problem string) error {
+func HandleInvalidRequestError(c *fiber.Ctx, problem string, description string) error {
 	return c.Status(fiber.StatusAccepted).JSON(schemas.ErrorResponse{
-		Error:   true,
-		Type:    errorType,
-		Problem: problem,
+		Error:       true,
+		Problem:     problem,
+		Description: description,
 	})
 }
 

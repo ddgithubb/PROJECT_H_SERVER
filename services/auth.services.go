@@ -299,24 +299,16 @@ func Login(c *fiber.Ctx) error {
 		return err
 	}
 
-	loginResponse := schemas.LoginResponseSchema{
-		Data: initUserInfo,
-	}
-
-	loginResponse.SessionID, err = helpers.RandomTokenString(20)
-	if loginResponse.SessionID == "" {
+	sessionID, err := helpers.RandomTokenString(20)
+	if sessionID == "" {
 		return err
 	}
 
-	loginResponse.Tokens.RefreshToken.Token, loginResponse.Tokens.RefreshToken.ExpireAt, err = helpers.GenerateRefresh(c, userID, loginResponse.SessionID)
-	if loginResponse.Tokens.RefreshToken.Token == "" {
+	c.Response().Header.Add("x-session-id", sessionID)
+
+	if err = helpers.GenerateAndRefreshTokens(c, userID, sessionID, false); err != nil {
 		return err
 	}
 
-	loginResponse.Tokens.AccessToken, err = helpers.GenerateJWT(c, userID)
-	if loginResponse.Tokens.AccessToken == "" {
-		return err
-	}
-
-	return c.JSON(loginResponse)
+	return c.JSON(initUserInfo)
 }

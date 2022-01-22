@@ -12,7 +12,7 @@ import (
 
 // SetRoutes sets all routes of server
 func SetRoutes(app *fiber.App) {
-	api := app.Group(config.Config.Version)
+	api := app.Group("/api/" + config.Config.Version)
 	app.Use(cors.New(cors.Config{
 		AllowCredentials: true,
 	}))
@@ -20,8 +20,6 @@ func SetRoutes(app *fiber.App) {
 	app.Use("/stream", middlewares.AuthenticateStream, websocket.New(services.Stream))
 
 	authRoutes(api)
-	socialRoutes(api)
-	resourceRoutes(api)
-	formRoutes(api)
+	userRoutes(api)
 	publicRoutes(api)
 }

@@ -6,8 +6,8 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-// Authenticate authenticates users with a refresh token
-func Authenticate(c *fiber.Ctx) error {
+// Initialize retrieves user data for initial app state
+func Initialize(c *fiber.Ctx) error {
 
 	userID := c.Locals("userid").(string)
 
@@ -16,5 +16,5 @@ func Authenticate(c *fiber.Ctx) error {
 		return err
 	}
 
-	return helpers.ReturnData(c, initUserInfo)
+	return c.JSON(initUserInfo)
 }

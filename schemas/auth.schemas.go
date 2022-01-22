@@ -31,7 +31,7 @@ type RefreshTokenSchema struct {
 	ExpireAt int64  `validate:"required"`
 }
 
-// TokenSchema struct
+// TokensSchema struct
 type TokensSchema struct {
 	RefreshToken RefreshTokenSchema
 	AccessToken  string
@@ -41,11 +41,4 @@ type TokensSchema struct {
 type TokensInfoSchema struct {
 	SessionID    string             `validate:"required" json:"sessionID" form:"sessionID"`
 	RefreshToken RefreshTokenSchema `validate:"dive" json:"refreshToken"`
-}
-
-// LoginResponseSchema struct
-type LoginResponseSchema struct {
-	Data      UserInfoSchema
-	SessionID string
-	Tokens    TokensSchema
 }

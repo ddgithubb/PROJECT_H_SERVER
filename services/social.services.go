@@ -14,14 +14,22 @@ import (
 func Request(c *fiber.Ctx) error {
 
 	userID := c.Locals("userid").(string)
-	requestID := c.Locals("requestid").(string)
-	reqUsername := c.Locals("reqUsername").(string)
-	username := c.Query("username")
+	requestID := c.Query("requestid")
+
+	username, err := helpers.GetUsernameByID(c, userID)
+	if err != nil {
+		return err
+	}
+
+	reqUsername, err := helpers.GetUsernameByID(c, requestID)
+	if err != nil {
+		return err
+	}
 
 	chainID := gocql.TimeUUID()
 	created := chainID.Time()
 
-	err := global.Session.Query(`
+	err = global.Session.Query(`
 		INSERT INTO user_relations (
 			user_id,
 			created,
@@ -77,14 +85,14 @@ func Request(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	return helpers.ReturnData(c, struct{ ChainID string }{ChainID: chainID.String()})
+	return c.JSON(struct{ ChainID string }{ChainID: chainID.String()})
 }
 
 // RemoveRelations removes relation selected user by id
 func RemoveRelation(c *fiber.Ctx) error {
 
 	userID := c.Locals("userid").(string)
-	requestID := c.Locals("requestid").(string)
+	requestID := c.Query("requestid")
 
 	err := global.Session.Query(`
 		DELETE FROM user_relations WHERE user_id = ?;`,
@@ -104,14 +112,14 @@ func RemoveRelation(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	return helpers.ReturnOKData(c)
+	return helpers.OKResponse(c)
 }
 
 // Accept accepts request from user by id
 func Accept(c *fiber.Ctx) error {
 
 	userID := c.Locals("userid").(string)
-	requestID := c.Locals("requestid").(string)
+	requestID := c.Query("requestid")
 
 	chainID, err := gocql.ParseUUID(c.Query("chainid"))
 	if err != nil {
@@ -154,5 +162,5 @@ func Accept(c *fiber.Ctx) error {
 		return errors.HandleInternalError(c, "user_relations", "ScyllaDB: "+err.Error())
 	}
 
-	return helpers.ReturnOKData(c)
+	return helpers.OKResponse(c)
 }

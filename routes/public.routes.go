@@ -9,7 +9,7 @@ import (
 )
 
 func publicRoutes(api fiber.Router) {
-	public := api.Group("public")
+	public := api.Group("/public")
 	public.Use(cache.New(cache.Config{
 		Next: func(c *fiber.Ctx) bool {
 			return c.Query("refresh") == "true"

@@ -153,7 +153,7 @@ func Stream(ws *websocket.Conn) {
 
 			if err = ws.WriteMessage(websocket.TextMessage, []byte("byte"+base64.StdEncoding.EncodeToString(data.Bytes()))); err != nil {
 				err = Errors.New("websocket_write: " + err.Error())
-				break
+				//break
 			}
 		case "send-message":
 			payload = append(payload, userID, reqChunk[2], reqChunk[3], reqChunk[4], reqChunk[5])

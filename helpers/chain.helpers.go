@@ -10,18 +10,19 @@ import (
 	"time"
 
 	"github.com/gocql/gocql"
+	"github.com/gofiber/fiber/v2"
 	minio "github.com/minio/minio-go/v7"
 )
 
-//GetChain gets a limited amount of chain based on created
-func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit int64) ([]schemas.ChainSchema, error) {
+// GetChain gets a limited amount of chain based on create
+func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit int64) ([]schemas.MessageSchema, error) {
 
 	var iter *gocql.Iter
 
 	if limit > 10 {
 		limit = 10
 	} else if limit <= 0 {
-		return []schemas.ChainSchema{}, nil
+		return []schemas.MessageSchema{}, nil
 	}
 
 	if !new {
@@ -46,12 +47,12 @@ func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit i
 		).WithContext(global.Context).Iter()
 	}
 
-	chain := []schemas.ChainSchema{}
+	chain := []schemas.MessageSchema{}
 
 	var (
-		messageID gocql.UUID
-		ok        bool
-		curChain  schemas.ChainSchema
+		messageID  gocql.UUID
+		ok         bool
+		curMessage schemas.MessageSchema
 	)
 	for {
 		row := make(map[string]interface{})
@@ -60,20 +61,20 @@ func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit i
 		}
 
 		if messageID, ok = row["message_id"].(gocql.UUID); ok {
-			curChain.MessageID = messageID.String()
-			curChain.UserID = row["user_id"].(gocql.UUID).String()
-			curChain.Created = messageID.Time().UnixMilli()
-			curChain.Duration = row["duration"].(int)
-			curChain.Seen = row["seen"].(bool)
-			curChain.Action = row["action"].(int)
-			curChain.Display = row["display"].(string)
+			curMessage.MessageID = messageID.String()
+			curMessage.UserID = row["user_id"].(gocql.UUID).String()
+			curMessage.Created = messageID.Time().UnixMilli()
+			curMessage.Duration = row["duration"].(int)
+			curMessage.Seen = row["seen"].(bool)
+			curMessage.Action = row["action"].(int)
+			curMessage.Display = row["display"].(string)
 			if asc {
-				chain = append(chain, curChain)
+				chain = append(chain, curMessage)
 			} else {
-				chain = append([]schemas.ChainSchema{curChain}, chain...)
+				chain = append([]schemas.MessageSchema{curMessage}, chain...)
 			}
 		} else {
-			return []schemas.ChainSchema{}, Errors.New("iter error")
+			return []schemas.MessageSchema{}, Errors.New("iter error")
 		}
 	}
 
@@ -170,4 +171,13 @@ func UpdateAction(chainID string, messageID string, actionID string) error {
 	}
 
 	return nil
+}
+
+// ParseChainUUID parses chain uuid
+func ParseChainUUID(c *fiber.Ctx) (gocql.UUID, error) {
+	chainID, err := gocql.ParseUUID(c.Params("chainID"))
+	if err != nil {
+		return gocql.UUID{}, errors.HandleBadRequestError(c, "ChainID", "invalid")
+	}
+	return chainID, err
 }

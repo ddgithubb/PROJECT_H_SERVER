@@ -1,7 +1,7 @@
 {
     "origin": "http://localhost",
     "port": ":8000",
-    "version": "/apiv1",
+    "version": "v1",
     "emailFrom": "PROJECT H",
     "smtp": {
         "host": "smtp.gmail.com",

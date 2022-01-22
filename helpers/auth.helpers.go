@@ -4,6 +4,7 @@ import (
 	"PROJECT_H_server/config"
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/global"
+	"PROJECT_H_server/schemas"
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
@@ -52,24 +53,40 @@ func ParseJWT(c *fiber.Ctx, jwtString string) (string, error) {
 	return user["id"].(string), nil
 }
 
-// GenerateRefresh generates a refresh token and attachces the cookie
-func GenerateRefresh(c *fiber.Ctx, userID string, sessionID string) (string, int64, error) {
-	refreshToken, err := RandomTokenString(40)
-	if err != nil {
-		return "", 0, errors.HandleInternalError(c, "password", "hex token error")
-	}
+// GenerateAndRefreshTokens generates and interacts with redis to store tokens and then sets response header
+func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, delExistingRecord bool) error {
 
-	createdAt := time.Now().UTC()
-
-	query := map[string]interface{}{
-		"token":  refreshToken,
-		"userid": userID,
-		"ip":     c.IP(),
-	}
-
+	var tokens schemas.TokensSchema
 	redisError := false
 
-	_, err = global.RedisClient.Pipelined(global.Context, func(pipe redis.Pipeliner) error {
+	_, err := global.RedisClient.Pipelined(global.Context, func(pipe redis.Pipeliner) error {
+
+		var err error
+
+		if delExistingRecord {
+			err = pipe.Del(global.Context, "refreshtokens:"+sessionID).Err()
+			if err != nil {
+				redisError = true
+				return errors.HandleInternalError(c, "refresh_tokens", "Redis: "+err.Error())
+			}
+			redisError = true
+			return errors.HandleInvalidRequestError(c, "RefreshToken", "invalid")
+		}
+
+		tokens.RefreshToken.Token, err = RandomTokenString(40)
+		if err != nil {
+			redisError = true
+			return errors.HandleInternalError(c, "password", "hex token error")
+		}
+
+		tokens.RefreshToken.ExpireAt = time.Now().UTC().Add(global.RefreshTokenDuration).Unix()
+
+		query := map[string]interface{}{
+			"token":  tokens.RefreshToken.Token,
+			"userid": userID,
+			"ip":     c.IP(),
+		}
+
 		err = pipe.HSet(global.Context, "refreshtokens:"+sessionID, query).Err()
 		if err != nil {
 			redisError = true
@@ -80,18 +97,28 @@ func GenerateRefresh(c *fiber.Ctx, userID string, sessionID string) (string, int
 			redisError = true
 			return errors.HandleInternalError(c, "expire_refresh_tokens", "Redis: "+err.Error())
 		}
+
+		tokens.AccessToken, err = GenerateJWT(c, userID)
+		if tokens.AccessToken == "" {
+			redisError = true
+			return err
+		}
+
 		return nil
 	})
 
 	if err != nil {
-		return "", 0, errors.HandleInternalError(c, "pipeline", "Redis: "+err.Error())
+		return errors.HandleInternalError(c, "pipeline", "Redis: "+err.Error())
 	}
-
 	if redisError {
-		return "", 0, err
+		return err
 	}
 
-	return refreshToken, createdAt.Add(global.RefreshTokenDuration).Unix(), nil
+	c.Response().Header.Add("x-refreshed", "true")
+	c.Response().Header.Add("x-refresh-token", tokens.RefreshToken.Token)
+	c.Response().Header.Add("x-refresh-token-expire", fmt.Sprint(tokens.RefreshToken.ExpireAt))
+	c.Response().Header.Add("x-access-token", tokens.AccessToken)
+	return nil
 }
 
 // SendVerifEmail send a verification email
