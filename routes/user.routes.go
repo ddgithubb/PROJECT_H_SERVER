@@ -27,7 +27,8 @@ func chainRoutes(api fiber.Router) {
 }
 
 func userChainRoutes(api fiber.Router) {
-	userChain := api.Group("/:chainID")
-	userChain.Post("/send-audio", services.SendAudio)
+	userChain := api.Group("/:chainID", middlewares.ChainRequestMiddleware)
 	userChain.Get("/get-chain", services.GetChain)
+	userChain.Post("/audio", services.AddAudioMessage)
+	userChain.Get("/audio/:messageID", services.GetAudioMessage)
 }

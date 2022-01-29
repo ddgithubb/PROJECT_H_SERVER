@@ -4,8 +4,6 @@ import (
 	"PROJECT_H_server/config"
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/helpers"
-	"bytes"
-	"encoding/base64"
 	Errors "errors"
 	"fmt"
 	"strings"
@@ -101,7 +99,6 @@ func Stream(ws *websocket.Conn) {
 		reqChunk []string
 		payload  []string
 		send     bool
-		data     *bytes.Buffer
 	)
 	for {
 		if err = ws.SetReadDeadline(time.Now().Add(time.Second * 190)); err != nil {
@@ -141,20 +138,6 @@ func Stream(ws *websocket.Conn) {
 			payload = append(payload, userID)
 		case "unfriend":
 			payload = append(payload, userID)
-		case "get-audio":
-			send = false
-			data, err = helpers.GetAudio(userID, reqChunk[1], reqChunk[2], reqChunk[3], reqChunk[4], reqChunk[5])
-
-			if err != nil {
-				break
-			}
-
-			fmt.Println(len(data.Bytes()))
-
-			if err = ws.WriteMessage(websocket.TextMessage, []byte("byte"+base64.StdEncoding.EncodeToString(data.Bytes()))); err != nil {
-				err = Errors.New("websocket_write: " + err.Error())
-				//break
-			}
 		case "send-message":
 			payload = append(payload, userID, reqChunk[2], reqChunk[3], reqChunk[4], reqChunk[5])
 		case "send-action":

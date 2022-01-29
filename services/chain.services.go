@@ -5,10 +5,7 @@ import (
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/helpers"
 	"PROJECT_H_server/schemas"
-	"bytes"
 	"fmt"
-	"mime/multipart"
-	"os/exec"
 	"strconv"
 	"time"
 
@@ -17,29 +14,76 @@ import (
 	minio "github.com/minio/minio-go/v7"
 )
 
-// SendAudio sends audio message to specific friend
-func SendAudio(c *fiber.Ctx) error {
+// GetChain gets a segment of chain for specified relation
+func GetChain(c *fiber.Ctx) error {
 
-	form := c.Locals("multipart").(*multipart.Form)
-	userID := c.Locals("userid").(string)
-	requestID := c.Query("requestid") // MAYBE INSTEAD OF QUERY, PUT IN FORM???? (becuase it is metadata afterall)
-	chainID, err := helpers.ParseChainUUID(c)
+	chainID := c.Locals("chainid").(gocql.UUID)
+
+	request, err := strconv.ParseInt(c.Query("requestTime"), 10, 64)
 	if err != nil {
-		return err
+		return errors.HandleInternalError(c, "parse_request_time", err.Error())
 	}
+	requestTime := time.UnixMilli(request)
+	asc := c.Query("asc")
+	desc := c.Query("desc")
+	limit, err := strconv.ParseInt(c.Query("limit", "50"), 10, 64)
+	if err != nil {
+		return errors.HandleInternalError(c, "parse_limit", err.Error())
+	}
+
+	if asc != "true" && desc != "true" {
+		newChain, err := helpers.GetChain(chainID, requestTime, false, true, limit)
+		if err != nil {
+			return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+		}
+
+		return c.JSON(newChain)
+	} else {
+
+		ascChain := []schemas.MessageSchema{}
+		descChain := []schemas.MessageSchema{}
+
+		if asc == "true" {
+			ascChain, err = helpers.GetChain(chainID, requestTime, true, false, limit)
+			if err != nil {
+				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+			}
+		}
+
+		if desc == "true" {
+			descChain, err = helpers.GetChain(chainID, requestTime, false, false, limit)
+			if err != nil {
+				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+			}
+		}
+
+		return c.JSON(append(descChain, ascChain...))
+	}
+}
+
+// AddAudioMessage adds audio message to specified chain
+func AddAudioMessage(c *fiber.Ctx) error {
+
+	userID := c.Locals("userid").(string)
+	chainID := c.Locals("chainid").(gocql.UUID)
+	requestID := c.Locals("requestid").(string)
+
+	form, err := c.MultipartForm()
+	if err != nil {
+		return errors.HandleBadRequestError(c, "Multipart", "invalid")
+	}
+
 	display := form.Value["display"][0]
-	duration, err := strconv.ParseInt(c.Query("duration"), 10, 64) //ALSO THIS, DURATION
+	duration, err := strconv.ParseInt(form.Value["duration"][0], 10, 64)
 	if err != nil {
 		return errors.HandleInternalError(c, "parse_duration", err.Error())
 	}
-	if duration <= 200 {
-		return errors.HandleBadRequestError(c, "Duration", "too short")
-	}
-	if duration > 5.1*60000 {
+
+	if duration > (5*60000 + 30) {
 		return errors.HandleBadRequestError(c, "Duration", "too long")
 	}
 
-	if form.File["audio"][0].Size > 2000000 {
+	if form.File["audio"][0].Size > 1900000 {
 		return errors.HandleBadRequestError(c, "Audio", "exceeding length")
 	}
 
@@ -50,65 +94,11 @@ func SendAudio(c *fiber.Ctx) error {
 	defer audioFile.Close()
 
 	messageID := gocql.TimeUUID()
-	fmt.Println(chainID, display, duration)
+	fmt.Println("AUDIO FILE SPECS: ", chainID, display, duration, form.File["audio"][0].Size)
 
-	cmd := exec.Command("ffmpeg", "-f", "aac", "-i", "pipe:0", "-to", "00:00:20", "-c", "copy", "-f", "adts", "pipe:1")
-
-	cmd.Stdin = audioFile
-
-	output, err := cmd.CombinedOutput()
-	if err != nil {
-		return errors.HandleInternalError(c, "cmd_run", string(output))
-	}
-
-	//Cut vid 15 seconds and rest _l0, _l1, _l2, _l3 //
-	_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", messageID.String()+"_l0", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
+	_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", chainID.String()+"_"+messageID.String(), audioFile, -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
 	if err != nil {
 		return errors.HandleInternalError(c, "minio_put", err.Error())
-	}
-
-	if duration > 20000 {
-		_, err := audioFile.Seek(0, 0)
-		if err != nil {
-			return errors.HandleInternalError(c, "audio_seek", err.Error())
-		}
-
-		cmd := exec.Command("ffmpeg", "-f", "aac", "-i", "pipe:0", "-ss", "00:00:20", "-to", "00:02:30", "-c", "copy", "-f", "adts", "pipe:1")
-
-		cmd.Stdin = audioFile
-
-		output, err := cmd.CombinedOutput()
-		if err != nil {
-			return errors.HandleInternalError(c, "cmd_run", string(output))
-		}
-
-		//Cut vid 15 seconds and rest _l0, _l1, _l2, _l3 //
-		_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", messageID.String()+"_l1", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
-		if err != nil {
-			return errors.HandleInternalError(c, "minio_put", err.Error())
-		}
-	}
-
-	if duration > 2.5*60000 {
-		_, err := audioFile.Seek(0, 0)
-		if err != nil {
-			return errors.HandleInternalError(c, "audio_seek", err.Error())
-		}
-
-		cmd := exec.Command("ffmpeg", "-f", "aac", "-i", "pipe:0", "-ss", "00:02:30", "-c", "copy", "-f", "adts", "pipe:1")
-
-		cmd.Stdin = audioFile
-
-		output, err := cmd.CombinedOutput()
-		if err != nil {
-			return errors.HandleInternalError(c, "cmd_run", string(output))
-		}
-
-		//Cut vid 15 seconds and rest _l0, _l1, _l2, _l3 //
-		_, err = global.MinIOClient.PutObject(global.Context, "audio-expire", messageID.String()+"_l2", bytes.NewReader(output), -1, minio.PutObjectOptions{ContentType: "audio/mpeg"})
-		if err != nil {
-			return errors.HandleInternalError(c, "minio_put", err.Error())
-		}
 	}
 
 	err = global.Session.Query(`
@@ -167,51 +157,53 @@ func SendAudio(c *fiber.Ctx) error {
 	})
 }
 
-// GetChain gets a segment of chain for specified relation
-func GetChain(c *fiber.Ctx) error {
+// GetAudioMessage gets a certain audio clip based on level
+func GetAudioMessage(c *fiber.Ctx) error {
 
-	chainID, err := helpers.ParseChainUUID(c)
+	userID := c.Locals("userid").(string)
+	chainID := c.Locals("chainid").(gocql.UUID)
+	seen := c.Query("seen")
+	messageID, err := helpers.ParseMessageUUID(c)
 	if err != nil {
 		return err
 	}
-	request, err := strconv.ParseInt(c.Query("requestTime"), 10, 64)
+
+	object, err := global.MinIOClient.GetObject(global.Context, "audio-expire", chainID.String()+"_"+messageID.String(), minio.GetObjectOptions{})
 	if err != nil {
-		return errors.HandleInternalError(c, "parse_request_time", err.Error())
-	}
-	requestTime := time.UnixMilli(request)
-	asc := c.Query("asc")
-	desc := c.Query("desc")
-	limit, err := strconv.ParseInt(c.Query("limit", "50"), 10, 64)
-	if err != nil {
-		return errors.HandleInternalError(c, "parse_limit", err.Error())
+		//ExpireAt if err is not a network error
+		return errors.HandleInvalidRequestError(c, "Message", "expired")
+		// return errors.HandleInternalError(c, "MinIO", "minio_get: "+err.Error())
 	}
 
-	if asc != "true" && desc != "true" {
-		newChain, err := helpers.GetChain(chainID, requestTime, false, true, limit)
-		if err != nil {
-			return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
-		}
+	if seen == "false" {
+		fmt.Println("LEVEL 0 AND NOT USER AND NOT SEEN")
+		go func() {
+			err = global.Session.Query(`
+				UPDATE chains SET seen = ? WHERE chain_id = ? AND created = ?;`,
+				true,
+				chainID.String(),
+				messageID.Time(),
+			).WithContext(global.Context).Exec()
 
-		return c.JSON(newChain)
-	} else {
-
-		ascChain := []schemas.MessageSchema{}
-		descChain := []schemas.MessageSchema{}
-
-		if asc == "true" {
-			ascChain, err = helpers.GetChain(chainID, requestTime, true, false, limit)
 			if err != nil {
-				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+				errors.HandleComplexError("chains", "ScyllaDB: "+err.Error())
+				return
 			}
-		}
 
-		if desc == "true" {
-			descChain, err = helpers.GetChain(chainID, requestTime, false, false, limit)
+			err = global.Session.Query(`
+				UPDATE user_relations SET last_seen = ? WHERE user_id = ? AND created = ? IF last_seen < ?;`,
+				messageID.Time().UTC(),
+				userID,
+				chainID.Time(),
+				messageID.Time().UTC(),
+			).WithContext(global.Context).Exec()
+
 			if err != nil {
-				return errors.HandleInternalError(c, "helpers_get_chain", err.Error())
+				errors.HandleComplexError("user_relations", "ScyllaDB: "+err.Error())
+				return
 			}
-		}
-
-		return c.JSON(append(descChain, ascChain...))
+		}()
 	}
+
+	return c.SendStream(object)
 }

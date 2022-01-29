@@ -4,14 +4,12 @@ import (
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/schemas"
-	"bytes"
 	Errors "errors"
 	"fmt"
 	"time"
 
 	"github.com/gocql/gocql"
 	"github.com/gofiber/fiber/v2"
-	minio "github.com/minio/minio-go/v7"
 )
 
 // GetChain gets a limited amount of chain based on create
@@ -82,61 +80,6 @@ func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit i
 
 }
 
-// GetAudio gets a certain audio clip based on level
-func GetAudio(userID string, chainID string, messageID string, level string, seen string, requestID string) (*bytes.Buffer, error) {
-
-	if level == "0" && seen == "0" && userID != requestID {
-		fmt.Println("LEVEL 0 AND NOT USER AND NOT SEEN")
-		go func() {
-			msgID, err := gocql.ParseUUID(messageID)
-			if err != nil {
-				errors.HandleComplexError("MessageID", "invalid")
-				return
-			}
-
-			chnID, err := gocql.ParseUUID(chainID)
-			if err != nil {
-				errors.HandleComplexError("MessageID", "invalid")
-				return
-			}
-			err = global.Session.Query(`
-				UPDATE chains SET seen = ? WHERE chain_id = ? AND created = ?;`,
-				true,
-				chnID.String(),
-				msgID.Time(),
-			).WithContext(global.Context).Exec()
-
-			if err != nil {
-				errors.HandleComplexError("chains", "ScyllaDB: "+err.Error())
-				return
-			}
-
-			err = global.Session.Query(`
-				UPDATE user_relations SET last_seen = ? WHERE user_id = ? AND created = ? IF last_seen < ?;`,
-				msgID.Time().UTC(),
-				userID,
-				chnID.Time(),
-				msgID.Time().UTC(),
-			).WithContext(global.Context).Exec()
-
-			if err != nil {
-				errors.HandleComplexError("user_relations", "ScyllaDB: "+err.Error())
-				return
-			}
-		}()
-	}
-
-	object, err := global.MinIOClient.GetObject(global.Context, "audio-expire", messageID+"_l"+level, minio.GetObjectOptions{})
-	if err != nil {
-		return nil, errors.HandleComplexError("MinIO", "minio_get: "+err.Error())
-	}
-
-	data := new(bytes.Buffer)
-	data.ReadFrom(object)
-
-	return data, nil
-}
-
 // UpdateAction updates the action of a specific message
 func UpdateAction(chainID string, messageID string, actionID string) error {
 
@@ -173,11 +116,20 @@ func UpdateAction(chainID string, messageID string, actionID string) error {
 	return nil
 }
 
-// ParseChainUUID parses chain uuid
+// ParseChainUUID parses chain uuid from parameter
 func ParseChainUUID(c *fiber.Ctx) (gocql.UUID, error) {
 	chainID, err := gocql.ParseUUID(c.Params("chainID"))
 	if err != nil {
 		return gocql.UUID{}, errors.HandleBadRequestError(c, "ChainID", "invalid")
 	}
 	return chainID, err
+}
+
+// ParseMessageUUID parses message uuid from parameter
+func ParseMessageUUID(c *fiber.Ctx) (gocql.UUID, error) {
+	messageID, err := gocql.ParseUUID(c.Params("messageID"))
+	if err != nil {
+		return gocql.UUID{}, errors.HandleBadRequestError(c, "MessageID", "invalid")
+	}
+	return messageID, err
 }

@@ -19,6 +19,7 @@ func Authenticate(c *fiber.Ctx) error {
 	var sessionInfo schemas.TokensInfoSchema
 	sessionInfo.SessionID = string(c.Request().Header.Peek("x-session-id"))
 	sessionInfo.RefreshToken.Token = string(c.Request().Header.Peek("x-refresh-token"))
+	refresh := string(c.Request().Header.Peek("x-refresh"))
 	expireAt, err := helpers.ParseStringToInt(string(c.Request().Header.Peek("x-refresh-token-expire")))
 	if err != nil || sessionInfo.SessionID == "" || sessionInfo.RefreshToken.Token == "" {
 		return errors.HandleUnauthorizedError(c)
@@ -45,11 +46,16 @@ func Authenticate(c *fiber.Ctx) error {
 			return errors.HandleInvalidRequestError(c, "RefreshToken", "invalid")
 		}
 
-		if err = helpers.GenerateAndRefreshTokens(c, res["userid"], sessionInfo.SessionID, sessionInfo.RefreshToken.Token != res["token"]); err != nil {
-			return err
-		}
+		userID = res["userid"]
 
-	} else if userID == "" {
+		if refresh == "true" {
+			if err = helpers.GenerateAndRefreshTokens(c, userID, sessionInfo.SessionID, sessionInfo.RefreshToken.Token != res["token"]); err != nil {
+				return err
+			}
+		}
+	}
+
+	if userID == "" {
 		return err
 	}
 
