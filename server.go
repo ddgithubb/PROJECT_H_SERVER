@@ -115,6 +115,7 @@ func init() {
 			user_id uuid,
 			password_hash text,
 			created timestamp,
+			username text,
 			PRIMARY KEY (email)) 
 		WITH compaction = { 'class' :  'LeveledCompactionStrategy'  };
 	`).Exec()
@@ -174,9 +175,9 @@ func init() {
 
 	errors.HandleFatalError(err)
 
-	// err = global.Session.Query(`
-	// 	DROP TABLE projecthdb.chains;
-	// `).Exec()
+	// err = global.Session.Quer(`
+	// 	DROP TABLE projecthdb.chais;
+	// `).Exe()
 
 	err = global.Session.Query(`
 		CREATE TABLE IF NOT EXISTS projecthdb.chains (

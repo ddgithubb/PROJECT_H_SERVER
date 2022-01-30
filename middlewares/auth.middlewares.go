@@ -35,7 +35,7 @@ func Authenticate(c *fiber.Ctx) error {
 		return errors.HandleBadRequestError(c, "RefreshToken", "expired")
 	}
 
-	userID, err := helpers.ParseJWT(c, accessToken)
+	userID, username, err := helpers.ParseJWT(c, accessToken)
 	if userID == "expired" {
 		res, err := global.RedisClient.HGetAll(global.Context, "refreshtokens:"+sessionInfo.SessionID).Result()
 		if err != nil {
@@ -49,7 +49,7 @@ func Authenticate(c *fiber.Ctx) error {
 		userID = res["userid"]
 
 		if refresh == "true" {
-			if err = helpers.GenerateAndRefreshTokens(c, userID, sessionInfo.SessionID, sessionInfo.RefreshToken.Token != res["token"]); err != nil {
+			if err = helpers.GenerateAndRefreshTokens(c, userID, sessionInfo.SessionID, username, sessionInfo.RefreshToken.Token != res["token"]); err != nil {
 				return err
 			}
 		}
@@ -69,15 +69,10 @@ func AuthenticateStream(c *fiber.Ctx) error {
 	if websocket.IsWebSocketUpgrade(c) {
 		accessToken := c.Query("token")
 
-		userID, err := helpers.ParseJWT(c, accessToken)
+		userID, username, err := helpers.ParseJWT(c, accessToken)
 		if userID == "expired" {
 			return errors.HandleInvalidRequestError(c, "AccessToken", "expired")
 		} else if userID == "" {
-			return err
-		}
-
-		username, err := helpers.GetUsernameByID(c, userID)
-		if err != nil {
 			return err
 		}
 

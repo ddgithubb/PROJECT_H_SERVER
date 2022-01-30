@@ -22,10 +22,11 @@ import (
 )
 
 // GenerateJWT generates a jwt token with a claim
-func GenerateJWT(c *fiber.Ctx, userID string) (string, error) {
+func GenerateJWT(c *fiber.Ctx, userID string, username string) (string, error) {
 	exp := time.Now().Add(time.Hour * 1).Unix()
 	user := jwt.MapClaims{}
 	user["id"] = userID
+	user["username"] = username
 	user["exp"] = exp
 	jt := jwt.NewWithClaims(jwt.SigningMethodRS256, user)
 	token, err := jt.SignedString(global.JwtKey)
@@ -36,25 +37,25 @@ func GenerateJWT(c *fiber.Ctx, userID string) (string, error) {
 }
 
 // ParseJWT parses a jwt to userID
-func ParseJWT(c *fiber.Ctx, jwtString string) (string, error) {
+func ParseJWT(c *fiber.Ctx, jwtString string) (string, string, error) {
 	token, err := jwt.Parse(jwtString, func(token *jwt.Token) (interface{}, error) {
 		return global.JwtParseKey, nil
 	})
 	if err != nil {
 		if err.(*jwt.ValidationError).Errors == jwt.ValidationErrorExpired {
-			return "expired", nil
+			return "expired", "", nil
 		}
-		return "", errors.HandleInternalError(c, "jwt_parse", err.Error())
+		return "", "", errors.HandleInternalError(c, "jwt_parse", err.Error())
 	}
 	user, ok := token.Claims.(jwt.MapClaims)
 	if !ok || !token.Valid {
-		return "", errors.HandleInternalError(c, "jwt_claims", err.Error())
+		return "", "", errors.HandleInternalError(c, "jwt_claims", err.Error())
 	}
-	return user["id"].(string), nil
+	return user["id"].(string), user["username"].(string), nil
 }
 
 // GenerateAndRefreshTokens generates and interacts with redis to store tokens and then sets response header
-func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, delExistingRecord bool) error {
+func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, username string, delExistingRecord bool) error {
 
 	var tokens schemas.TokensSchema
 	redisError := false
@@ -98,7 +99,7 @@ func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, del
 			return errors.HandleInternalError(c, "expire_refresh_tokens", "Redis: "+err.Error())
 		}
 
-		tokens.AccessToken, err = GenerateJWT(c, userID)
+		tokens.AccessToken, err = GenerateJWT(c, userID, username)
 		if tokens.AccessToken == "" {
 			redisError = true
 			return err

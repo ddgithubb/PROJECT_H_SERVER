@@ -306,7 +306,9 @@ func Login(c *fiber.Ctx) error {
 
 	c.Response().Header.Add("x-session-id", sessionID)
 
-	if err = helpers.GenerateAndRefreshTokens(c, userID, sessionID, false); err != nil {
+	username := initUserInfo.Username
+
+	if err = helpers.GenerateAndRefreshTokens(c, userID, sessionID, username, false); err != nil {
 		return err
 	}
 

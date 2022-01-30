@@ -16,7 +16,6 @@ import (
 // Stream starts and maintains websocket connection
 func Stream(ws *websocket.Conn) {
 
-	var heartbeat = 0
 	var version = 0
 	fmt.Println("opened")
 	defer ws.Close()
@@ -75,23 +74,6 @@ func Stream(ws *websocket.Conn) {
 		}
 	}()
 
-	go func() {
-		for {
-			if heartbeat >= 5 {
-				break
-			}
-			if close {
-				break
-			}
-			if err = ws.WriteMessage(websocket.TextMessage, []byte("PING"+fmt.Sprint(version))); err != nil {
-				errors.HandleWebsocketError(ws, "websocket_write_PING", err.Error())
-				break
-			}
-			heartbeat++
-			time.Sleep(time.Second * 50) //50 seconds
-		}
-	}()
-
 	var (
 		mt       int
 		msg      []byte
@@ -120,8 +102,11 @@ func Stream(ws *websocket.Conn) {
 
 		fmt.Println(req)
 
-		if req == "PONG" {
-			heartbeat = 0
+		if req == "PING" {
+			if err = ws.WriteMessage(websocket.TextMessage, []byte("PONG"+fmt.Sprint(version))); err != nil {
+				errors.HandleWebsocketError(ws, "websocket_write_PONG", err.Error())
+				break
+			}
 			continue
 		}
 
