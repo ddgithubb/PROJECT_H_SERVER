@@ -1,0 +1,2061 @@
+2022/05/27 10:02:46 Conn err: read tcp 127.0.0.1:54613->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 10:02:46 127.0.0.1:10000 closed, recovering...
+2022/05/27 18:27:29 Conn err: read tcp 127.0.0.1:52876->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 18:27:29 127.0.0.1 closed, recovering...
+2022/05/27 18:27:31 recovering API_main: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/05/27 18:27:31 Conn err: write tcp 127.0.0.1:52876->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:31:28 Conn err: read tcp 127.0.0.1:52913->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 18:31:28 127.0.0.1 closed, recovering...
+2022/05/27 18:31:28 Conn err: write tcp 127.0.0.1:52913->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:31:30 recovering API_main: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/05/27 18:31:31 127.0.0.1:10000 recovering API_main...
+2022/05/27 18:31:31 Conn err: write tcp 127.0.0.1:52913->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:34 Conn err: read tcp 127.0.0.1:52937->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 18:35:34 127.0.0.1 closed, recovering...
+2022/05/27 18:35:35 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:36 recovering API_main: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/05/27 18:35:37 127.0.0.1:10000 recovering API_main...
+2022/05/27 18:35:38 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:41 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:44 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:47 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:50 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:53 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:56 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:35:59 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:02 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:05 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:08 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:11 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:14 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:17 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:20 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:23 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:26 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:29 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:32 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:35 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:38 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:41 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:44 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:36:47 Conn err: write tcp 127.0.0.1:52937->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:47:12 Conn err: read tcp 127.0.0.1:52988->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 18:47:12 127.0.0.1 closed, recovering...
+2022/05/27 18:47:12 recovering API_main: read tcp 127.0.0.1:52169->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 18:47:13 127.0.0.1:10000 recovering API_main...
+2022/05/27 18:47:16 Conn err: write tcp 127.0.0.1:52988->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:47:26 Conn err: write tcp 127.0.0.1:52988->127.0.0.1:10000: use of closed network connection
+2022/05/27 18:53:33 127.0.0.1 closed, recovering...
+2022/05/27 19:46:46 Conn err: read tcp 127.0.0.1:60517->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 19:46:46 127.0.0.1 closed, recovering...
+2022/05/27 20:00:39 Conn err: read tcp 127.0.0.1:56027->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 20:00:39 127.0.0.1 closed, recovering...
+2022/05/27 20:02:50 Conn err: read tcp 127.0.0.1:56071->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 20:02:50 127.0.0.1 closed, recovering...
+2022/05/27 20:03:43 Conn err: read tcp 127.0.0.1:56086->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 20:03:43 127.0.0.1 closed, recovering...
+2022/05/27 20:05:08 Conn err: read tcp 127.0.0.1:56103->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 20:05:08 127.0.0.1 closed, recovering...
+2022/05/27 20:42:40 127.0.0.1 closed, recovering...
+2022/05/27 20:45:38 Conn err: read tcp 127.0.0.1:61998->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/27 20:45:38 127.0.0.1 closed, recovering...
+2022/05/30 09:25:21 127.0.0.1 closed, recovering...
+2022/05/30 09:47:39 Conn err: read tcp 127.0.0.1:63534->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 09:47:40 127.0.0.1 closed, recovering...
+2022/05/30 10:12:10 Conn err: read tcp 127.0.0.1:64097->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 10:12:10 127.0.0.1 closed, recovering...
+2022/05/30 10:19:52 Conn err: read tcp 127.0.0.1:53003->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 10:19:52 127.0.0.1 closed, recovering...
+2022/05/30 10:19:52 Conn err: write tcp 127.0.0.1:53003->127.0.0.1:10000: use of closed network connection
+2022/05/30 10:19:54 recovering API_main: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/05/30 10:19:55 127.0.0.1:10000 recovering API_main...
+2022/05/30 13:22:44 Conn err: read tcp 127.0.0.1:56027->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 13:22:44 127.0.0.1 closed, recovering...
+2022/05/30 13:24:02 127.0.0.1 closed, recovering...
+2022/05/30 14:38:09 Conn err: read tcp 127.0.0.1:52996->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 14:38:09 127.0.0.1 closed, recovering...
+2022/05/30 14:43:00 127.0.0.1 closed, recovering...
+2022/05/30 14:45:19 127.0.0.1 closed, recovering...
+2022/05/30 15:32:05 127.0.0.1 closed, recovering...
+2022/05/30 15:33:33 127.0.0.1 closed, recovering...
+2022/05/30 18:35:09 127.0.0.1 closed, recovering...
+2022/05/30 18:40:11 127.0.0.1 closed, recovering...
+2022/05/30 18:42:08 127.0.0.1 closed, recovering...
+2022/05/30 18:43:20 127.0.0.1 closed, recovering...
+2022/05/30 18:46:36 127.0.0.1 closed, recovering...
+2022/05/30 19:01:27 127.0.0.1 closed, recovering...
+2022/05/30 19:29:07 127.0.0.1 closed, recovering...
+2022/05/30 19:33:57 127.0.0.1 closed, recovering...
+2022/05/30 19:38:11 127.0.0.1 closed, recovering...
+2022/05/30 19:39:15 127.0.0.1 closed, recovering...
+2022/05/30 19:41:33 127.0.0.1 closed, recovering...
+2022/05/30 19:44:03 127.0.0.1 closed, recovering...
+2022/05/30 20:06:38 127.0.0.1 closed, recovering...
+2022/05/30 20:07:38 127.0.0.1 closed, recovering...
+2022/05/30 20:10:11 127.0.0.1 closed, recovering...
+2022/05/30 20:20:04 127.0.0.1 closed, recovering...
+2022/05/30 20:22:23 127.0.0.1 closed, recovering...
+2022/05/30 20:34:30 127.0.0.1 closed, recovering...
+2022/05/30 20:37:42 127.0.0.1 closed, recovering...
+2022/05/30 20:42:58 127.0.0.1 closed, recovering...
+2022/05/30 20:43:11 127.0.0.1 closed, recovering...
+2022/05/30 20:53:05 127.0.0.1 closed, recovering...
+2022/05/30 20:53:41 127.0.0.1 closed, recovering...
+2022/05/30 21:25:38 Conn err: EOF
+2022/05/30 21:25:38 127.0.0.1 closed, recovering...
+2022/05/30 21:25:48 Conn err: write tcp 127.0.0.1:51672->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:25:48 127.0.0.1 closed, recovering...
+2022/05/30 21:25:48 Conn err: heartbeat timeout. Timeout ver: 80. Heartbeat ver: 80
+2022/05/30 21:25:58 Conn err: read tcp 127.0.0.1:53044->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:25:58 127.0.0.1 closed, recovering...
+2022/05/30 21:25:58 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:25:58 Conn err: write tcp 127.0.0.1:51752->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:25:58 127.0.0.1 closed, recovering...
+2022/05/30 21:25:58 Conn err: read tcp 127.0.0.1:51752->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:25:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:26:08 Conn err: write tcp 127.0.0.1:53044->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:08 127.0.0.1 closed, recovering...
+2022/05/30 21:26:18 Conn err: write tcp 127.0.0.1:53163->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:18 127.0.0.1 closed, recovering...
+2022/05/30 21:26:18 Conn err: read tcp 127.0.0.1:53163->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:26:18 Conn err: read tcp 127.0.0.1:53173->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:18 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:26:18 Conn err: read tcp 127.0.0.1:51677->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:18 127.0.0.1 closed, recovering...
+2022/05/30 21:26:18 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:26:28 Conn err: write tcp 127.0.0.1:51677->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:28 127.0.0.1 closed, recovering...
+2022/05/30 21:26:28 Conn err: write tcp 127.0.0.1:53173->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:28 Conn err: read tcp 127.0.0.1:53165->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:28 127.0.0.1 closed, recovering...
+2022/05/30 21:26:28 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:26:28 Conn err: read tcp 127.0.0.1:51699->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:28 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:26:38 Conn err: write tcp 127.0.0.1:51699->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:38 127.0.0.1 closed, recovering...
+2022/05/30 21:26:38 Conn err: write tcp 127.0.0.1:53165->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:38 127.0.0.1 closed, recovering...
+2022/05/30 21:26:38 Conn err: read tcp 127.0.0.1:51679->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:38 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:26:48 Conn err: read tcp 127.0.0.1:51709->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:48 127.0.0.1 closed, recovering...
+2022/05/30 21:26:48 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:26:48 Conn err: write tcp 127.0.0.1:51704->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:48 127.0.0.1 closed, recovering...
+2022/05/30 21:26:48 Conn err: write tcp 127.0.0.1:51679->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:48 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:26:48 Conn err: read tcp 127.0.0.1:51704->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:58 Conn err: write tcp 127.0.0.1:51709->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:58 127.0.0.1 closed, recovering...
+2022/05/30 21:26:58 Conn err: read tcp 127.0.0.1:51713->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:58 127.0.0.1 closed, recovering...
+2022/05/30 21:26:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:26:58 Conn err: read tcp 127.0.0.1:60045->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:26:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:27:08 Conn err: write tcp 127.0.0.1:60045->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:08 127.0.0.1 closed, recovering...
+2022/05/30 21:27:08 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:27:08 Conn err: read tcp 127.0.0.1:60047->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:08 Conn err: write tcp 127.0.0.1:51713->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:08 127.0.0.1 closed, recovering...
+2022/05/30 21:27:08 Conn err: write tcp 127.0.0.1:60047->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:08 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:27:08 Conn err: read tcp 127.0.0.1:60075->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 Conn err: write tcp 127.0.0.1:60075->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 Conn err: read tcp 127.0.0.1:60040->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 127.0.0.1 closed, recovering...
+2022/05/30 21:27:18 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:27:18 Conn err: read tcp 127.0.0.1:60078->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:27:18 Conn err: write tcp 127.0.0.1:60078->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 127.0.0.1 closed, recovering...
+2022/05/30 21:27:18 Conn err: read tcp 127.0.0.1:60041->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:27:18 Conn err: read tcp 127.0.0.1:60138->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:18 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:27:28 Conn err: write tcp 127.0.0.1:60040->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:28 127.0.0.1 closed, recovering...
+2022/05/30 21:27:28 Conn err: write tcp 127.0.0.1:60138->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:28 Conn err: write tcp 127.0.0.1:60041->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:28 127.0.0.1 closed, recovering...
+2022/05/30 21:27:38 Conn err: read tcp 127.0.0.1:60141->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:38 127.0.0.1 closed, recovering...
+2022/05/30 21:27:38 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:27:38 Conn err: read tcp 127.0.0.1:57425->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:38 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:27:48 Conn err: read tcp 127.0.0.1:57434->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:48 127.0.0.1 closed, recovering...
+2022/05/30 21:27:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:27:48 Conn err: write tcp 127.0.0.1:60141->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:48 127.0.0.1 closed, recovering...
+2022/05/30 21:27:48 Conn err: write tcp 127.0.0.1:57425->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:48 Conn err: write tcp 127.0.0.1:57434->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:58 Conn err: write tcp 127.0.0.1:57423->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:27:58 127.0.0.1 closed, recovering...
+2022/05/30 21:27:58 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:27:58 Conn err: read tcp 127.0.0.1:57423->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:08 Conn err: read tcp 127.0.0.1:57440->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:08 127.0.0.1 closed, recovering...
+2022/05/30 21:28:08 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:28:08 Conn err: read tcp 127.0.0.1:57448->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:08 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:28:08 127.0.0.1 closed, recovering...
+2022/05/30 21:28:08 Conn err: read tcp 127.0.0.1:57457->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:08 127.0.0.1 closed, recovering...
+2022/05/30 21:28:08 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:28:18 Conn err: write tcp 127.0.0.1:57448->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:18 127.0.0.1 closed, recovering...
+2022/05/30 21:28:18 Conn err: write tcp 127.0.0.1:57440->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:18 Conn err: write tcp 127.0.0.1:57457->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:18 Conn err: write tcp 127.0.0.1:57441->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:18 127.0.0.1 closed, recovering...
+2022/05/30 21:28:18 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:28:18 Conn err: read tcp 127.0.0.1:57441->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:28 Conn err: read tcp 127.0.0.1:57455->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:28 127.0.0.1 closed, recovering...
+2022/05/30 21:28:28 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:28:38 Conn err: write tcp 127.0.0.1:57455->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:38 127.0.0.1 closed, recovering...
+2022/05/30 21:28:38 Conn err: read tcp 127.0.0.1:57472->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:38 127.0.0.1 closed, recovering...
+2022/05/30 21:28:38 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:28:38 Conn err: write tcp 127.0.0.1:57459->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:38 127.0.0.1 closed, recovering...
+2022/05/30 21:28:38 Conn err: read tcp 127.0.0.1:57459->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:38 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:28:38 Conn err: read tcp 127.0.0.1:57480->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:38 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:28:48 Conn err: write tcp 127.0.0.1:57480->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:48 127.0.0.1 closed, recovering...
+2022/05/30 21:28:48 Conn err: write tcp 127.0.0.1:57472->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:48 Conn err: write tcp 127.0.0.1:57463->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:48 Conn err: read tcp 127.0.0.1:57463->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:48 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:28:48 Conn err: read tcp 127.0.0.1:57487->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:48 127.0.0.1 closed, recovering...
+2022/05/30 21:28:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:28:58 Conn err: write tcp 127.0.0.1:57487->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:58 127.0.0.1 closed, recovering...
+2022/05/30 21:28:58 Conn err: read tcp 127.0.0.1:57479->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:28:58 Conn err: read tcp 127.0.0.1:57489->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:28:58 Conn err: write tcp 127.0.0.1:57489->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:58 127.0.0.1 closed, recovering...
+2022/05/30 21:28:58 Conn err: read tcp 127.0.0.1:57466->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:58 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/05/30 21:28:58 Conn err: read tcp 127.0.0.1:57495->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:28:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:29:08 Conn err: write tcp 127.0.0.1:57495->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:08 Conn err: write tcp 127.0.0.1:57479->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:08 127.0.0.1 closed, recovering...
+2022/05/30 21:29:08 Conn err: write tcp 127.0.0.1:57481->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:08 127.0.0.1 closed, recovering...
+2022/05/30 21:29:08 Conn err: write tcp 127.0.0.1:57466->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:08 Conn err: read tcp 127.0.0.1:57481->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:08 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:29:18 Conn err: write tcp 127.0.0.1:57498->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:18 127.0.0.1 closed, recovering...
+2022/05/30 21:29:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:29:18 Conn err: read tcp 127.0.0.1:57498->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:18 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:29:18 Conn err: read tcp 127.0.0.1:57506->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:28 Conn err: read tcp 127.0.0.1:57512->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:28 127.0.0.1 closed, recovering...
+2022/05/30 21:29:28 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:29:28 Conn err: write tcp 127.0.0.1:57512->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:28 127.0.0.1 closed, recovering...
+2022/05/30 21:29:28 Conn err: write tcp 127.0.0.1:57506->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:38 Conn err: read tcp 127.0.0.1:57504->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:38 127.0.0.1 closed, recovering...
+2022/05/30 21:29:38 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:29:38 Conn err: read tcp 127.0.0.1:57519->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:38 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:29:38 Conn err: write tcp 127.0.0.1:57519->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:38 127.0.0.1 closed, recovering...
+2022/05/30 21:29:48 Conn err: write tcp 127.0.0.1:57504->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:48 127.0.0.1 closed, recovering...
+2022/05/30 21:29:48 Conn err: read tcp 127.0.0.1:57517->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:48 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:29:48 Conn err: read tcp 127.0.0.1:57527->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:29:48 Conn err: write tcp 127.0.0.1:57527->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:48 127.0.0.1 closed, recovering...
+2022/05/30 21:29:58 Conn err: write tcp 127.0.0.1:57517->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:58 127.0.0.1 closed, recovering...
+2022/05/30 21:29:58 Conn err: read tcp 127.0.0.1:57524->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:29:58 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:29:58 Conn err: read tcp 127.0.0.1:57534->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:29:58 127.0.0.1 closed, recovering...
+2022/05/30 21:30:08 Conn err: read tcp 127.0.0.1:57533->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:08 127.0.0.1 closed, recovering...
+2022/05/30 21:30:08 Conn err: write tcp 127.0.0.1:57524->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:08 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:30:08 Conn err: write tcp 127.0.0.1:57534->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:08 127.0.0.1 closed, recovering...
+2022/05/30 21:30:08 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:30:08 Conn err: read tcp 127.0.0.1:57544->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:18 Conn err: write tcp 127.0.0.1:57533->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:18 127.0.0.1 closed, recovering...
+2022/05/30 21:30:18 Conn err: write tcp 127.0.0.1:57541->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:18 Conn err: read tcp 127.0.0.1:57541->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:30:18 Conn err: write tcp 127.0.0.1:57544->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:18 127.0.0.1 closed, recovering...
+2022/05/30 21:30:28 Conn err: write tcp 127.0.0.1:57550->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:28 127.0.0.1 closed, recovering...
+2022/05/30 21:30:28 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:30:28 Conn err: read tcp 127.0.0.1:57550->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:38 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:30:38 127.0.0.1 closed, recovering...
+2022/05/30 21:30:38 Conn err: read tcp 127.0.0.1:57561->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:38 Conn err: read tcp 127.0.0.1:57552->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:38 127.0.0.1 closed, recovering...
+2022/05/30 21:30:38 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:30:38 Conn err: read tcp 127.0.0.1:57564->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:38 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:30:38 127.0.0.1 closed, recovering...
+2022/05/30 21:30:48 Conn err: write tcp 127.0.0.1:57561->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 127.0.0.1 closed, recovering...
+2022/05/30 21:30:48 Conn err: write tcp 127.0.0.1:57564->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 Conn err: read tcp 127.0.0.1:57558->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:30:48 Conn err: read tcp 127.0.0.1:57566->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:30:48 Conn err: write tcp 127.0.0.1:57552->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 127.0.0.1 closed, recovering...
+2022/05/30 21:30:48 Conn err: write tcp 127.0.0.1:57566->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 Conn err: read tcp 127.0.0.1:57559->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:30:48 Conn err: read tcp 127.0.0.1:57570->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:48 127.0.0.1 closed, recovering...
+2022/05/30 21:30:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:30:58 Conn err: write tcp 127.0.0.1:57558->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:58 127.0.0.1 closed, recovering...
+2022/05/30 21:30:58 Conn err: write tcp 127.0.0.1:57570->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:58 Conn err: write tcp 127.0.0.1:57559->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:58 127.0.0.1 closed, recovering...
+2022/05/30 21:30:58 Conn err: read tcp 127.0.0.1:57565->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:30:58 Conn err: read tcp 127.0.0.1:57575->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:30:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:31:08 Conn err: write tcp 127.0.0.1:57575->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:08 127.0.0.1 closed, recovering...
+2022/05/30 21:31:08 Conn err: write tcp 127.0.0.1:57565->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:08 127.0.0.1 closed, recovering...
+2022/05/30 21:31:08 Conn err: write tcp 127.0.0.1:57572->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:08 Conn err: write tcp 127.0.0.1:57574->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:08 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:31:08 Conn err: read tcp 127.0.0.1:57574->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:08 Conn err: read tcp 127.0.0.1:57572->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:08 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:31:18 Conn err: read tcp 127.0.0.1:57579->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:18 127.0.0.1 closed, recovering...
+2022/05/30 21:31:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:31:28 Conn err: write tcp 127.0.0.1:57579->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:28 127.0.0.1 closed, recovering...
+2022/05/30 21:31:28 Conn err: read tcp 127.0.0.1:57587->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:28 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:31:28 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:31:28 127.0.0.1 closed, recovering...
+2022/05/30 21:31:28 Conn err: read tcp 127.0.0.1:57591->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:38 Conn err: write tcp 127.0.0.1:57580->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:38 127.0.0.1 closed, recovering...
+2022/05/30 21:31:38 Conn err: read tcp 127.0.0.1:57580->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:38 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:31:38 Conn err: write tcp 127.0.0.1:57591->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:38 127.0.0.1 closed, recovering...
+2022/05/30 21:31:38 Conn err: write tcp 127.0.0.1:57587->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:38 Conn err: read tcp 127.0.0.1:57597->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:38 127.0.0.1 closed, recovering...
+2022/05/30 21:31:38 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:31:48 Conn err: write tcp 127.0.0.1:57597->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:48 127.0.0.1 closed, recovering...
+2022/05/30 21:31:48 Conn err: read tcp 127.0.0.1:57581->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:48 127.0.0.1 closed, recovering...
+2022/05/30 21:31:48 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/05/30 21:31:48 Conn err: read tcp 127.0.0.1:57593->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:48 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:31:48 Conn err: read tcp 127.0.0.1:57602->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:31:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:31:58 Conn err: read tcp 127.0.0.1:57594->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:58 127.0.0.1 closed, recovering...
+2022/05/30 21:31:58 Conn err: write tcp 127.0.0.1:57602->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:58 127.0.0.1 closed, recovering...
+2022/05/30 21:31:58 Conn err: write tcp 127.0.0.1:57581->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:31:58 127.0.0.1 closed, recovering...
+2022/05/30 21:31:58 Conn err: write tcp 127.0.0.1:57593->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:08 Conn err: write tcp 127.0.0.1:57594->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:08 127.0.0.1 closed, recovering...
+2022/05/30 21:32:08 Conn err: read tcp 127.0.0.1:57609->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:08 127.0.0.1 closed, recovering...
+2022/05/30 21:32:08 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:32:08 Conn err: read tcp 127.0.0.1:57600->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:08 127.0.0.1 closed, recovering...
+2022/05/30 21:32:08 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:32:18 Conn err: read tcp 127.0.0.1:57608->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:18 127.0.0.1 closed, recovering...
+2022/05/30 21:32:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:18 Conn err: read tcp 127.0.0.1:57617->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:18 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:32:18 Conn err: write tcp 127.0.0.1:57617->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:18 127.0.0.1 closed, recovering...
+2022/05/30 21:32:18 Conn err: write tcp 127.0.0.1:57609->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:18 Conn err: read tcp 127.0.0.1:57613->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:18 127.0.0.1 closed, recovering...
+2022/05/30 21:32:18 Conn err: write tcp 127.0.0.1:57600->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:28 Conn err: write tcp 127.0.0.1:57608->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:28 127.0.0.1 closed, recovering...
+2022/05/30 21:32:28 Conn err: read tcp 127.0.0.1:57614->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:28 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:28 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:32:28 127.0.0.1 closed, recovering...
+2022/05/30 21:32:28 Conn err: read tcp 127.0.0.1:57625->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:28 Conn err: write tcp 127.0.0.1:57613->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:28 127.0.0.1 closed, recovering...
+2022/05/30 21:32:38 Conn err: write tcp 127.0.0.1:57614->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:38 Conn err: read tcp 127.0.0.1:57623->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:38 127.0.0.1 closed, recovering...
+2022/05/30 21:32:38 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:38 Conn err: write tcp 127.0.0.1:57625->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:38 127.0.0.1 closed, recovering...
+2022/05/30 21:32:38 Conn err: read tcp 127.0.0.1:57634->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:38 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:32:38 127.0.0.1 closed, recovering...
+2022/05/30 21:32:38 Conn err: write tcp 127.0.0.1:57634->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:38 127.0.0.1 closed, recovering...
+2022/05/30 21:32:48 Conn err: write tcp 127.0.0.1:57623->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:48 127.0.0.1 closed, recovering...
+2022/05/30 21:32:48 Conn err: read tcp 127.0.0.1:57631->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:48 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:48 Conn err: read tcp 127.0.0.1:57633->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:48 127.0.0.1 closed, recovering...
+2022/05/30 21:32:48 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:48 Conn err: read tcp 127.0.0.1:57643->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:32:48 Conn err: write tcp 127.0.0.1:57643->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:48 127.0.0.1 closed, recovering...
+2022/05/30 21:32:58 Conn err: write tcp 127.0.0.1:57631->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 127.0.0.1 closed, recovering...
+2022/05/30 21:32:58 Conn err: read tcp 127.0.0.1:57639->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:58 Conn err: write tcp 127.0.0.1:57633->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 127.0.0.1 closed, recovering...
+2022/05/30 21:32:58 Conn err: write tcp 127.0.0.1:57641->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 Conn err: read tcp 127.0.0.1:57640->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:58 Conn err: read tcp 127.0.0.1:57641->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:32:58 Conn err: read tcp 127.0.0.1:57652->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:32:58 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:32:58 127.0.0.1 closed, recovering...
+2022/05/30 21:33:08 Conn err: write tcp 127.0.0.1:57639->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:08 127.0.0.1 closed, recovering...
+2022/05/30 21:33:08 Conn err: write tcp 127.0.0.1:57640->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:08 127.0.0.1 closed, recovering...
+2022/05/30 21:33:08 Conn err: read tcp 127.0.0.1:57650->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:08 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:08 Conn err: write tcp 127.0.0.1:57652->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:08 127.0.0.1 closed, recovering...
+2022/05/30 21:33:08 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:33:08 Conn err: read tcp 127.0.0.1:57662->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:08 127.0.0.1 closed, recovering...
+2022/05/30 21:33:18 Conn err: write tcp 127.0.0.1:57662->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:18 127.0.0.1 closed, recovering...
+2022/05/30 21:33:18 Conn err: write tcp 127.0.0.1:57650->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:18 127.0.0.1 closed, recovering...
+2022/05/30 21:33:18 Conn err: read tcp 127.0.0.1:57659->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:18 Conn err: read tcp 127.0.0.1:57661->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:18 127.0.0.1 closed, recovering...
+2022/05/30 21:33:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:18 Conn err: read tcp 127.0.0.1:57670->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:18 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:33:28 Conn err: write tcp 127.0.0.1:57670->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 127.0.0.1 closed, recovering...
+2022/05/30 21:33:28 Conn err: write tcp 127.0.0.1:57659->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 127.0.0.1 closed, recovering...
+2022/05/30 21:33:28 Conn err: read tcp 127.0.0.1:57664->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:28 Conn err: write tcp 127.0.0.1:57668->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 127.0.0.1 closed, recovering...
+2022/05/30 21:33:28 Conn err: write tcp 127.0.0.1:57661->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 Conn err: read tcp 127.0.0.1:57668->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 Conn err: read tcp 127.0.0.1:57667->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:28 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:28 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:38 Conn err: read tcp 127.0.0.1:57677->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:38 127.0.0.1 closed, recovering...
+2022/05/30 21:33:38 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:33:38 Conn err: write tcp 127.0.0.1:57664->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:38 127.0.0.1 closed, recovering...
+2022/05/30 21:33:38 Conn err: write tcp 127.0.0.1:57676->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:38 Conn err: write tcp 127.0.0.1:57667->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:38 127.0.0.1 closed, recovering...
+2022/05/30 21:33:38 Conn err: read tcp 127.0.0.1:57676->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:38 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:48 Conn err: write tcp 127.0.0.1:57677->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:48 127.0.0.1 closed, recovering...
+2022/05/30 21:33:48 Conn err: read tcp 127.0.0.1:57685->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:48 127.0.0.1 closed, recovering...
+2022/05/30 21:33:48 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:48 Conn err: read tcp 127.0.0.1:57695->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:48 127.0.0.1 closed, recovering...
+2022/05/30 21:33:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:33:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:33:48 Conn err: read tcp 127.0.0.1:57700->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 Conn err: write tcp 127.0.0.1:57695->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 127.0.0.1 closed, recovering...
+2022/05/30 21:33:58 Conn err: read tcp 127.0.0.1:57688->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:33:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:33:58 127.0.0.1 closed, recovering...
+2022/05/30 21:33:58 Conn err: read tcp 127.0.0.1:57701->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 Conn err: read tcp 127.0.0.1:57704->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 127.0.0.1 closed, recovering...
+2022/05/30 21:33:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:33:58 Conn err: write tcp 127.0.0.1:57685->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 Conn err: write tcp 127.0.0.1:57700->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 Conn err: write tcp 127.0.0.1:57701->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 127.0.0.1 closed, recovering...
+2022/05/30 21:33:58 Conn err: read tcp 127.0.0.1:57706->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:33:58 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:08 Conn err: write tcp 127.0.0.1:57704->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 Conn err: write tcp 127.0.0.1:57688->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 127.0.0.1 closed, recovering...
+2022/05/30 21:34:08 Conn err: write tcp 127.0.0.1:57706->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 127.0.0.1 closed, recovering...
+2022/05/30 21:34:08 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:08 Conn err: read tcp 127.0.0.1:57690->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 Conn err: read tcp 127.0.0.1:57710->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:08 Conn err: write tcp 127.0.0.1:57693->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 127.0.0.1 closed, recovering...
+2022/05/30 21:34:08 Conn err: read tcp 127.0.0.1:57693->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:08 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:18 Conn err: write tcp 127.0.0.1:57710->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:18 127.0.0.1 closed, recovering...
+2022/05/30 21:34:18 Conn err: read tcp 127.0.0.1:57702->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:18 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:34:18 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:18 Conn err: read tcp 127.0.0.1:57714->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:18 Conn err: write tcp 127.0.0.1:57690->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:18 127.0.0.1 closed, recovering...
+2022/05/30 21:34:19 Conn err: write tcp 127.0.0.1:57714->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:19 127.0.0.1 closed, recovering...
+2022/05/30 21:34:19 Conn err: read tcp 127.0.0.1:57721->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:28 Conn err: write tcp 127.0.0.1:57702->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:28 127.0.0.1 closed, recovering...
+2022/05/30 21:34:28 Conn err: write tcp 127.0.0.1:57721->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:28 127.0.0.1 closed, recovering...
+2022/05/30 21:34:28 Conn err: read tcp 127.0.0.1:57725->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:28 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:29 Conn err: write tcp 127.0.0.1:57708->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:29 127.0.0.1 closed, recovering...
+2022/05/30 21:34:29 Conn err: read tcp 127.0.0.1:57708->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:29 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:38 Conn err: write tcp 127.0.0.1:57725->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:38 127.0.0.1 closed, recovering...
+2022/05/30 21:34:38 Conn err: read tcp 127.0.0.1:57730->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:38 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:38 127.0.0.1 closed, recovering...
+2022/05/30 21:34:39 Conn err: read tcp 127.0.0.1:57712->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:39 127.0.0.1 closed, recovering...
+2022/05/30 21:34:39 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:39 Conn err: read tcp 127.0.0.1:57735->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:39 Conn err: read tcp 127.0.0.1:57737->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:39 127.0.0.1 closed, recovering...
+2022/05/30 21:34:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:39 Conn err: write tcp 127.0.0.1:57730->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:39 127.0.0.1 closed, recovering...
+2022/05/30 21:34:48 Conn err: write tcp 127.0.0.1:57735->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:48 127.0.0.1 closed, recovering...
+2022/05/30 21:34:48 Conn err: read tcp 127.0.0.1:57717->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:48 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:48 Conn err: read tcp 127.0.0.1:57740->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:48 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:34:49 Conn err: write tcp 127.0.0.1:57712->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:49 127.0.0.1 closed, recovering...
+2022/05/30 21:34:49 Conn err: write tcp 127.0.0.1:57737->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:49 Conn err: write tcp 127.0.0.1:57722->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:49 Conn err: read tcp 127.0.0.1:57722->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:49 Conn err: write tcp 127.0.0.1:57740->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:49 127.0.0.1 closed, recovering...
+2022/05/30 21:34:59 Conn err: write tcp 127.0.0.1:57717->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 127.0.0.1 closed, recovering...
+2022/05/30 21:34:59 Conn err: read tcp 127.0.0.1:57732->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:34:59 Conn err: read tcp 127.0.0.1:57748->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:59 Conn err: write tcp 127.0.0.1:57739->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 127.0.0.1 closed, recovering...
+2022/05/30 21:34:59 Conn err: read tcp 127.0.0.1:57739->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:34:59 Conn err: read tcp 127.0.0.1:57728->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:34:59 Conn err: read tcp 127.0.0.1:57751->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:34:59 Conn err: write tcp 127.0.0.1:57748->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:34:59 127.0.0.1 closed, recovering...
+2022/05/30 21:35:09 Conn err: write tcp 127.0.0.1:57732->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:09 127.0.0.1 closed, recovering...
+2022/05/30 21:35:09 Conn err: write tcp 127.0.0.1:57751->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:09 Conn err: write tcp 127.0.0.1:57728->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:09 Conn err: write tcp 127.0.0.1:57745->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:09 127.0.0.1 closed, recovering...
+2022/05/30 21:35:09 Conn err: read tcp 127.0.0.1:57745->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:35:09 127.0.0.1 closed, recovering...
+2022/05/30 21:35:09 Conn err: read tcp 127.0.0.1:57756->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:19 Conn err: read tcp 127.0.0.1:57755->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:19 127.0.0.1 closed, recovering...
+2022/05/30 21:35:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:19 Conn err: read tcp 127.0.0.1:57765->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:35:19 Conn err: write tcp 127.0.0.1:57765->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:19 127.0.0.1 closed, recovering...
+2022/05/30 21:35:19 Conn err: write tcp 127.0.0.1:57756->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 Conn err: write tcp 127.0.0.1:57743->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 127.0.0.1 closed, recovering...
+2022/05/30 21:35:29 Conn err: read tcp 127.0.0.1:57743->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/05/30 21:35:29 Conn err: read tcp 127.0.0.1:57760->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:29 Conn err: write tcp 127.0.0.1:57755->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 127.0.0.1 closed, recovering...
+2022/05/30 21:35:29 Conn err: write tcp 127.0.0.1:57763->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 Conn err: read tcp 127.0.0.1:57763->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:29 Conn err: read tcp 127.0.0.1:57771->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:29 127.0.0.1 closed, recovering...
+2022/05/30 21:35:29 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:35:39 Conn err: write tcp 127.0.0.1:57760->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:39 127.0.0.1 closed, recovering...
+2022/05/30 21:35:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:39 127.0.0.1 closed, recovering...
+2022/05/30 21:35:39 Conn err: read tcp 127.0.0.1:57770->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:39 Conn err: write tcp 127.0.0.1:57771->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:39 127.0.0.1 closed, recovering...
+2022/05/30 21:35:39 Conn err: read tcp 127.0.0.1:57780->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:35:39 127.0.0.1 closed, recovering...
+2022/05/30 21:35:49 Conn err: write tcp 127.0.0.1:57780->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:49 127.0.0.1 closed, recovering...
+2022/05/30 21:35:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:49 Conn err: read tcp 127.0.0.1:57775->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:49 Conn err: write tcp 127.0.0.1:57770->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:49 127.0.0.1 closed, recovering...
+2022/05/30 21:35:49 Conn err: read tcp 127.0.0.1:57776->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:49 Conn err: read tcp 127.0.0.1:57789->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:49 127.0.0.1 closed, recovering...
+2022/05/30 21:35:49 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:35:59 Conn err: write tcp 127.0.0.1:57775->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 127.0.0.1 closed, recovering...
+2022/05/30 21:35:59 Conn err: write tcp 127.0.0.1:57776->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 127.0.0.1 closed, recovering...
+2022/05/30 21:35:59 Conn err: read tcp 127.0.0.1:57785->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:59 Conn err: write tcp 127.0.0.1:57789->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 127.0.0.1 closed, recovering...
+2022/05/30 21:35:59 Conn err: write tcp 127.0.0.1:57787->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 Conn err: read tcp 127.0.0.1:57779->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:35:59 Conn err: read tcp 127.0.0.1:57787->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:35:59 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:36:09 Conn err: read tcp 127.0.0.1:57802->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:36:09 127.0.0.1 closed, recovering...
+2022/05/30 21:36:09 Conn err: write tcp 127.0.0.1:57785->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:09 127.0.0.1 closed, recovering...
+2022/05/30 21:36:09 Conn err: write tcp 127.0.0.1:57779->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:09 127.0.0.1 closed, recovering...
+2022/05/30 21:36:09 Conn err: read tcp 127.0.0.1:57801->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:19 Conn err: write tcp 127.0.0.1:57802->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:19 127.0.0.1 closed, recovering...
+2022/05/30 21:36:19 Conn err: read tcp 127.0.0.1:57817->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:36:19 127.0.0.1 closed, recovering...
+2022/05/30 21:36:19 Conn err: write tcp 127.0.0.1:57817->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:19 127.0.0.1 closed, recovering...
+2022/05/30 21:36:19 Conn err: write tcp 127.0.0.1:57801->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:19 Conn err: read tcp 127.0.0.1:57811->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:29 127.0.0.1 closed, recovering...
+2022/05/30 21:36:29 Conn err: read tcp 127.0.0.1:57814->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:29 Conn err: read tcp 127.0.0.1:57821->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:29 127.0.0.1 closed, recovering...
+2022/05/30 21:36:29 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:36:29 Conn err: write tcp 127.0.0.1:57811->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:29 127.0.0.1 closed, recovering...
+2022/05/30 21:36:39 Conn err: write tcp 127.0.0.1:57814->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:39 127.0.0.1 closed, recovering...
+2022/05/30 21:36:39 Conn err: read tcp 127.0.0.1:57820->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:39 Conn err: write tcp 127.0.0.1:57821->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:39 Conn err: read tcp 127.0.0.1:57815->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:39 127.0.0.1 closed, recovering...
+2022/05/30 21:36:39 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:36:39 Conn err: read tcp 127.0.0.1:57835->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:39 127.0.0.1 closed, recovering...
+2022/05/30 21:36:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:36:49 Conn err: write tcp 127.0.0.1:57820->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:49 127.0.0.1 closed, recovering...
+2022/05/30 21:36:49 Conn err: write tcp 127.0.0.1:57815->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:49 127.0.0.1 closed, recovering...
+2022/05/30 21:36:49 Conn err: read tcp 127.0.0.1:57833->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:49 Conn err: write tcp 127.0.0.1:57835->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:49 127.0.0.1 closed, recovering...
+2022/05/30 21:36:49 Conn err: read tcp 127.0.0.1:57852->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:36:59 Conn err: write tcp 127.0.0.1:57852->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:59 127.0.0.1 closed, recovering...
+2022/05/30 21:36:59 Conn err: write tcp 127.0.0.1:57833->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:59 127.0.0.1 closed, recovering...
+2022/05/30 21:36:59 Conn err: read tcp 127.0.0.1:57843->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:59 Conn err: read tcp 127.0.0.1:57845->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:59 127.0.0.1 closed, recovering...
+2022/05/30 21:36:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:36:59 Conn err: read tcp 127.0.0.1:57860->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:36:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:37:09 Conn err: write tcp 127.0.0.1:57860->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:09 127.0.0.1 closed, recovering...
+2022/05/30 21:37:09 Conn err: write tcp 127.0.0.1:57843->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:09 127.0.0.1 closed, recovering...
+2022/05/30 21:37:09 Conn err: read tcp 127.0.0.1:57855->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:09 Conn err: write tcp 127.0.0.1:57857->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:09 127.0.0.1 closed, recovering...
+2022/05/30 21:37:09 Conn err: write tcp 127.0.0.1:57845->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:09 Conn err: read tcp 127.0.0.1:57857->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:19 Conn err: read tcp 127.0.0.1:57867->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:19 127.0.0.1 closed, recovering...
+2022/05/30 21:37:19 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:37:19 Conn err: write tcp 127.0.0.1:57855->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:19 127.0.0.1 closed, recovering...
+2022/05/30 21:37:19 Conn err: read tcp 127.0.0.1:57866->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:19 127.0.0.1 closed, recovering...
+2022/05/30 21:37:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:29 Conn err: write tcp 127.0.0.1:57867->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 127.0.0.1 closed, recovering...
+2022/05/30 21:37:29 Conn err: read tcp 127.0.0.1:57875->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:37:29 Conn err: write tcp 127.0.0.1:57875->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 127.0.0.1 closed, recovering...
+2022/05/30 21:37:29 Conn err: read tcp 127.0.0.1:57870->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:29 Conn err: write tcp 127.0.0.1:57866->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 Conn err: write tcp 127.0.0.1:57872->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 Conn err: read tcp 127.0.0.1:57872->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:39 Conn err: read tcp 127.0.0.1:57881->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:39 127.0.0.1 closed, recovering...
+2022/05/30 21:37:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:37:39 Conn err: write tcp 127.0.0.1:57870->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:39 127.0.0.1 closed, recovering...
+2022/05/30 21:37:39 Conn err: write tcp 127.0.0.1:57879->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:39 127.0.0.1 closed, recovering...
+2022/05/30 21:37:39 Conn err: read tcp 127.0.0.1:57879->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:49 Conn err: write tcp 127.0.0.1:57881->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:49 127.0.0.1 closed, recovering...
+2022/05/30 21:37:49 Conn err: read tcp 127.0.0.1:57874->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:37:49 Conn err: read tcp 127.0.0.1:57891->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:37:49 127.0.0.1 closed, recovering...
+2022/05/30 21:37:49 Conn err: write tcp 127.0.0.1:57891->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:49 127.0.0.1 closed, recovering...
+2022/05/30 21:37:59 Conn err: write tcp 127.0.0.1:57874->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:59 127.0.0.1 closed, recovering...
+2022/05/30 21:37:59 Conn err: read tcp 127.0.0.1:57888->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:59 Conn err: read tcp 127.0.0.1:57890->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:59 127.0.0.1 closed, recovering...
+2022/05/30 21:37:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:37:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:37:59 Conn err: read tcp 127.0.0.1:57897->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:59 Conn err: write tcp 127.0.0.1:57897->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:37:59 127.0.0.1 closed, recovering...
+2022/05/30 21:38:09 Conn err: write tcp 127.0.0.1:57888->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:09 127.0.0.1 closed, recovering...
+2022/05/30 21:38:09 Conn err: write tcp 127.0.0.1:57893->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:09 Conn err: read tcp 127.0.0.1:57893->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:09 Conn err: write tcp 127.0.0.1:57890->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:09 127.0.0.1 closed, recovering...
+2022/05/30 21:38:09 Conn err: write tcp 127.0.0.1:57895->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:09 Conn err: read tcp 127.0.0.1:57895->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:19 Conn err: read tcp 127.0.0.1:57908->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:38:19 127.0.0.1 closed, recovering...
+2022/05/30 21:38:19 Conn err: write tcp 127.0.0.1:57908->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:19 127.0.0.1 closed, recovering...
+2022/05/30 21:38:19 Conn err: write tcp 127.0.0.1:57903->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:19 Conn err: read tcp 127.0.0.1:57903->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:19 Conn err: read tcp 127.0.0.1:57904->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:19 127.0.0.1 closed, recovering...
+2022/05/30 21:38:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:38:19 Conn err: read tcp 127.0.0.1:61730->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:29 Conn err: write tcp 127.0.0.1:61730->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:29 127.0.0.1 closed, recovering...
+2022/05/30 21:38:29 Conn err: write tcp 127.0.0.1:57904->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:29 127.0.0.1 closed, recovering...
+2022/05/30 21:38:39 Conn err: write tcp 127.0.0.1:57905->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:39 127.0.0.1 closed, recovering...
+2022/05/30 21:38:39 Conn err: write tcp 127.0.0.1:61729->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:39 Conn err: read tcp 127.0.0.1:57905->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:39 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:38:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:39 Conn err: read tcp 127.0.0.1:61729->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:39 Conn err: read tcp 127.0.0.1:61735->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:39 127.0.0.1 closed, recovering...
+2022/05/30 21:38:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:38:49 Conn err: write tcp 127.0.0.1:61735->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:49 127.0.0.1 closed, recovering...
+2022/05/30 21:38:49 Conn err: read tcp 127.0.0.1:61738->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:38:49 127.0.0.1 closed, recovering...
+2022/05/30 21:38:49 Conn err: read tcp 127.0.0.1:61734->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:49 127.0.0.1 closed, recovering...
+2022/05/30 21:38:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:49 Conn err: read tcp 127.0.0.1:61739->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:49 127.0.0.1 closed, recovering...
+2022/05/30 21:38:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:38:49 Conn err: read tcp 127.0.0.1:61741->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:49 127.0.0.1 closed, recovering...
+2022/05/30 21:38:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:38:59 Conn err: write tcp 127.0.0.1:61738->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 127.0.0.1 closed, recovering...
+2022/05/30 21:38:59 Conn err: write tcp 127.0.0.1:61739->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 127.0.0.1 closed, recovering...
+2022/05/30 21:38:59 Conn err: read tcp 127.0.0.1:61733->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:38:59 Conn err: read tcp 127.0.0.1:61743->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:38:59 Conn err: write tcp 127.0.0.1:61741->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 127.0.0.1 closed, recovering...
+2022/05/30 21:38:59 Conn err: write tcp 127.0.0.1:61734->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: write tcp 127.0.0.1:61737->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: write tcp 127.0.0.1:61740->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: read tcp 127.0.0.1:61731->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/05/30 21:38:59 Conn err: read tcp 127.0.0.1:61737->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/05/30 21:38:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:38:59 Conn err: read tcp 127.0.0.1:61740->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: read tcp 127.0.0.1:61745->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:38:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:39:09 Conn err: write tcp 127.0.0.1:61743->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:09 127.0.0.1 closed, recovering...
+2022/05/30 21:39:09 Conn err: write tcp 127.0.0.1:61745->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:09 127.0.0.1 closed, recovering...
+2022/05/30 21:39:09 Conn err: write tcp 127.0.0.1:61733->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:09 Conn err: write tcp 127.0.0.1:61742->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:09 127.0.0.1 closed, recovering...
+2022/05/30 21:39:09 Conn err: write tcp 127.0.0.1:61731->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:39:09 Conn err: read tcp 127.0.0.1:61742->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:39:19 127.0.0.1 closed, recovering...
+2022/05/30 21:39:19 Conn err: read tcp 127.0.0.1:61750->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:19 Conn err: write tcp 127.0.0.1:61750->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:19 127.0.0.1 closed, recovering...
+2022/05/30 21:39:19 Conn err: read tcp 127.0.0.1:61746->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:39:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:39:19 127.0.0.1 closed, recovering...
+2022/05/30 21:39:19 Conn err: read tcp 127.0.0.1:61752->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:29 Conn err: write tcp 127.0.0.1:61748->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:29 127.0.0.1 closed, recovering...
+2022/05/30 21:39:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:39:29 Conn err: read tcp 127.0.0.1:61748->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:29 Conn err: write tcp 127.0.0.1:61752->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:29 127.0.0.1 closed, recovering...
+2022/05/30 21:39:29 Conn err: read tcp 127.0.0.1:61756->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:39:29 Conn err: write tcp 127.0.0.1:61746->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:39 Conn err: write tcp 127.0.0.1:61756->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:39 127.0.0.1 closed, recovering...
+2022/05/30 21:39:39 Conn err: write tcp 127.0.0.1:61749->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:39 127.0.0.1 closed, recovering...
+2022/05/30 21:39:39 Conn err: read tcp 127.0.0.1:61749->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:39 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:39:39 Conn err: read tcp 127.0.0.1:61753->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:39:39 Conn err: read tcp 127.0.0.1:61754->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:39:49 Conn err: read tcp 127.0.0.1:61760->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:49 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:39:49 127.0.0.1 closed, recovering...
+2022/05/30 21:39:49 Conn err: write tcp 127.0.0.1:61753->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:49 127.0.0.1 closed, recovering...
+2022/05/30 21:39:49 Conn err: write tcp 127.0.0.1:61754->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:39:49 Conn err: read tcp 127.0.0.1:61758->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:59 Conn err: write tcp 127.0.0.1:61760->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:59 127.0.0.1 closed, recovering...
+2022/05/30 21:39:59 Conn err: write tcp 127.0.0.1:61758->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:39:59 127.0.0.1 closed, recovering...
+2022/05/30 21:40:09 Conn err: write tcp 127.0.0.1:61777->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:09 127.0.0.1 closed, recovering...
+2022/05/30 21:40:09 Conn err: read tcp 127.0.0.1:61777->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:40:09 Conn err: read tcp 127.0.0.1:61780->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:40:09 127.0.0.1 closed, recovering...
+2022/05/30 21:40:19 Conn err: read tcp 127.0.0.1:61785->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:19 127.0.0.1 closed, recovering...
+2022/05/30 21:40:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:40:19 Conn err: write tcp 127.0.0.1:61780->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:19 127.0.0.1 closed, recovering...
+2022/05/30 21:40:19 Conn err: write tcp 127.0.0.1:61785->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:29 Conn err: write tcp 127.0.0.1:61778->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:29 127.0.0.1 closed, recovering...
+2022/05/30 21:40:29 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:40:29 Conn err: read tcp 127.0.0.1:61778->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:29 Conn err: write tcp 127.0.0.1:61782->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:29 127.0.0.1 closed, recovering...
+2022/05/30 21:40:29 Conn err: read tcp 127.0.0.1:61782->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:40:39 Conn err: read tcp 127.0.0.1:61791->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:39 127.0.0.1 closed, recovering...
+2022/05/30 21:40:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:40:39 Conn err: write tcp 127.0.0.1:61791->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:39 127.0.0.1 closed, recovering...
+2022/05/30 21:40:49 Conn err: read tcp 127.0.0.1:61787->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:49 127.0.0.1 closed, recovering...
+2022/05/30 21:40:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:40:49 Conn err: read tcp 127.0.0.1:61788->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:49 127.0.0.1 closed, recovering...
+2022/05/30 21:40:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:40:59 Conn err: write tcp 127.0.0.1:61787->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:59 127.0.0.1 closed, recovering...
+2022/05/30 21:40:59 Conn err: read tcp 127.0.0.1:61789->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:59 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:40:59 Conn err: write tcp 127.0.0.1:61788->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:40:59 127.0.0.1 closed, recovering...
+2022/05/30 21:41:09 Conn err: write tcp 127.0.0.1:61789->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:09 127.0.0.1 closed, recovering...
+2022/05/30 21:41:19 Conn err: read tcp 127.0.0.1:61806->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:19 127.0.0.1 closed, recovering...
+2022/05/30 21:41:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:41:19 Conn err: read tcp 127.0.0.1:61812->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:19 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:41:19 Conn err: read tcp 127.0.0.1:61822->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:41:19 127.0.0.1 closed, recovering...
+2022/05/30 21:41:29 Conn err: write tcp 127.0.0.1:61812->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:29 127.0.0.1 closed, recovering...
+2022/05/30 21:41:29 Conn err: write tcp 127.0.0.1:61822->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:29 Conn err: write tcp 127.0.0.1:61806->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:29 Conn err: write tcp 127.0.0.1:61811->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:29 127.0.0.1 closed, recovering...
+2022/05/30 21:41:29 Conn err: read tcp 127.0.0.1:61811->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:29 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:41:39 Conn err: write tcp 127.0.0.1:61823->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:39 127.0.0.1 closed, recovering...
+2022/05/30 21:41:39 Conn err: read tcp 127.0.0.1:61823->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:41:39 Conn err: read tcp 127.0.0.1:61827->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:41:49 Conn err: read tcp 127.0.0.1:61829->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:49 127.0.0.1 closed, recovering...
+2022/05/30 21:41:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:41:49 Conn err: write tcp 127.0.0.1:61827->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:49 127.0.0.1 closed, recovering...
+2022/05/30 21:41:49 Conn err: write tcp 127.0.0.1:61829->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:59 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:41:59 Conn err: read tcp 127.0.0.1:61825->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:59 127.0.0.1 closed, recovering...
+2022/05/30 21:41:59 Conn err: read tcp 127.0.0.1:61832->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:41:59 Conn err: write tcp 127.0.0.1:61832->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:41:59 127.0.0.1 closed, recovering...
+2022/05/30 21:42:09 Conn err: write tcp 127.0.0.1:61825->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:09 127.0.0.1 closed, recovering...
+2022/05/30 21:42:09 Conn err: write tcp 127.0.0.1:61831->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:09 Conn err: read tcp 127.0.0.1:61831->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:42:19 Conn err: read tcp 127.0.0.1:61833->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:19 127.0.0.1 closed, recovering...
+2022/05/30 21:42:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:42:19 Conn err: read tcp 127.0.0.1:61838->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:19 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:42:29 Conn err: write tcp 127.0.0.1:61838->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:29 127.0.0.1 closed, recovering...
+2022/05/30 21:42:29 Conn err: write tcp 127.0.0.1:61833->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:29 Conn err: write tcp 127.0.0.1:61835->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:29 127.0.0.1 closed, recovering...
+2022/05/30 21:42:29 Conn err: read tcp 127.0.0.1:61835->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:29 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:42:39 Conn err: read tcp 127.0.0.1:61848->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:42:39 127.0.0.1 closed, recovering...
+2022/05/30 21:42:49 Conn err: read tcp 127.0.0.1:61847->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:49 127.0.0.1 closed, recovering...
+2022/05/30 21:42:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:42:49 Conn err: read tcp 127.0.0.1:61851->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:42:49 Conn err: write tcp 127.0.0.1:61851->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:49 127.0.0.1 closed, recovering...
+2022/05/30 21:42:49 Conn err: write tcp 127.0.0.1:61848->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:59 Conn err: write tcp 127.0.0.1:61847->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:42:59 127.0.0.1 closed, recovering...
+2022/05/30 21:43:09 Conn err: read tcp 127.0.0.1:61854->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:09 127.0.0.1 closed, recovering...
+2022/05/30 21:43:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:43:09 Conn err: read tcp 127.0.0.1:61857->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:43:09 Conn err: read tcp 127.0.0.1:61861->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:09 127.0.0.1 closed, recovering...
+2022/05/30 21:43:09 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:43:19 Conn err: write tcp 127.0.0.1:61861->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:19 127.0.0.1 closed, recovering...
+2022/05/30 21:43:19 Conn err: write tcp 127.0.0.1:61854->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:19 Conn err: write tcp 127.0.0.1:61857->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:19 Conn err: write tcp 127.0.0.1:61855->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:19 127.0.0.1 closed, recovering...
+2022/05/30 21:43:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:43:19 Conn err: read tcp 127.0.0.1:61855->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:29 Conn err: write tcp 127.0.0.1:61862->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:43:29 Conn err: read tcp 127.0.0.1:61862->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:29 127.0.0.1 closed, recovering...
+2022/05/30 21:43:29 Conn err: read tcp 127.0.0.1:61865->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:29 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:43:39 Conn err: read tcp 127.0.0.1:61867->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:39 127.0.0.1 closed, recovering...
+2022/05/30 21:43:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:43:39 Conn err: write tcp 127.0.0.1:61865->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:39 127.0.0.1 closed, recovering...
+2022/05/30 21:43:39 Conn err: write tcp 127.0.0.1:61867->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:49 Conn err: write tcp 127.0.0.1:61863->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:49 127.0.0.1 closed, recovering...
+2022/05/30 21:43:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:43:49 Conn err: read tcp 127.0.0.1:61863->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:43:59 127.0.0.1 closed, recovering...
+2022/05/30 21:43:59 Conn err: read tcp 127.0.0.1:61869->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:59 Conn err: read tcp 127.0.0.1:61871->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:59 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:43:59 Conn err: read tcp 127.0.0.1:61873->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:43:59 127.0.0.1 closed, recovering...
+2022/05/30 21:43:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:44:09 Conn err: write tcp 127.0.0.1:61871->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:09 127.0.0.1 closed, recovering...
+2022/05/30 21:44:09 Conn err: write tcp 127.0.0.1:61873->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:09 Conn err: write tcp 127.0.0.1:61869->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:09 Conn err: read tcp 127.0.0.1:61870->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:09 127.0.0.1 closed, recovering...
+2022/05/30 21:44:09 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:44:09 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:44:09 127.0.0.1 closed, recovering...
+2022/05/30 21:44:09 Conn err: read tcp 127.0.0.1:61877->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:19 Conn err: write tcp 127.0.0.1:61877->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:19 127.0.0.1 closed, recovering...
+2022/05/30 21:44:19 Conn err: write tcp 127.0.0.1:61870->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:19 127.0.0.1 closed, recovering...
+2022/05/30 21:44:19 Conn err: read tcp 127.0.0.1:61875->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:44:19 Conn err: read tcp 127.0.0.1:61880->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:19 127.0.0.1 closed, recovering...
+2022/05/30 21:44:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 4
+2022/05/30 21:44:29 Conn err: write tcp 127.0.0.1:61880->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:29 127.0.0.1 closed, recovering...
+2022/05/30 21:44:29 Conn err: write tcp 127.0.0.1:61875->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:29 127.0.0.1 closed, recovering...
+2022/05/30 21:44:29 Conn err: read tcp 127.0.0.1:61878->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:29 Conn err: write tcp 127.0.0.1:61879->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:44:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:44:29 Conn err: read tcp 127.0.0.1:61879->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:29 Conn err: read tcp 127.0.0.1:61886->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:44:39 Conn err: write tcp 127.0.0.1:61886->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:39 127.0.0.1 closed, recovering...
+2022/05/30 21:44:39 Conn err: read tcp 127.0.0.1:61882->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:39 127.0.0.1 closed, recovering...
+2022/05/30 21:44:39 Conn err: write tcp 127.0.0.1:61878->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:44:39 Conn err: write tcp 127.0.0.1:61883->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:39 Conn err: read tcp 127.0.0.1:61883->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:44:49 Conn err: read tcp 127.0.0.1:61890->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:49 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:44:49 127.0.0.1 closed, recovering...
+2022/05/30 21:44:49 Conn err: write tcp 127.0.0.1:61882->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:49 127.0.0.1 closed, recovering...
+2022/05/30 21:44:49 Conn err: write tcp 127.0.0.1:61888->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:44:49 Conn err: read tcp 127.0.0.1:61888->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:59 Conn err: write tcp 127.0.0.1:61890->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:59 127.0.0.1 closed, recovering...
+2022/05/30 21:44:59 Conn err: write tcp 127.0.0.1:61892->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:59 127.0.0.1 closed, recovering...
+2022/05/30 21:44:59 Conn err: read tcp 127.0.0.1:61892->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:44:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:45:09 Conn err: read tcp 127.0.0.1:61898->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:09 127.0.0.1 closed, recovering...
+2022/05/30 21:45:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:45:19 Conn err: write tcp 127.0.0.1:61893->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:19 127.0.0.1 closed, recovering...
+2022/05/30 21:45:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:45:19 Conn err: read tcp 127.0.0.1:61893->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:19 Conn err: read tcp 127.0.0.1:61895->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:19 127.0.0.1 closed, recovering...
+2022/05/30 21:45:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:45:19 Conn err: write tcp 127.0.0.1:61898->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:29 Conn err: read tcp 127.0.0.1:61897->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:29 127.0.0.1 closed, recovering...
+2022/05/30 21:45:29 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:45:29 Conn err: write tcp 127.0.0.1:61895->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:29 127.0.0.1 closed, recovering...
+2022/05/30 21:45:39 Conn err: write tcp 127.0.0.1:61897->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:39 127.0.0.1 closed, recovering...
+2022/05/30 21:45:39 Conn err: read tcp 127.0.0.1:61911->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:39 127.0.0.1 closed, recovering...
+2022/05/30 21:45:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:45:49 Conn err: write tcp 127.0.0.1:61911->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:49 127.0.0.1 closed, recovering...
+2022/05/30 21:45:49 Conn err: read tcp 127.0.0.1:61909->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:45:49 Conn err: read tcp 127.0.0.1:61913->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:49 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:45:49 Conn err: read tcp 127.0.0.1:61910->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:49 127.0.0.1 closed, recovering...
+2022/05/30 21:45:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:45:59 Conn err: write tcp 127.0.0.1:61909->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:59 127.0.0.1 closed, recovering...
+2022/05/30 21:45:59 Conn err: write tcp 127.0.0.1:61913->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:59 Conn err: write tcp 127.0.0.1:61910->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:45:59 127.0.0.1 closed, recovering...
+2022/05/30 21:46:09 Conn err: read tcp 127.0.0.1:61919->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:09 127.0.0.1 closed, recovering...
+2022/05/30 21:46:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:46:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:46:09 Conn err: read tcp 127.0.0.1:61922->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:09 127.0.0.1 closed, recovering...
+2022/05/30 21:46:19 Conn err: read tcp 127.0.0.1:61926->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:46:19 127.0.0.1 closed, recovering...
+2022/05/30 21:46:19 Conn err: write tcp 127.0.0.1:61922->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:19 Conn err: write tcp 127.0.0.1:61919->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:19 Conn err: write tcp 127.0.0.1:61926->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:19 127.0.0.1 closed, recovering...
+2022/05/30 21:46:29 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:46:29 127.0.0.1 closed, recovering...
+2022/05/30 21:46:29 Conn err: read tcp 127.0.0.1:61920->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:29 Conn err: read tcp 127.0.0.1:61931->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:46:29 Conn err: write tcp 127.0.0.1:61931->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:29 127.0.0.1 closed, recovering...
+2022/05/30 21:46:29 Conn err: read tcp 127.0.0.1:61925->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:46:29 Conn err: read tcp 127.0.0.1:61934->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:46:39 Conn err: write tcp 127.0.0.1:61920->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:39 127.0.0.1 closed, recovering...
+2022/05/30 21:46:39 Conn err: write tcp 127.0.0.1:61934->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:39 Conn err: read tcp 127.0.0.1:61935->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:46:39 Conn err: write tcp 127.0.0.1:61935->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:39 127.0.0.1 closed, recovering...
+2022/05/30 21:46:39 Conn err: write tcp 127.0.0.1:61925->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:49 Conn err: read tcp 127.0.0.1:61929->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:49 127.0.0.1 closed, recovering...
+2022/05/30 21:46:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:46:49 Conn err: read tcp 127.0.0.1:61938->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:49 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:46:49 Conn err: write tcp 127.0.0.1:61938->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:49 127.0.0.1 closed, recovering...
+2022/05/30 21:46:59 Conn err: write tcp 127.0.0.1:61929->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:59 127.0.0.1 closed, recovering...
+2022/05/30 21:46:59 Conn err: read tcp 127.0.0.1:61936->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:46:59 Conn err: read tcp 127.0.0.1:61943->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:46:59 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:46:59 127.0.0.1 closed, recovering...
+2022/05/30 21:47:09 Conn err: write tcp 127.0.0.1:61936->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:09 127.0.0.1 closed, recovering...
+2022/05/30 21:47:09 Conn err: read tcp 127.0.0.1:61942->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:47:09 Conn err: write tcp 127.0.0.1:61943->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:09 127.0.0.1 closed, recovering...
+2022/05/30 21:47:09 Conn err: read tcp 127.0.0.1:61946->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:47:19 Conn err: write tcp 127.0.0.1:61942->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:19 127.0.0.1 closed, recovering...
+2022/05/30 21:47:19 Conn err: read tcp 127.0.0.1:61945->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:47:19 Conn err: write tcp 127.0.0.1:61946->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:19 127.0.0.1 closed, recovering...
+2022/05/30 21:47:19 Conn err: read tcp 127.0.0.1:61951->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:19 127.0.0.1 closed, recovering...
+2022/05/30 21:47:19 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:47:29 Conn err: write tcp 127.0.0.1:61949->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:29 Conn err: write tcp 127.0.0.1:61945->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:29 127.0.0.1 closed, recovering...
+2022/05/30 21:47:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:47:29 Conn err: read tcp 127.0.0.1:61949->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:29 Conn err: write tcp 127.0.0.1:61951->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:29 127.0.0.1 closed, recovering...
+2022/05/30 21:47:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:47:29 Conn err: read tcp 127.0.0.1:61957->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 Conn err: write tcp 127.0.0.1:61957->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:47:39 Conn err: read tcp 127.0.0.1:61954->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 127.0.0.1 closed, recovering...
+2022/05/30 21:47:39 Conn err: read tcp 127.0.0.1:61958->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:47:39 Conn err: write tcp 127.0.0.1:61958->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 127.0.0.1 closed, recovering...
+2022/05/30 21:47:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:47:39 Conn err: read tcp 127.0.0.1:61955->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 Conn err: read tcp 127.0.0.1:61959->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:47:49 Conn err: write tcp 127.0.0.1:61954->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:49 127.0.0.1 closed, recovering...
+2022/05/30 21:47:49 Conn err: write tcp 127.0.0.1:61959->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:49 Conn err: write tcp 127.0.0.1:61955->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:49 127.0.0.1 closed, recovering...
+2022/05/30 21:47:49 Conn err: write tcp 127.0.0.1:61956->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:49 Conn err: read tcp 127.0.0.1:61956->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:49 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:47:59 Conn err: write tcp 127.0.0.1:61962->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:59 127.0.0.1 closed, recovering...
+2022/05/30 21:47:59 Conn err: read tcp 127.0.0.1:61962->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:47:59 Conn err: read tcp 127.0.0.1:61966->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:47:59 127.0.0.1 closed, recovering...
+2022/05/30 21:47:59 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:48:09 Conn err: read tcp 127.0.0.1:61967->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:09 127.0.0.1 closed, recovering...
+2022/05/30 21:48:09 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:48:09 Conn err: write tcp 127.0.0.1:61967->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:09 127.0.0.1 closed, recovering...
+2022/05/30 21:48:09 Conn err: write tcp 127.0.0.1:61966->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:09 Conn err: read tcp 127.0.0.1:61970->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:09 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:48:19 Conn err: write tcp 127.0.0.1:61970->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:19 127.0.0.1 closed, recovering...
+2022/05/30 21:48:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:48:19 Conn err: read tcp 127.0.0.1:61963->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:48:19 Conn err: read tcp 127.0.0.1:61971->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:19 Conn err: write tcp 127.0.0.1:61971->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:19 127.0.0.1 closed, recovering...
+2022/05/30 21:48:19 Conn err: read tcp 127.0.0.1:61965->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:48:19 Conn err: write tcp 127.0.0.1:61965->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:29 Conn err: write tcp 127.0.0.1:61963->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:29 127.0.0.1 closed, recovering...
+2022/05/30 21:48:29 Conn err: read tcp 127.0.0.1:61975->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:48:29 127.0.0.1 closed, recovering...
+2022/05/30 21:48:39 Conn err: write tcp 127.0.0.1:61975->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:39 127.0.0.1 closed, recovering...
+2022/05/30 21:48:39 Conn err: read tcp 127.0.0.1:61972->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:48:39 Conn err: read tcp 127.0.0.1:61976->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:48:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:48:39 127.0.0.1 closed, recovering...
+2022/05/30 21:48:39 Conn err: read tcp 127.0.0.1:61974->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:39 Conn err: read tcp 127.0.0.1:61978->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:48:49 Conn err: write tcp 127.0.0.1:61976->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:49 127.0.0.1 closed, recovering...
+2022/05/30 21:48:49 Conn err: write tcp 127.0.0.1:61972->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:49 Conn err: write tcp 127.0.0.1:61978->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:49 Conn err: write tcp 127.0.0.1:61974->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:49 127.0.0.1 closed, recovering...
+2022/05/30 21:48:59 Conn err: write tcp 127.0.0.1:61979->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:59 127.0.0.1 closed, recovering...
+2022/05/30 21:48:59 Conn err: read tcp 127.0.0.1:61979->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:48:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:48:59 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:48:59 Conn err: read tcp 127.0.0.1:61983->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:09 Conn err: read tcp 127.0.0.1:61985->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:09 127.0.0.1 closed, recovering...
+2022/05/30 21:49:09 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:49:09 Conn err: write tcp 127.0.0.1:61985->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:09 127.0.0.1 closed, recovering...
+2022/05/30 21:49:09 Conn err: write tcp 127.0.0.1:61983->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:19 Conn err: read tcp 127.0.0.1:61981->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:19 127.0.0.1 closed, recovering...
+2022/05/30 21:49:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:49:19 Conn err: read tcp 127.0.0.1:61988->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:49:19 Conn err: write tcp 127.0.0.1:61988->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:19 127.0.0.1 closed, recovering...
+2022/05/30 21:49:29 Conn err: read tcp 127.0.0.1:61987->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:29 127.0.0.1 closed, recovering...
+2022/05/30 21:49:29 Conn err: write tcp 127.0.0.1:61981->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:49:29 Conn err: read tcp 127.0.0.1:61991->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:49:29 Conn err: write tcp 127.0.0.1:61991->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:29 127.0.0.1 closed, recovering...
+2022/05/30 21:49:39 Conn err: write tcp 127.0.0.1:61987->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:39 127.0.0.1 closed, recovering...
+2022/05/30 21:49:39 Conn err: read tcp 127.0.0.1:61989->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:49:39 Conn err: read tcp 127.0.0.1:61996->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:39 127.0.0.1 closed, recovering...
+2022/05/30 21:49:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:49:49 Conn err: write tcp 127.0.0.1:61989->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:49 127.0.0.1 closed, recovering...
+2022/05/30 21:49:49 Conn err: read tcp 127.0.0.1:61995->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:49:49 Conn err: write tcp 127.0.0.1:61996->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:49 127.0.0.1 closed, recovering...
+2022/05/30 21:49:49 Conn err: read tcp 127.0.0.1:62000->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:49 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:49:59 Conn err: write tcp 127.0.0.1:61995->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:59 127.0.0.1 closed, recovering...
+2022/05/30 21:49:59 Conn err: read tcp 127.0.0.1:61999->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:49:59 Conn err: write tcp 127.0.0.1:62000->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:49:59 127.0.0.1 closed, recovering...
+2022/05/30 21:49:59 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:49:59 Conn err: read tcp 127.0.0.1:62004->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:09 Conn err: write tcp 127.0.0.1:61999->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:09 127.0.0.1 closed, recovering...
+2022/05/30 21:50:09 Conn err: read tcp 127.0.0.1:62003->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:50:09 Conn err: write tcp 127.0.0.1:62004->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:09 127.0.0.1 closed, recovering...
+2022/05/30 21:50:09 Conn err: read tcp 127.0.0.1:62008->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:50:19 Conn err: write tcp 127.0.0.1:62003->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:19 127.0.0.1 closed, recovering...
+2022/05/30 21:50:19 Conn err: read tcp 127.0.0.1:62007->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:50:19 Conn err: write tcp 127.0.0.1:62008->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:19 127.0.0.1 closed, recovering...
+2022/05/30 21:50:19 Conn err: read tcp 127.0.0.1:62013->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:19 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:50:29 Conn err: write tcp 127.0.0.1:62007->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:29 127.0.0.1 closed, recovering...
+2022/05/30 21:50:29 Conn err: read tcp 127.0.0.1:62011->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:50:29 Conn err: read tcp 127.0.0.1:62019->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:50:29 127.0.0.1 closed, recovering...
+2022/05/30 21:50:29 Conn err: write tcp 127.0.0.1:62013->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:29 127.0.0.1 closed, recovering...
+2022/05/30 21:50:39 Conn err: write tcp 127.0.0.1:62011->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:39 Conn err: write tcp 127.0.0.1:62019->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:39 127.0.0.1 closed, recovering...
+2022/05/30 21:50:39 Conn err: read tcp 127.0.0.1:62016->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:50:39 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:50:39 127.0.0.1 closed, recovering...
+2022/05/30 21:50:39 Conn err: read tcp 127.0.0.1:62017->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:49 Conn err: write tcp 127.0.0.1:62016->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:49 127.0.0.1 closed, recovering...
+2022/05/30 21:50:49 Conn err: write tcp 127.0.0.1:62017->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:49 127.0.0.1 closed, recovering...
+2022/05/30 21:50:59 Conn err: read tcp 127.0.0.1:62028->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:59 127.0.0.1 closed, recovering...
+2022/05/30 21:50:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:50:59 Conn err: read tcp 127.0.0.1:62033->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:50:59 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:51:09 Conn err: read tcp 127.0.0.1:62035->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:09 127.0.0.1 closed, recovering...
+2022/05/30 21:51:09 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:51:09 Conn err: write tcp 127.0.0.1:62033->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:09 127.0.0.1 closed, recovering...
+2022/05/30 21:51:09 Conn err: write tcp 127.0.0.1:62028->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:09 Conn err: write tcp 127.0.0.1:62035->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:19 Conn err: write tcp 127.0.0.1:62032->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:19 Conn err: read tcp 127.0.0.1:62032->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:19 127.0.0.1 closed, recovering...
+2022/05/30 21:51:19 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:51:29 Conn err: write tcp 127.0.0.1:62036->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:29 127.0.0.1 closed, recovering...
+2022/05/30 21:51:29 Conn err: read tcp 127.0.0.1:62036->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:51:29 Conn err: read tcp 127.0.0.1:62040->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:29 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:51:29 Conn err: read tcp 127.0.0.1:62043->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:29 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:51:29 127.0.0.1 closed, recovering...
+2022/05/30 21:51:39 Conn err: write tcp 127.0.0.1:62040->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:39 Conn err: write tcp 127.0.0.1:62043->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:39 127.0.0.1 closed, recovering...
+2022/05/30 21:51:39 Conn err: read tcp 127.0.0.1:62038->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:39 127.0.0.1 closed, recovering...
+2022/05/30 21:51:39 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:51:39 Conn err: read tcp 127.0.0.1:62045->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:39 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:51:49 Conn err: write tcp 127.0.0.1:62045->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:49 127.0.0.1 closed, recovering...
+2022/05/30 21:51:49 Conn err: write tcp 127.0.0.1:62038->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:49 127.0.0.1 closed, recovering...
+2022/05/30 21:51:49 Conn err: read tcp 127.0.0.1:62044->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:49 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:51:59 Conn err: read tcp 127.0.0.1:62050->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:59 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:51:59 127.0.0.1 closed, recovering...
+2022/05/30 21:51:59 Conn err: write tcp 127.0.0.1:62044->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:51:59 127.0.0.1 closed, recovering...
+2022/05/30 21:51:59 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:51:59 Conn err: read tcp 127.0.0.1:62048->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:09 Conn err: write tcp 127.0.0.1:62050->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:09 127.0.0.1 closed, recovering...
+2022/05/30 21:52:09 Conn err: read tcp 127.0.0.1:62058->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:09 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:52:09 127.0.0.1 closed, recovering...
+2022/05/30 21:52:09 Conn err: write tcp 127.0.0.1:62048->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:09 127.0.0.1 closed, recovering...
+2022/05/30 21:52:09 Conn err: read tcp 127.0.0.1:62052->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:09 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:52:19 Conn err: write tcp 127.0.0.1:62058->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:19 127.0.0.1 closed, recovering...
+2022/05/30 21:52:19 Conn err: read tcp 127.0.0.1:62066->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:19 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/05/30 21:52:19 Conn err: write tcp 127.0.0.1:62066->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:19 127.0.0.1 closed, recovering...
+2022/05/30 21:52:19 Conn err: write tcp 127.0.0.1:62052->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:19 Conn err: read tcp 127.0.0.1:62060->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:19 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:52:29 Conn err: read tcp 127.0.0.1:62062->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:29 127.0.0.1 closed, recovering...
+2022/05/30 21:52:29 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:52:30 Conn err: write tcp 127.0.0.1:62060->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:30 127.0.0.1 closed, recovering...
+2022/05/30 21:52:39 Conn err: write tcp 127.0.0.1:62062->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:39 127.0.0.1 closed, recovering...
+2022/05/30 21:52:39 Conn err: read tcp 127.0.0.1:62065->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:39 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:52:39 Conn err: read tcp 127.0.0.1:62072->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:39 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:52:40 Conn err: read tcp 127.0.0.1:62071->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:40 127.0.0.1 closed, recovering...
+2022/05/30 21:52:40 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:52:49 Conn err: write tcp 127.0.0.1:62072->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:49 127.0.0.1 closed, recovering...
+2022/05/30 21:52:49 Conn err: write tcp 127.0.0.1:62065->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:50 Conn err: write tcp 127.0.0.1:62071->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:52:50 127.0.0.1 closed, recovering...
+2022/05/30 21:53:00 Conn err: write tcp 127.0.0.1:62079->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:00 127.0.0.1 closed, recovering...
+2022/05/30 21:53:00 Conn err: read tcp 127.0.0.1:62079->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:00 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:53:00 Conn err: read tcp 127.0.0.1:62082->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:00 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:53:10 Conn err: read tcp 127.0.0.1:62086->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:10 127.0.0.1 closed, recovering...
+2022/05/30 21:53:10 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:53:10 Conn err: write tcp 127.0.0.1:62082->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:10 127.0.0.1 closed, recovering...
+2022/05/30 21:53:10 Conn err: write tcp 127.0.0.1:62086->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:20 Conn err: write tcp 127.0.0.1:62080->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:20 127.0.0.1 closed, recovering...
+2022/05/30 21:53:20 Conn err: read tcp 127.0.0.1:62080->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:20 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:53:30 Conn err: read tcp 127.0.0.1:62087->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:30 127.0.0.1 closed, recovering...
+2022/05/30 21:53:30 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:53:30 Conn err: read tcp 127.0.0.1:62091->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:30 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:53:30 Conn err: read tcp 127.0.0.1:62095->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:30 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:53:30 127.0.0.1 closed, recovering...
+2022/05/30 21:53:40 Conn err: write tcp 127.0.0.1:62091->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:40 127.0.0.1 closed, recovering...
+2022/05/30 21:53:40 Conn err: write tcp 127.0.0.1:62087->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:40 Conn err: write tcp 127.0.0.1:62095->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:40 Conn err: read tcp 127.0.0.1:62088->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:40 127.0.0.1 closed, recovering...
+2022/05/30 21:53:40 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:53:40 Conn err: read tcp 127.0.0.1:62097->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:40 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:53:40 Conn err: read tcp 127.0.0.1:62099->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:40 127.0.0.1 closed, recovering...
+2022/05/30 21:53:40 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:53:50 Conn err: write tcp 127.0.0.1:62097->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:50 127.0.0.1 closed, recovering...
+2022/05/30 21:53:50 Conn err: write tcp 127.0.0.1:62096->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:50 127.0.0.1 closed, recovering...
+2022/05/30 21:53:50 Conn err: write tcp 127.0.0.1:62088->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:50 Conn err: read tcp 127.0.0.1:62096->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:53:50 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:53:50 Conn err: write tcp 127.0.0.1:62099->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:00 Conn err: write tcp 127.0.0.1:62100->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:00 127.0.0.1 closed, recovering...
+2022/05/30 21:54:00 Conn err: read tcp 127.0.0.1:62100->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:00 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:54:00 Conn err: read tcp 127.0.0.1:62104->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:00 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:54:10 Conn err: read tcp 127.0.0.1:62106->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:10 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/05/30 21:54:10 127.0.0.1 closed, recovering...
+2022/05/30 21:54:10 Conn err: write tcp 127.0.0.1:62106->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:10 127.0.0.1 closed, recovering...
+2022/05/30 21:54:10 Conn err: write tcp 127.0.0.1:62104->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:20 Conn err: read tcp 127.0.0.1:62101->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:20 127.0.0.1 closed, recovering...
+2022/05/30 21:54:20 Conn err: write tcp 127.0.0.1:62101->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:20 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:54:30 Conn err: read tcp 127.0.0.1:62108->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:30 127.0.0.1 closed, recovering...
+2022/05/30 21:54:30 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:54:30 Conn err: read tcp 127.0.0.1:62110->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:30 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:54:40 Conn err: write tcp 127.0.0.1:62110->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:40 127.0.0.1 closed, recovering...
+2022/05/30 21:54:40 Conn err: write tcp 127.0.0.1:62108->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:40 Conn err: read tcp 127.0.0.1:62109->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:40 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/05/30 21:54:40 127.0.0.1 closed, recovering...
+2022/05/30 21:54:50 Conn err: write tcp 127.0.0.1:62109->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:54:50 127.0.0.1 closed, recovering...
+2022/05/30 21:55:00 Conn err: read tcp 127.0.0.1:62122->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:00 127.0.0.1 closed, recovering...
+2022/05/30 21:55:00 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:55:00 Conn err: read tcp 127.0.0.1:62124->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:00 127.0.0.1 closed, recovering...
+2022/05/30 21:55:00 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/05/30 21:55:10 Conn err: write tcp 127.0.0.1:62124->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:10 127.0.0.1 closed, recovering...
+2022/05/30 21:55:10 Conn err: write tcp 127.0.0.1:62122->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:10 Conn err: read tcp 127.0.0.1:62127->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:10 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:55:20 Conn err: write tcp 127.0.0.1:62127->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:20 127.0.0.1 closed, recovering...
+2022/05/30 21:55:20 Conn err: read tcp 127.0.0.1:62126->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:20 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:55:20 Conn err: read tcp 127.0.0.1:62132->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:20 127.0.0.1 closed, recovering...
+2022/05/30 21:55:20 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/05/30 21:55:30 Conn err: write tcp 127.0.0.1:62126->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:30 127.0.0.1 closed, recovering...
+2022/05/30 21:55:30 Conn err: write tcp 127.0.0.1:62132->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:30 Conn err: read tcp 127.0.0.1:62130->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:30 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:55:30 Conn err: read tcp 127.0.0.1:62133->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:30 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/05/30 21:55:40 Conn err: write tcp 127.0.0.1:62133->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:40 127.0.0.1 closed, recovering...
+2022/05/30 21:55:40 Conn err: write tcp 127.0.0.1:62130->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:50 Conn err: read tcp 127.0.0.1:62137->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:55:50 127.0.0.1 closed, recovering...
+2022/05/30 21:55:50 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/05/30 21:55:50 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/05/30 21:55:50 Conn err: read tcp 127.0.0.1:62135->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:56:00 Conn err: write tcp 127.0.0.1:62137->127.0.0.1:10000: use of closed network connection
+2022/05/30 21:56:00 127.0.0.1 closed, recovering...
+2022/05/30 21:56:00 Conn err: write tcp 127.0.0.1:62135->127.0.0.1:10000: use of closed network connection
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57673->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 127.0.0.1 closed, recovering...
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57840->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57863->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61901->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57605->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62119->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57799->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57628->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61904->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57825->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57620->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62069->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57830->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61917->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57807->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61794->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57795->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61801->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57682->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61763->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57656->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62026->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62021->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57648->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57899->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61796->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62075->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61843->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61906->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62140->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62143->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62077->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61769->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62023->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:61803->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:57885->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:09 Conn err: read tcp 127.0.0.1:62116->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/30 22:45:09 recovering API_main: recovery failed
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/30 22:45:10 127.0.0.1:10000 recovering API_main...
+2022/05/31 16:43:26 Conn err: read tcp 127.0.0.1:54694->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/05/31 16:43:26 127.0.0.1 closed, recovering...
+2022/05/31 16:48:44 127.0.0.1 closed, recovering...
+2022/05/31 16:49:55 127.0.0.1 closed, recovering...
+2022/06/01 08:34:02 Conn err: EOF
+2022/06/01 08:34:02 127.0.0.1 closed, recovering...
+2022/06/01 08:34:12 Conn err: heartbeat timeout. Timeout ver: 203. Heartbeat ver: 203
+2022/06/01 08:34:12 127.0.0.1 closed, recovering...
+2022/06/01 08:34:12 Conn err: write tcp 127.0.0.1:52936->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:22 Conn err: read tcp 127.0.0.1:58079->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:22 127.0.0.1 closed, recovering...
+2022/06/01 08:34:22 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:34:32 Conn err: write tcp 127.0.0.1:58079->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:32 127.0.0.1 closed, recovering...
+2022/06/01 08:34:32 Conn err: write tcp 127.0.0.1:50839->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:32 Conn err: read tcp 127.0.0.1:50839->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:32 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:34:32 Conn err: read tcp 127.0.0.1:58099->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:32 127.0.0.1 closed, recovering...
+2022/06/01 08:34:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:34:42 Conn err: write tcp 127.0.0.1:58093->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:42 127.0.0.1 closed, recovering...
+2022/06/01 08:34:42 Conn err: read tcp 127.0.0.1:58093->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:42 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:34:42 Conn err: write tcp 127.0.0.1:58099->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:52 Conn err: read tcp 127.0.0.1:58101->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:52 127.0.0.1 closed, recovering...
+2022/06/01 08:34:52 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:34:52 Conn err: read tcp 127.0.0.1:58108->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:34:52 127.0.0.1 closed, recovering...
+2022/06/01 08:34:52 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 4
+2022/06/01 08:35:02 Conn err: write tcp 127.0.0.1:58101->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:02 127.0.0.1 closed, recovering...
+2022/06/01 08:35:02 Conn err: write tcp 127.0.0.1:58108->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:02 Conn err: read tcp 127.0.0.1:58117->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:02 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 08:35:12 Conn err: write tcp 127.0.0.1:58117->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:12 127.0.0.1 closed, recovering...
+2022/06/01 08:35:12 Conn err: read tcp 127.0.0.1:58115->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:12 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:35:22 Conn err: write tcp 127.0.0.1:58115->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:22 127.0.0.1 closed, recovering...
+2022/06/01 08:35:32 Conn err: read tcp 127.0.0.1:58123->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:32 127.0.0.1 closed, recovering...
+2022/06/01 08:35:32 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:35:42 Conn err: write tcp 127.0.0.1:58123->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:42 127.0.0.1 closed, recovering...
+2022/06/01 08:35:42 Conn err: write tcp 127.0.0.1:58120->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:42 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/06/01 08:35:42 Conn err: read tcp 127.0.0.1:58120->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:52 Conn err: read tcp 127.0.0.1:58122->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:35:52 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/06/01 08:35:52 127.0.0.1 closed, recovering...
+2022/06/01 08:36:02 Conn err: write tcp 127.0.0.1:58122->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:02 127.0.0.1 closed, recovering...
+2022/06/01 08:36:22 Conn err: write tcp 127.0.0.1:50776->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:22 127.0.0.1 closed, recovering...
+2022/06/01 08:36:22 Conn err: read tcp 127.0.0.1:50776->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:22 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:36:22 Conn err: read tcp 127.0.0.1:50778->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:22 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 4
+2022/06/01 08:36:32 Conn err: write tcp 127.0.0.1:50778->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:32 127.0.0.1 closed, recovering...
+2022/06/01 08:36:42 Conn err: write tcp 127.0.0.1:50793->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:42 127.0.0.1 closed, recovering...
+2022/06/01 08:36:42 Conn err: read tcp 127.0.0.1:50793->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:42 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:36:42 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 08:36:42 Conn err: read tcp 127.0.0.1:50795->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:52 Conn err: write tcp 127.0.0.1:50795->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:36:52 127.0.0.1 closed, recovering...
+2022/06/01 08:37:12 Conn err: read tcp 127.0.0.1:50796->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:12 127.0.0.1 closed, recovering...
+2022/06/01 08:37:12 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:37:12 Conn err: read tcp 127.0.0.1:50799->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:12 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 5
+2022/06/01 08:37:22 Conn err: write tcp 127.0.0.1:50796->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:22 127.0.0.1 closed, recovering...
+2022/06/01 08:37:22 Conn err: write tcp 127.0.0.1:50799->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:42 Conn err: read tcp 127.0.0.1:50801->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:42 127.0.0.1 closed, recovering...
+2022/06/01 08:37:42 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:37:42 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 4
+2022/06/01 08:37:42 Conn err: read tcp 127.0.0.1:50802->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:52 Conn err: write tcp 127.0.0.1:50802->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:52 127.0.0.1 closed, recovering...
+2022/06/01 08:37:52 Conn err: write tcp 127.0.0.1:50801->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:52 Conn err: read tcp 127.0.0.1:50807->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:37:52 127.0.0.1 closed, recovering...
+2022/06/01 08:37:52 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:38:02 Conn err: write tcp 127.0.0.1:50807->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:02 127.0.0.1 closed, recovering...
+2022/06/01 08:38:02 Conn err: read tcp 127.0.0.1:50804->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:02 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:38:02 Conn err: read tcp 127.0.0.1:50808->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:02 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 08:38:02 Conn err: write tcp 127.0.0.1:50808->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:02 127.0.0.1 closed, recovering...
+2022/06/01 08:38:12 Conn err: write tcp 127.0.0.1:50804->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:12 127.0.0.1 closed, recovering...
+2022/06/01 08:38:12 Conn err: read tcp 127.0.0.1:50811->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:12 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 08:38:22 Conn err: write tcp 127.0.0.1:50811->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:22 127.0.0.1 closed, recovering...
+2022/06/01 08:38:22 Conn err: read tcp 127.0.0.1:50809->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:22 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:38:32 Conn err: write tcp 127.0.0.1:50809->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:32 127.0.0.1 closed, recovering...
+2022/06/01 08:38:32 Conn err: read tcp 127.0.0.1:50815->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:32 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:38:42 Conn err: write tcp 127.0.0.1:50815->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:42 127.0.0.1 closed, recovering...
+2022/06/01 08:38:52 Conn err: read tcp 127.0.0.1:50813->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:52 127.0.0.1 closed, recovering...
+2022/06/01 08:38:52 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/06/01 08:38:52 Conn err: read tcp 127.0.0.1:50823->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:38:52 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:38:52 127.0.0.1 closed, recovering...
+2022/06/01 08:39:02 Conn err: write tcp 127.0.0.1:50823->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:02 127.0.0.1 closed, recovering...
+2022/06/01 08:39:02 Conn err: write tcp 127.0.0.1:50822->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:02 Conn err: write tcp 127.0.0.1:50813->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:02 Conn err: read tcp 127.0.0.1:50822->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:02 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:39:22 Conn err: read tcp 127.0.0.1:50825->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:22 127.0.0.1 closed, recovering...
+2022/06/01 08:39:22 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:39:22 Conn err: read tcp 127.0.0.1:50826->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:22 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 4
+2022/06/01 08:39:22 127.0.0.1 closed, recovering...
+2022/06/01 08:39:22 Conn err: read tcp 127.0.0.1:50834->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:22 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:39:32 Conn err: write tcp 127.0.0.1:50826->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:32 127.0.0.1 closed, recovering...
+2022/06/01 08:39:32 Conn err: write tcp 127.0.0.1:50834->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:32 Conn err: write tcp 127.0.0.1:50825->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:52 Conn err: read tcp 127.0.0.1:50838->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:52 127.0.0.1 closed, recovering...
+2022/06/01 08:39:52 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:39:52 Conn err: read tcp 127.0.0.1:50839->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:39:52 127.0.0.1 closed, recovering...
+2022/06/01 08:39:52 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 5
+2022/06/01 08:40:02 Conn err: write tcp 127.0.0.1:50838->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:02 127.0.0.1 closed, recovering...
+2022/06/01 08:40:02 Conn err: write tcp 127.0.0.1:50839->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:02 Conn err: read tcp 127.0.0.1:50842->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:02 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 08:40:12 Conn err: write tcp 127.0.0.1:50842->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:12 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:40:12 127.0.0.1 closed, recovering...
+2022/06/01 08:40:12 Conn err: read tcp 127.0.0.1:50840->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:22 Conn err: write tcp 127.0.0.1:50840->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:22 127.0.0.1 closed, recovering...
+2022/06/01 08:40:32 Conn err: read tcp 127.0.0.1:50860->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:32 127.0.0.1 closed, recovering...
+2022/06/01 08:40:32 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:40:42 Conn err: write tcp 127.0.0.1:50860->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:42 127.0.0.1 closed, recovering...
+2022/06/01 08:40:42 Conn err: read tcp 127.0.0.1:50847->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:42 Conn err: write tcp 127.0.0.1:50847->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:42 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/06/01 08:40:42 Conn err: read tcp 127.0.0.1:50862->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:42 127.0.0.1 closed, recovering...
+2022/06/01 08:40:42 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:40:52 Conn err: write tcp 127.0.0.1:50862->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:52 127.0.0.1 closed, recovering...
+2022/06/01 08:40:52 Conn err: write tcp 127.0.0.1:50859->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:52 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:40:52 Conn err: read tcp 127.0.0.1:50861->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:52 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/06/01 08:40:52 Conn err: read tcp 127.0.0.1:50859->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:52 Conn err: read tcp 127.0.0.1:50865->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:40:52 127.0.0.1 closed, recovering...
+2022/06/01 08:40:52 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:41:02 Conn err: write tcp 127.0.0.1:50861->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:02 127.0.0.1 closed, recovering...
+2022/06/01 08:41:02 Conn err: read tcp 127.0.0.1:50866->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:02 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 08:41:02 Conn err: write tcp 127.0.0.1:50865->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:02 Conn err: write tcp 127.0.0.1:50866->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:02 127.0.0.1 closed, recovering...
+2022/06/01 08:41:12 Conn err: read tcp 127.0.0.1:50864->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:12 127.0.0.1 closed, recovering...
+2022/06/01 08:41:12 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:41:12 Conn err: read tcp 127.0.0.1:50868->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:12 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 08:41:22 Conn err: write tcp 127.0.0.1:50868->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:22 127.0.0.1 closed, recovering...
+2022/06/01 08:41:22 Conn err: write tcp 127.0.0.1:50864->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:22 Conn err: read tcp 127.0.0.1:50867->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:22 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:41:32 Conn err: write tcp 127.0.0.1:50867->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:32 127.0.0.1 closed, recovering...
+2022/06/01 08:41:32 Conn err: read tcp 127.0.0.1:50874->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:32 127.0.0.1 closed, recovering...
+2022/06/01 08:41:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:41:42 Conn err: write tcp 127.0.0.1:50873->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:42 127.0.0.1 closed, recovering...
+2022/06/01 08:41:42 Conn err: write tcp 127.0.0.1:50874->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:42 Conn err: read tcp 127.0.0.1:50873->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:41:42 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:42:03 Conn err: read tcp 127.0.0.1:50875->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:03 127.0.0.1 closed, recovering...
+2022/06/01 08:42:03 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:42:03 Conn err: read tcp 127.0.0.1:50877->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:03 127.0.0.1 closed, recovering...
+2022/06/01 08:42:03 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:42:13 Conn err: write tcp 127.0.0.1:50877->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:13 127.0.0.1 closed, recovering...
+2022/06/01 08:42:13 Conn err: write tcp 127.0.0.1:50875->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:13 Conn err: read tcp 127.0.0.1:50878->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:13 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:42:13 127.0.0.1 closed, recovering...
+2022/06/01 08:42:13 Conn err: read tcp 127.0.0.1:50879->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:13 127.0.0.1 closed, recovering...
+2022/06/01 08:42:13 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 1
+2022/06/01 08:42:23 Conn err: write tcp 127.0.0.1:50876->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:23 Conn err: write tcp 127.0.0.1:50878->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:23 127.0.0.1 closed, recovering...
+2022/06/01 08:42:23 Conn err: write tcp 127.0.0.1:50879->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:23 Conn err: read tcp 127.0.0.1:50876->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:23 Conn err: heartbeat timeout. Timeout ver: 4. Heartbeat ver: 4
+2022/06/01 08:42:23 Conn err: read tcp 127.0.0.1:50881->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:23 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 08:42:33 Conn err: read tcp 127.0.0.1:50880->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:33 127.0.0.1 closed, recovering...
+2022/06/01 08:42:33 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 08:42:33 Conn err: write tcp 127.0.0.1:50881->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:33 Conn err: read tcp 127.0.0.1:50882->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:33 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:42:43 Conn err: write tcp 127.0.0.1:50882->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:42:43 127.0.0.1 closed, recovering...
+2022/06/01 08:42:43 Conn err: write tcp 127.0.0.1:50880->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:03 Conn err: read tcp 127.0.0.1:50883->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:03 127.0.0.1 closed, recovering...
+2022/06/01 08:43:03 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:43:03 Conn err: read tcp 127.0.0.1:50884->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:03 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 4
+2022/06/01 08:43:13 Conn err: write tcp 127.0.0.1:50884->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:13 127.0.0.1 closed, recovering...
+2022/06/01 08:43:13 Conn err: write tcp 127.0.0.1:50883->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:33 Conn err: write tcp 127.0.0.1:50900->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:33 127.0.0.1 closed, recovering...
+2022/06/01 08:43:33 Conn err: read tcp 127.0.0.1:50900->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:33 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:43:33 Conn err: read tcp 127.0.0.1:50901->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:33 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 4
+2022/06/01 08:43:43 Conn err: write tcp 127.0.0.1:50901->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:43:43 127.0.0.1 closed, recovering...
+2022/06/01 08:44:03 Conn err: read tcp 127.0.0.1:50907->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:03 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:44:03 127.0.0.1 closed, recovering...
+2022/06/01 08:44:03 Conn err: read tcp 127.0.0.1:50908->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:03 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 4
+2022/06/01 08:44:13 Conn err: write tcp 127.0.0.1:50907->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:13 127.0.0.1 closed, recovering...
+2022/06/01 08:44:13 Conn err: write tcp 127.0.0.1:50908->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:33 Conn err: read tcp 127.0.0.1:50909->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:33 127.0.0.1 closed, recovering...
+2022/06/01 08:44:33 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:44:33 Conn err: read tcp 127.0.0.1:50913->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:33 Conn err: heartbeat version mismatch. Incoming ver: 2. Heartbeat ver: 5
+2022/06/01 08:44:43 Conn err: write tcp 127.0.0.1:50913->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:43 127.0.0.1 closed, recovering...
+2022/06/01 08:44:43 Conn err: write tcp 127.0.0.1:50909->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:53 Conn err: read tcp 127.0.0.1:50915->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:44:53 127.0.0.1 closed, recovering...
+2022/06/01 08:44:53 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:45:03 Conn err: write tcp 127.0.0.1:50915->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:03 127.0.0.1 closed, recovering...
+2022/06/01 08:45:03 Conn err: read tcp 127.0.0.1:50914->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:03 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:45:13 Conn err: write tcp 127.0.0.1:50914->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:13 127.0.0.1 closed, recovering...
+2022/06/01 08:45:23 Conn err: read tcp 127.0.0.1:50920->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:23 127.0.0.1 closed, recovering...
+2022/06/01 08:45:23 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 08:45:33 Conn err: write tcp 127.0.0.1:50920->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:33 127.0.0.1 closed, recovering...
+2022/06/01 08:45:33 Conn err: write tcp 127.0.0.1:50919->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:33 Conn err: heartbeat timeout. Timeout ver: 3. Heartbeat ver: 3
+2022/06/01 08:45:33 Conn err: read tcp 127.0.0.1:50919->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:43 Conn err: read tcp 127.0.0.1:50922->127.0.0.1:10000: use of closed network connection
+2022/06/01 08:45:43 127.0.0.1 closed, recovering...
+2022/06/01 08:45:43 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 2
+2022/06/01 11:03:46 Conn err: read tcp 127.0.0.1:51850->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 11:03:54 Conn err: write tcp 127.0.0.1:51850->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:04:04 Conn err: read tcp 127.0.0.1:51858->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:04:04 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 11:04:08 Conn err: read tcp 127.0.0.1:51856->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:04:08 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 11:04:08 Conn err: read tcp 127.0.0.1:51861->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:04:08 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:10 Conn err: read tcp 127.0.0.1:51898->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 11:09:15 Conn err: write tcp 127.0.0.1:51898->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:18 Conn err: read tcp 127.0.0.1:51911->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 11:09:20 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 11:09:21 Conn err: write tcp 127.0.0.1:51911->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51918->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 1. Heartbeat ver: 3
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51924->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51927->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51929->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51931->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51933->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51935->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51937->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51939->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:32 Conn err: read tcp 127.0.0.1:51941->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:32 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 2
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51920->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51920->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 2. Heartbeat ver: 2
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51924->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51918->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51922->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51926->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51930->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51927->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51933->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51932->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51929->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51928->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51931->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51938->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51930->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51935->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51926->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51939->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51936->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51937->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51940->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: write tcp 127.0.0.1:51941->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51934->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51922->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51938->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51940->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: heartbeat timeout. Timeout ver: 1. Heartbeat ver: 1
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51944->127.0.0.1:10000: use of closed network connection
+2022/06/01 11:09:42 Conn err: heartbeat version mismatch. Incoming ver: 0. Heartbeat ver: 3
+2022/06/01 11:09:42 Conn err: read tcp 127.0.0.1:51951->127.0.0.1:10000: wsarecv: An established connection was aborted by the software in your host machine.
+2022/06/01 13:15:49 Conn err: read tcp 127.0.0.1:53565->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:15:51 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:15:53 Conn err: write tcp 127.0.0.1:53565->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:15:56 Conn err: read tcp 127.0.0.1:53572->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:15:58 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:16:00 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:16:03 Conn err: write tcp 127.0.0.1:53572->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:19:08 Conn err: read tcp 127.0.0.1:53581->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:19:10 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:11 Conn err: write tcp 127.0.0.1:53581->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:19:12 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:15 Conn err: read tcp 127.0.0.1:53598->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:19:17 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:19 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:21 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:30 Conn err: read tcp 127.0.0.1:53622->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:20:32 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:34 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:37 Conn err: write tcp 127.0.0.1:53622->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:20:43 Conn err: read tcp 127.0.0.1:53630->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:20:45 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:45 Conn err: write tcp 127.0.0.1:53630->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:20:47 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:49 recovering API_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/02 23:30:07 Conn err: EOF
+2022/06/02 23:30:17 Conn err: write tcp 127.0.0.1:52375->127.0.0.1:10000: use of closed network connection
+2022/06/02 23:30:17 Conn err: heartbeat timeout. Timeout ver: 207. Heartbeat ver: 207
+2022/06/02 23:52:51 Conn err: read tcp 127.0.0.1:52505->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.

@@ -16,6 +16,9 @@ func publicRoutes(api fiber.Router) {
 		},
 		Expiration:   5 * time.Minute,
 		CacheControl: true,
+		KeyGenerator: func(c *fiber.Ctx) string {
+			return c.Path() + "?username=" + c.Query("username")
+		},
 	}))
 	public.Get("/user", services.UserByUsername)
 }

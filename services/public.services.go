@@ -4,6 +4,7 @@ import (
 	"PROJECT_H_server/errors"
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/schemas"
+	"fmt"
 
 	"github.com/gocql/gocql"
 	"github.com/gofiber/fiber/v2"
@@ -13,6 +14,8 @@ import (
 func UserByUsername(c *fiber.Ctx) error {
 
 	username := c.Query("username")
+
+	fmt.Println("REQ USERNANME:", username)
 
 	if username == "" || len(username) > 30 {
 		return errors.HandleInvalidRequestError(c, "Username", "invalid")

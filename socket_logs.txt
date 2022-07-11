@@ -1,0 +1,27 @@
+2022/06/01 13:15:49 Conn err: read tcp 127.0.0.1:53566->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:15:51 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:15:53 Conn err: write tcp 127.0.0.1:53566->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:15:56 Conn err: read tcp 127.0.0.1:53571->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:15:58 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:16:00 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:16:03 Conn err: write tcp 127.0.0.1:53571->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:19:08 Conn err: read tcp 127.0.0.1:53580->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:19:10 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:11 Conn err: write tcp 127.0.0.1:53580->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:19:12 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:15 Conn err: read tcp 127.0.0.1:53599->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:19:17 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:19 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:19:21 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:30 Conn err: read tcp 127.0.0.1:53621->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:20:32 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:34 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:37 Conn err: write tcp 127.0.0.1:53621->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:20:43 Conn err: read tcp 127.0.0.1:53629->127.0.0.1:10000: wsarecv: An existing connection was forcibly closed by the remote host.
+2022/06/01 13:20:45 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:45 Conn err: write tcp 127.0.0.1:53629->127.0.0.1:10000: use of closed network connection
+2022/06/01 13:20:47 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/01 13:20:49 recovering SOCK_main failed: dial tcp 127.0.0.1:10000: connectex: No connection could be made because the target machine actively refused it.
+2022/06/02 23:30:07 Conn err: EOF
+2022/06/02 23:30:17 Conn err: write tcp 127.0.0.1:52374->127.0.0.1:10000: use of closed network connection
+2022/06/02 23:30:17 Conn err: heartbeat timeout. Timeout ver: 207. Heartbeat ver: 207

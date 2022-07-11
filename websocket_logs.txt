@@ -1,0 +1,7 @@
+2022/05/31 16:36:28 ip: 192.168.1.226:38226; Problem: recv_prev_state; Error: response not op:31, but is op:32
+2022/06/02 11:02:22 ip: 192.168.1.240:60459; Problem: recv_prev_state; Error: response not op:31, but is op:32
+2022/06/02 11:11:27 ip: 192.168.1.240:60671; Problem: recv_prev_state; Error: response not op:31, but is op:100
+2022/06/02 13:15:16 ip: 192.168.1.226:44814; Problem: recv_prev_state; Error: response not op:31, but is op:32
+2022/06/02 13:15:16 ip: 192.168.1.226:44814; Problem: write op:1002; Error: write tcp4 192.168.1.240:8000->192.168.1.226:44814: wsasend: An existing connection was forcibly closed by the remote host.
+2022/06/02 15:01:06 ip: 192.168.1.240:52366; Problem: recv_prev_state; Error: response not op:31, but is op:100
+2022/06/02 15:01:46 ip: 192.168.1.226:47594; Problem: recv_prev_state; Error: response not op:31, but is op:32

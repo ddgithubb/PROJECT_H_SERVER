@@ -197,12 +197,13 @@ func VerifyEmail(c *fiber.Ctx) error {
 	userID := gocql.TimeUUID()
 
 	applied, err := global.Session.Query(`
-		INSERT INTO users_public (username,user_id)
-		VALUES(?,?) 
+		INSERT INTO users_public (username,user_id,statement)
+		VALUES(?,?,?) 
 		IF NOT EXISTS;`,
 		res["username"],
 		userID,
-	).WithContext(global.Context).MapScanCAS(make(map[string]interface{}))
+		gocql.UnsetValue,
+	).WithContext(global.Context).ScanCAS()
 
 	if err != nil {
 		return errors.HandleInternalError(c, "users_public", "ScyllaDB: "+err.Error())
@@ -212,12 +213,13 @@ func VerifyEmail(c *fiber.Ctx) error {
 	}
 
 	err = global.Session.Query(`
-		INSERT INTO users (email,user_id,password_hash,created)
-		VALUES(?,?,?,?);`,
+		INSERT INTO users (email,user_id,password_hash,created,username)
+		VALUES(?,?,?,?,?);`,
 		req.Email,
 		userID,
 		res["passwordhash"],
 		time.Now().UTC(),
+		res["username"],
 	).WithContext(global.Context).Exec()
 
 	if err != nil {
@@ -280,37 +282,18 @@ func Login(c *fiber.Ctx) error {
 		return errors.HandleInvalidRequestError(c, "Password", "invalid")
 	}
 
-	err = global.Session.Query(`
-		INSERT INTO user_devices (user_id,created,device_token,active)
-		VALUES(?,?,?,?) 
-		IF NOT EXISTS;`,
-		userID,
-		time.Now().UTC(),
-		req.DeviceToken,
-		true,
-	).WithContext(global.Context).Exec()
-
-	if err != nil {
-		return errors.HandleInternalError(c, "user_devices", "ScyllaDB: "+err.Error())
-	}
-
-	initUserInfo, err := helpers.GetUserInfo(c, userID)
-	if initUserInfo.UserID == "" {
-		return err
-	}
-
 	sessionID, err := helpers.RandomTokenString(20)
-	if sessionID == "" {
+	if err != nil {
 		return err
 	}
 
-	c.Response().Header.Add("x-session-id", sessionID)
-
-	username := initUserInfo.Username
-
-	if err = helpers.GenerateAndRefreshTokens(c, userID, sessionID, username, false); err != nil {
+	if err = helpers.GenerateAndRefreshTokens(c, userID, sessionID, mainResult["username"].(string)); err != nil {
 		return err
 	}
 
-	return c.JSON(initUserInfo)
+	return c.JSON(struct {
+		SessionID string
+	}{
+		SessionID: sessionID,
+	})
 }

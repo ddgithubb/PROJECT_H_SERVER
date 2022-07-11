@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/go-redis/redis/v8"
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/websocket/v2"
 )
 
 // Authenticate authenticates refresh and access tokens
@@ -22,64 +22,59 @@ func Authenticate(c *fiber.Ctx) error {
 	refresh := string(c.Request().Header.Peek("x-refresh"))
 	expireAt, err := helpers.ParseStringToInt(string(c.Request().Header.Peek("x-refresh-token-expire")))
 	if err != nil || sessionInfo.SessionID == "" || sessionInfo.RefreshToken.Token == "" {
-		return errors.HandleUnauthorizedError(c)
+		return errors.HandleBadRequestError(c, "Auth", "empty")
 	}
 	sessionInfo.RefreshToken.ExpireAt = expireAt
 
 	fmt.Println("AUTHENTICATING " + sessionInfo.SessionID + "; PATH " + c.Path())
 
 	authorization := c.Request().Header.Peek("Authorization")
-	accessToken := strings.Split(string(authorization), "Bearer ")[1]
+	bearerSplit := strings.Split(string(authorization), "Bearer ")
+	accessToken := ""
 
-	if time.Unix(sessionInfo.RefreshToken.ExpireAt, 0).Before(time.Now().UTC()) {
+	if len(bearerSplit) == 2 {
+		accessToken = bearerSplit[1]
+	} else {
+		return errors.HandleBadRequestError(c, "AccessToken", "invalid")
+	}
+
+	if time.UnixMilli(sessionInfo.RefreshToken.ExpireAt).Before(time.Now().UTC()) {
 		return errors.HandleBadRequestError(c, "RefreshToken", "expired")
 	}
 
-	userID, username, err := helpers.ParseJWT(c, accessToken)
-	if userID == "expired" {
+	expired, userID, username, sessionID, err := helpers.ParseJWT(c, accessToken)
+	if err != nil {
+		return err
+	}
+
+	fmt.Println(userID, sessionID, sessionInfo.SessionID)
+
+	if sessionID != sessionInfo.SessionID {
+		return errors.HandleBadRequestError(c, "SessionID", "invalid")
+	}
+
+	if expired {
 		res, err := global.RedisClient.HGetAll(global.Context, "refreshtokens:"+sessionInfo.SessionID).Result()
 		if err != nil {
+			if err == redis.Nil {
+				return errors.HandleInvalidRequestError(c, "RefreshToken", "invalid")
+			}
 			return errors.HandleInternalError(c, "get_refresh_tokens", "Redis: "+err.Error())
 		}
 
-		if _, ok := res["token"]; !ok {
-			return errors.HandleInvalidRequestError(c, "RefreshToken", "invalid")
+		if userID != res["userid"] {
+			return errors.HandleBadRequestError(c, "UserID", "Invalid")
 		}
 
-		userID = res["userid"]
-
 		if refresh == "true" {
-			if err = helpers.GenerateAndRefreshTokens(c, userID, sessionInfo.SessionID, username, sessionInfo.RefreshToken.Token != res["token"]); err != nil {
+			if err = helpers.GenerateAndRefreshTokens(c, userID, sessionInfo.SessionID, username); err != nil {
 				return err
 			}
 		}
 	}
 
-	if userID == "" {
-		return err
-	}
-
 	c.Locals("userid", userID)
+	c.Locals("username", username)
+	c.Locals("sessionid", sessionID)
 	return c.Next()
-}
-
-// AuthenticateStream authenticates websocket connection
-func AuthenticateStream(c *fiber.Ctx) error {
-
-	if websocket.IsWebSocketUpgrade(c) {
-		accessToken := c.Query("token")
-
-		userID, username, err := helpers.ParseJWT(c, accessToken)
-		if userID == "expired" {
-			return errors.HandleInvalidRequestError(c, "AccessToken", "expired")
-		} else if userID == "" {
-			return err
-		}
-
-		c.Locals("userid", userID)
-		c.Locals("username", username)
-		return c.Next()
-	}
-
-	return errors.HandleInternalError(c, "websocket_upgrade", fiber.ErrUpgradeRequired.Error())
 }

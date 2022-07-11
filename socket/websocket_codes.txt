@@ -1,0 +1,114 @@
+Message template:
+{
+    Op: INTEGER,
+    Data: {
+
+    }
+}
+
+WS State template:
+{
+    LastTimestamp: UNIXMILLI,
+    MQ: map[string][]byte
+}
+
+
+WEBSOCKET SERVER OP CODES:
+
+1000 - WS heartbeat
+
+1001 - Request auth token
+
+1002 - Auth response
+    data: {
+        WSID: STRING
+        Refresh: BOOLEAN (true for default, false if recovered)
+    }
+
+
+WEBSCOKET CLIENT OP CODES:
+
+1000 - WS heartbeat
+
+1001 - Reply auth token
+    data: {
+        Token: AUTH TOKEN STRING
+        PrevWSID: OPTIONAL previous websocket id to recover session
+    }
+
+1005 - Close gate (default)
+
+1006 - Open gate
+
+1007 - ACK
+    data: {
+        Timestamp: UNIXMILLI
+        Signature: STRING
+    }
+
+
+WEBSOCKET ERROR OP CODES: (No fatal error code, connection just closes)
+
+3000 - Unresponsive error
+
+3001 - Auth error
+
+3002 - Requires full refresh
+
+...
+
+3101 - Refresh relations
+
+3102 - Refresh chain
+    data: {
+        ChainID: STRING
+    }
+
+
+MESSAGE CODES:
+
+{
+    Op: INTEGER
+    OriginID: STRING
+	TargetID: STRING
+    Timestamp: UNIXMILLI
+    Signature: STRING
+    Atomic: BOOLEAN
+    Data: {
+
+    }
+}
+
+...
+
+200-299 - Social sector
+
+200 - Friend request
+    data: {
+        OriginUsername: STRING;
+        TargetUsername: STRING;
+    }
+
+201 - Friend accepted
+    data: {
+        ChainID: STRING
+        Created: UNIXMILLI
+    }
+
+202 - Relation remove
+
+...
+
+300-399 - Chain sector
+
+300 - Send message
+    data: {
+        ChainID: STRING
+        MessageID: STRING
+        Created: UNIXMILLI
+        Expires: UNIXMILLI
+        Type: NUMBER
+        Display: STRING
+        Duration: NUMBER
+    }
+

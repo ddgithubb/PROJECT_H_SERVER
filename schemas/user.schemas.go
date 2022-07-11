@@ -29,9 +29,10 @@ type RelationsSchema struct {
 
 // FriendsSchema struct
 type FriendsSchema struct {
-	Username   string
 	RelationID string
+	Username   string
 	ChainID    string
+	Created    int64
 	LastSeen   int64
 	LastRecv   int64
 	Key        int
@@ -41,5 +42,6 @@ type FriendsSchema struct {
 type RequestsSchema struct {
 	Username   string
 	RelationID string
+	Created    int64
 	Requested  bool
 }

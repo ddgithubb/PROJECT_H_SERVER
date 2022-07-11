@@ -6,8 +6,3 @@ type ErrorResponse struct {
 	Problem     string
 	Description string
 }
-
-// Message struct
-type Message struct {
-	Message string
-}

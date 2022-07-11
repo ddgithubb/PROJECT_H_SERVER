@@ -8,7 +8,6 @@ import (
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/websocket/v2"
 )
 
 // HandleFatalError handles global error
@@ -21,7 +20,7 @@ func HandleFatalError(err error) {
 // HandleBasicError handles basic error and logs
 func HandleBasicError(err error) bool {
 	if err != nil {
-		global.Logger.Println(err)
+		global.InternalLogger.Println(err)
 		return true
 	}
 	return false
@@ -29,29 +28,21 @@ func HandleBasicError(err error) bool {
 
 // HandleComplexError handles complex errors and logs
 func HandleComplexError(problem string, err string) error {
-	global.Logger.Println("Problem: " + problem + "; Error: " + err)
+	global.MonitorLogger.Println("Complex error; Problem: " + problem + "; Error: " + err)
 	return Errors.New("Problem: " + problem + "; Error: " + err)
 }
 
 // HandleInternalError handles internal errors (things that should never happen in normal circumstances)
 func HandleInternalError(c *fiber.Ctx, problem string, err string) error {
-	global.Logger.Println("IP: " + c.IP() + "; Problem: " + problem + "; Error: " + err)
+	global.InternalLogger.Println("IP: " + c.IP() + "; Problem: " + problem + "; Error: " + err)
 	return c.Status(fiber.StatusInternalServerError).JSON(schemas.ErrorResponse{
 		Error: true,
 	})
 }
 
-// HandleUnauthorizedError handles authorization error
-func HandleUnauthorizedError(c *fiber.Ctx) error {
-	return c.Status(fiber.StatusUnauthorized).JSON(schemas.ErrorResponse{
-		Error:       true,
-		Problem:     "Authorization",
-		Description: "unauthorized",
-	})
-}
-
 // HandleBadRequestError handles bad request errors (client error that is harmless to server and state)
 func HandleBadRequestError(c *fiber.Ctx, problem string, description string) error {
+	global.MonitorLogger.Println("Bad Request; Problem: " + problem + "; Description: " + description)
 	return c.Status(fiber.StatusBadRequest).JSON(schemas.ErrorResponse{
 		Error:       true,
 		Problem:     problem,
@@ -77,9 +68,4 @@ func HandleValidatorError(c *fiber.Ctx, err error) error {
 // HandleBadJsonError handles json request parser errors
 func HandleBadJsonError(c *fiber.Ctx) error {
 	return HandleBadRequestError(c, "JSON body", "invalid")
-}
-
-// HandleWebsocketError handles internal errors from websocket
-func HandleWebsocketError(c *websocket.Conn, problem string, err string) {
-	global.Logger.Println("ip: " + c.RemoteAddr().String() + "; Problem: " + problem + "; Error: " + err)
 }

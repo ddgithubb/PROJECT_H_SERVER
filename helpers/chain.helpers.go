@@ -5,7 +5,6 @@ import (
 	"PROJECT_H_server/global"
 	"PROJECT_H_server/schemas"
 	Errors "errors"
-	"fmt"
 	"time"
 
 	"github.com/gocql/gocql"
@@ -26,25 +25,29 @@ func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit i
 	if !new {
 		if asc {
 			iter = global.Session.Query(`
-				SELECT * FROM chains WHERE chain_id = ? AND created > ? ORDER BY created ASC LIMIT `+fmt.Sprint(limit)+` BYPASS CACHE;`,
+				SELECT * FROM chains WHERE chain_id = ? AND created > ? ORDER BY created ASC LIMIT ? BYPASS CACHE;`,
 				chainID,
 				reqTime,
+				limit,
 			).WithContext(global.Context).Iter()
 		} else {
 			iter = global.Session.Query(`
-				SELECT * FROM chains WHERE chain_id = ? AND created < ? LIMIT `+fmt.Sprint(limit)+` BYPASS CACHE;`,
+				SELECT * FROM chains WHERE chain_id = ? AND created < ? LIMIT ? BYPASS CACHE;`,
 				chainID,
 				reqTime,
+				limit,
 			).WithContext(global.Context).Iter()
 		}
 	} else {
 		iter = global.Session.Query(`
-			SELECT * FROM chains WHERE chain_id = ? AND created <= ? LIMIT `+fmt.Sprint(limit)+` BYPASS CACHE;`,
+			SELECT * FROM chains WHERE chain_id = ? AND created <= ? LIMIT ? BYPASS CACHE;`,
 			chainID,
 			reqTime,
+			limit,
 		).WithContext(global.Context).Iter()
 	}
 
+	defer iter.Close()
 	chain := []schemas.MessageSchema{}
 
 	var (
@@ -62,71 +65,93 @@ func GetChain(chainID gocql.UUID, reqTime time.Time, asc bool, new bool, limit i
 			curMessage.MessageID = messageID.String()
 			curMessage.UserID = row["user_id"].(gocql.UUID).String()
 			curMessage.Created = messageID.Time().UnixMilli()
-			curMessage.Duration = row["duration"].(int)
+			curMessage.Expires = row["expires"].(time.Time).UnixMilli()
+			curMessage.Type = row["type"].(int)
 			curMessage.Seen = row["seen"].(bool)
-			curMessage.Action = row["action"].(int)
 			curMessage.Display = row["display"].(string)
-			if asc {
-				chain = append(chain, curMessage)
-			} else {
-				chain = append([]schemas.MessageSchema{curMessage}, chain...)
-			}
+			curMessage.Duration = row["duration"].(int)
+			chain = append(chain, curMessage)
 		} else {
-			return []schemas.MessageSchema{}, Errors.New("iter error")
+			return nil, Errors.New("iter error")
+		}
+	}
+
+	if !asc {
+		for i := 0; i < len(chain)/2; i++ {
+			j := len(chain) - i - 1
+			chain[i], chain[j] = chain[j], chain[i]
 		}
 	}
 
 	return chain, nil
-
 }
 
-// UpdateAction updates the action of a specific message
-func UpdateAction(chainID string, messageID string, actionID string) error {
+func InsertChainsUsers(c *fiber.Ctx, chainID gocql.UUID, users ...string) error {
 
-	msgID, err := gocql.ParseUUID(messageID)
-	if err != nil {
-		return errors.HandleComplexError("MessageID", "invalid")
+	created := time.Now().UTC()
+
+	b := global.Session.NewBatch(gocql.LoggedBatch).WithContext(global.Context)
+
+	for i := 0; i < len(users); i++ {
+		b.Entries = append(b.Entries, gocql.BatchEntry{
+			Stmt:       "INSERT INTO chains_users (chain_id, user_id, created) VALUES (?, ?, ?)",
+			Args:       []interface{}{chainID, users[i], created},
+			Idempotent: true,
+		})
 	}
 
-	chnID, err := gocql.ParseUUID(chainID)
+	err := global.Session.ExecuteBatch(b)
 	if err != nil {
-		return errors.HandleComplexError("MessageID", "invalid")
-	}
-
-	action, err := ParseStringToInt(actionID)
-	if err != nil {
-		return errors.HandleComplexError("ActionID", "parsing")
-	}
-
-	if action < 0 || action > 5 {
-		return errors.HandleComplexError("ActionID", "invalid")
-	}
-
-	err = global.Session.Query(`
-		UPDATE chains SET action = ? WHERE chain_id = ? AND created = ?;`,
-		action,
-		chnID.String(),
-		msgID.Time(),
-	).WithContext(global.Context).Exec()
-
-	if err != nil {
-		return errors.HandleComplexError("chains", "ScyllaDB: "+err.Error())
+		return errors.HandleInternalError(c, "chains_users", "ScyllaDB: "+err.Error())
 	}
 
 	return nil
+
 }
 
-// ParseChainUUID parses chain uuid from parameter
-func ParseChainUUID(c *fiber.Ctx) (gocql.UUID, error) {
+func GetChainsUsers(c *fiber.Ctx, chainID gocql.UUID) ([]string, error) {
+
+	iter := global.Session.Query(`
+		SELECT * FROM chains_users WHERE chain_id = ?;`,
+		chainID,
+	).WithContext(global.Context).Iter()
+
+	defer iter.Close()
+
+	users := []string{}
+
+	var (
+		ok     bool
+		userID gocql.UUID
+	)
+	for {
+		row := make(map[string]interface{})
+		if !iter.MapScan(row) {
+			break
+		}
+		if userID, ok = row["user_id"].(gocql.UUID); ok {
+			users = append(users, userID.String())
+		} else {
+			return nil, Errors.New("iter error")
+		}
+	}
+
+	return users, nil
+
+}
+
+// ParseParamChainUUID parses chain uuid from parameter
+func ParseParamChainUUID(c *fiber.Ctx) (gocql.UUID, error) {
 	chainID, err := gocql.ParseUUID(c.Params("chainID"))
 	if err != nil {
 		return gocql.UUID{}, errors.HandleBadRequestError(c, "ChainID", "invalid")
 	}
+
 	return chainID, err
 }
 
-// ParseMessageUUID parses message uuid from parameter
-func ParseMessageUUID(c *fiber.Ctx) (gocql.UUID, error) {
+// ParseParamMessageUUID parses message uuid from parameter
+func ParseParamMessageUUID(c *fiber.Ctx) (gocql.UUID, error) {
 	messageID, err := gocql.ParseUUID(c.Params("messageID"))
 	if err != nil {
 		return gocql.UUID{}, errors.HandleBadRequestError(c, "MessageID", "invalid")

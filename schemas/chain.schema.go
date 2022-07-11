@@ -5,8 +5,9 @@ type MessageSchema struct {
 	MessageID string
 	UserID    string
 	Created   int64
-	Duration  int
+	Expires   int64
+	Type      int
 	Seen      bool
-	Action    int
 	Display   string
+	Duration  int
 }

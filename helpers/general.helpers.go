@@ -8,8 +8,6 @@ import (
 	"net/smtp"
 	"strconv"
 	"time"
-
-	"github.com/gofiber/fiber/v2"
 )
 
 // RandomTokenString generates random hex token
@@ -29,11 +27,6 @@ func EmailSender(to string, message string) error {
 		return err
 	}
 	return nil
-}
-
-// OKResponse sends a successful request/response
-func OKResponse(c *fiber.Ctx) error {
-	return c.SendStatus(fiber.StatusOK)
 }
 
 // MilisecondsToTime converts milliseconds since epoch to golang time object

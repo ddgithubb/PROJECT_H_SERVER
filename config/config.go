@@ -10,8 +10,6 @@ type JSONConfig struct {
 	Version   string      `json:"version"`
 	EmailFrom string      `json:"emailFrom"`
 	SMTP      SMTPConfig  `json:"smtp"`
-	PubPort   string      `json:"pubPort"`
-	SubPort   string      `json:"subPort"`
 	MinIO     MinIOConfig `json:"minIO"`
 }
 

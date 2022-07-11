@@ -1,0 +1,2 @@
+2022/06/02 14:57:58 IP: 192.168.1.226; Problem: user_relations; Error: ScyllaDB: Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING
+2022/06/02 14:59:59 IP: 192.168.1.226; Problem: user_relations; Error: ScyllaDB: Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING

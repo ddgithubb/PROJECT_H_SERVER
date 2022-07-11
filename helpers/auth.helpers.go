@@ -11,7 +11,6 @@ import (
 	"crypto/rsa"
 	"crypto/sha256"
 	"encoding/base64"
-	"fmt"
 	"strconv"
 	"strings"
 	"time"
@@ -22,11 +21,12 @@ import (
 )
 
 // GenerateJWT generates a jwt token with a claim
-func GenerateJWT(c *fiber.Ctx, userID string, username string) (string, error) {
+func GenerateJWT(c *fiber.Ctx, userID string, username string, sessionID string) (string, error) {
 	exp := time.Now().Add(time.Hour * 1).Unix()
 	user := jwt.MapClaims{}
 	user["id"] = userID
 	user["username"] = username
+	user["session_id"] = sessionID
 	user["exp"] = exp
 	jt := jwt.NewWithClaims(jwt.SigningMethodRS256, user)
 	token, err := jt.SignedString(global.JwtKey)
@@ -37,25 +37,27 @@ func GenerateJWT(c *fiber.Ctx, userID string, username string) (string, error) {
 }
 
 // ParseJWT parses a jwt to userID
-func ParseJWT(c *fiber.Ctx, jwtString string) (string, string, error) {
+func ParseJWT(c *fiber.Ctx, jwtString string) (bool, string, string, string, error) {
+	expired := false
 	token, err := jwt.Parse(jwtString, func(token *jwt.Token) (interface{}, error) {
 		return global.JwtParseKey, nil
 	})
 	if err != nil {
 		if err.(*jwt.ValidationError).Errors == jwt.ValidationErrorExpired {
-			return "expired", "", nil
+			expired = true
+		} else {
+			return expired, "", "", "", errors.HandleInternalError(c, "jwt_parse", err.Error())
 		}
-		return "", "", errors.HandleInternalError(c, "jwt_parse", err.Error())
 	}
 	user, ok := token.Claims.(jwt.MapClaims)
-	if !ok || !token.Valid {
-		return "", "", errors.HandleInternalError(c, "jwt_claims", err.Error())
+	if !ok {
+		return expired, "", "", "", errors.HandleInternalError(c, "jwt_claims", "jwt_claims not valid")
 	}
-	return user["id"].(string), user["username"].(string), nil
+	return expired, user["id"].(string), user["username"].(string), user["session_id"].(string), nil
 }
 
 // GenerateAndRefreshTokens generates and interacts with redis to store tokens and then sets response header
-func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, username string, delExistingRecord bool) error {
+func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, username string) error {
 
 	var tokens schemas.TokensSchema
 	redisError := false
@@ -64,23 +66,14 @@ func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, use
 
 		var err error
 
-		if delExistingRecord {
-			err = pipe.Del(global.Context, "refreshtokens:"+sessionID).Err()
-			if err != nil {
-				redisError = true
-				return errors.HandleInternalError(c, "refresh_tokens", "Redis: "+err.Error())
-			}
-			redisError = true
-			return errors.HandleInvalidRequestError(c, "RefreshToken", "invalid")
-		}
-
 		tokens.RefreshToken.Token, err = RandomTokenString(40)
 		if err != nil {
 			redisError = true
 			return errors.HandleInternalError(c, "password", "hex token error")
 		}
 
-		tokens.RefreshToken.ExpireAt = time.Now().UTC().Add(global.RefreshTokenDuration).Unix()
+		tokenExpire := time.Now().Add(global.RefreshTokenDuration)
+		tokens.RefreshToken.ExpireAt = tokenExpire.UnixMilli()
 
 		query := map[string]interface{}{
 			"token":  tokens.RefreshToken.Token,
@@ -93,13 +86,13 @@ func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, use
 			redisError = true
 			return errors.HandleInternalError(c, "set_refresh_tokens", "Redis: "+err.Error())
 		}
-		err = pipe.Expire(global.Context, "refreshtokens:"+sessionID, global.RefreshTokenDuration).Err()
+		err = pipe.ExpireAt(global.Context, "refreshtokens:"+sessionID, tokenExpire).Err()
 		if err != nil {
 			redisError = true
 			return errors.HandleInternalError(c, "expire_refresh_tokens", "Redis: "+err.Error())
 		}
 
-		tokens.AccessToken, err = GenerateJWT(c, userID, username)
+		tokens.AccessToken, err = GenerateJWT(c, userID, username, sessionID)
 		if tokens.AccessToken == "" {
 			redisError = true
 			return err
@@ -117,7 +110,7 @@ func GenerateAndRefreshTokens(c *fiber.Ctx, userID string, sessionID string, use
 
 	c.Response().Header.Add("x-refreshed", "true")
 	c.Response().Header.Add("x-refresh-token", tokens.RefreshToken.Token)
-	c.Response().Header.Add("x-refresh-token-expire", fmt.Sprint(tokens.RefreshToken.ExpireAt))
+	c.Response().Header.Add("x-refresh-token-expire", strconv.FormatInt(tokens.RefreshToken.ExpireAt, 10))
 	c.Response().Header.Add("x-access-token", tokens.AccessToken)
 	return nil
 }
@@ -139,15 +132,15 @@ func SendVerifEmail(c *fiber.Ctx, email string, code string) {
 
 	err := EmailSender(email, from+subject+mime+body)
 	if err != nil {
-		global.Logger.Println("Email sender error: " + err.Error())
+		global.InternalLogger.Println("Email sender error: " + err.Error())
 	}
 }
 
-// DecryptRequestPassword decrypts password into hash form
+// DecryptRequestPassword decrypts password from request
 func DecryptRequestPasswordHash(c *fiber.Ctx, encPasswordHash string) ([]byte, error) {
 	chunks := strings.Split(encPasswordHash, ".")
 	if len(chunks) != 3 {
-		return []byte{}, errors.HandleInternalError(c, "invalid_chunks", fmt.Sprint(len(chunks)))
+		return []byte{}, errors.HandleInternalError(c, "invalid_chunks", strconv.Itoa(len(chunks)))
 	}
 	nonce, err := base64.StdEncoding.DecodeString(chunks[2])
 	if err != nil {

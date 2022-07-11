@@ -9,8 +9,6 @@
         "user": "ddnoreplytest@gmail.com",
         "password": "c88ub29g"
     },
-    "pubPort": "8700",
-    "subPort": "8701",
     "minIO": {
         "user": "PROJECTHDB_MINIO",
         "password": "np6b6z7VIXxHU6j0eDFStD0scvwFBW1ZfZawnDpYwUAYxvcZgIONQoOewNxX3lK"

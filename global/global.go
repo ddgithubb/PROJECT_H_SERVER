@@ -12,8 +12,11 @@ import (
 	minio "github.com/minio/minio-go/v7"
 )
 
-// Logger for global logging
-var Logger *log.Logger
+// InternalLogger for internal logging
+var InternalLogger *log.Logger
+
+// MonitorLogger for monitor logging
+var MonitorLogger *log.Logger
 
 // Session for global cassandra cql session
 var Session *gocql.Session
